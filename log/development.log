@@ -1,0 +1,980 @@
+[Sat Dec  7 20:54:46 2013] [info] Listening at "http://*:3000".
+[Sat Dec  7 20:54:58 2013] [debug] Your secret passphrase needs to be changed!!!
+[Sat Dec  7 20:54:58 2013] [debug] GET / (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 20:54:58 2013] [error] Can't locate Database/MongoDB.pm in @INC (@INC contains: script/../lib /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 .) at script/../lib/KiDiP/Example.pm line 3.
+BEGIN failed--compilation aborted at script/../lib/KiDiP/Example.pm line 3.
+Compilation failed in require at (eval 242) line 1.
+
+[Sat Dec  7 20:54:58 2013] [debug] Template "exception.development.html.ep" not found.
+[Sat Dec  7 20:54:58 2013] [debug] Template "exception.html.ep" not found.
+[Sat Dec  7 20:54:58 2013] [debug] Rendering inline template.
+[Sat Dec  7 20:54:58 2013] [debug] Rendering inline template.
+[Sat Dec  7 20:54:58 2013] [debug] 500 Internal Server Error (0.031620s, 31.626/s).
+[Sat Dec  7 20:56:44 2013] [info] Listening at "http://*:3000".
+[Sat Dec  7 20:56:48 2013] [debug] Your secret passphrase needs to be changed!!!
+[Sat Dec  7 20:56:48 2013] [debug] GET / (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 20:56:48 2013] [error] Can't locate Database/MongoDB.pm in @INC (@INC contains: /home/wolf/repos/ki_di_p/script/../ script/../lib /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 .) at script/../lib/KiDiP/Example.pm line 6.
+BEGIN failed--compilation aborted at script/../lib/KiDiP/Example.pm line 6.
+Compilation failed in require at (eval 242) line 1.
+
+[Sat Dec  7 20:56:48 2013] [debug] Template "exception.development.html.ep" not found.
+[Sat Dec  7 20:56:48 2013] [debug] Template "exception.html.ep" not found.
+[Sat Dec  7 20:56:48 2013] [debug] Rendering inline template.
+[Sat Dec  7 20:56:48 2013] [debug] Rendering inline template.
+[Sat Dec  7 20:56:48 2013] [debug] 500 Internal Server Error (0.033595s, 29.766/s).
+[Sat Dec  7 20:57:15 2013] [debug] GET / (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 20:57:15 2013] [debug] Routing to controller "KiDiP::Example" and action "welcome".
+[Sat Dec  7 20:57:15 2013] [debug] Action not found in controller.
+[Sat Dec  7 20:57:15 2013] [debug] Rendering template "example/welcome.html.ep".
+[Sat Dec  7 20:57:15 2013] [error] Global symbol "$message" requires explicit package name at template "example/welcome.html.ep" line 3, near "This page was generated from the template "templates/example/welcome.html.ep"".
+1: % layout 'default';
+2: % title 'Kak Dienstplan Manager';
+3: <h2><%= $message %></h2>
+4: This page was generated from the template "templates/example/welcome.html.ep"
+5: and the layout "templates/layouts/default.html.ep",
+6: <a href="<%== url_for %>">click here</a> to reload the page or
+7: <a href="/index.html">here</a> to move forward to a static page.
+
+[Sat Dec  7 20:57:15 2013] [debug] Template "exception.development.html.ep" not found.
+[Sat Dec  7 20:57:15 2013] [debug] Template "exception.html.ep" not found.
+[Sat Dec  7 20:57:15 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 20:57:15 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 20:57:15 2013] [debug] 500 Internal Server Error (0.022809s, 43.842/s).
+[Sat Dec  7 21:04:20 2013] [info] Listening at "http://*:3000".
+[Sat Dec  7 21:04:58 2013] [debug] Your secret passphrase needs to be changed!!!
+[Sat Dec  7 21:04:58 2013] [debug] GET / (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:04:58 2013] [error] Can't locate Database/MongoDB.pm in @INC (@INC contains: /usr/bin/../lib script/../lib /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 .) at script/../lib/KiDiP/Example.pm line 6.
+BEGIN failed--compilation aborted at script/../lib/KiDiP/Example.pm line 6.
+Compilation failed in require at (eval 241) line 1.
+
+[Sat Dec  7 21:04:58 2013] [debug] Template "exception.development.html.ep" not found.
+[Sat Dec  7 21:04:58 2013] [debug] Template "exception.html.ep" not found.
+[Sat Dec  7 21:04:58 2013] [debug] Rendering inline template.
+[Sat Dec  7 21:04:58 2013] [debug] Rendering inline template.
+[Sat Dec  7 21:04:58 2013] [debug] 500 Internal Server Error (0.033682s, 29.689/s).
+[Sat Dec  7 21:07:14 2013] [debug] Your secret passphrase needs to be changed!!!
+[Sat Dec  7 21:07:14 2013] [debug] GET / (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:07:15 2013] [error] Database/Mongo.pm did not return a true value at script/../lib/KiDiP/Example.pm line 6.
+BEGIN failed--compilation aborted at script/../lib/KiDiP/Example.pm line 6.
+Compilation failed in require at (eval 241) line 1.
+
+[Sat Dec  7 21:07:15 2013] [debug] Template "exception.development.html.ep" not found.
+[Sat Dec  7 21:07:15 2013] [debug] Template "exception.html.ep" not found.
+[Sat Dec  7 21:07:15 2013] [debug] Rendering inline template.
+[Sat Dec  7 21:07:15 2013] [debug] Rendering inline template.
+[Sat Dec  7 21:07:15 2013] [debug] 500 Internal Server Error (0.453769s, 2.204/s).
+[Sat Dec  7 21:07:40 2013] [debug] Your secret passphrase needs to be changed!!!
+[Sat Dec  7 21:07:40 2013] [debug] GET / (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:07:41 2013] [error] Can't locate object method "new" via package "Database::MongoDB" (perhaps you forgot to load "Database::MongoDB"?) at script/../lib/KiDiP/Example.pm line 8.
+Compilation failed in require at (eval 241) line 1.
+
+[Sat Dec  7 21:07:41 2013] [debug] Template "exception.development.html.ep" not found.
+[Sat Dec  7 21:07:41 2013] [debug] Template "exception.html.ep" not found.
+[Sat Dec  7 21:07:41 2013] [debug] Rendering inline template.
+[Sat Dec  7 21:07:41 2013] [debug] Rendering inline template.
+[Sat Dec  7 21:07:41 2013] [debug] 500 Internal Server Error (0.451662s, 2.214/s).
+[Sat Dec  7 21:08:25 2013] [debug] Your secret passphrase needs to be changed!!!
+[Sat Dec  7 21:08:25 2013] [debug] GET / (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:08:25 2013] [error] Can't locate object method "new" via package "Database::Mongo" (perhaps you forgot to load "Database::Mongo"?) at script/../lib/KiDiP/Example.pm line 6.
+Compilation failed in require at (eval 241) line 1.
+
+[Sat Dec  7 21:08:25 2013] [debug] Template "exception.development.html.ep" not found.
+[Sat Dec  7 21:08:25 2013] [debug] Template "exception.html.ep" not found.
+[Sat Dec  7 21:08:25 2013] [debug] Rendering inline template.
+[Sat Dec  7 21:08:25 2013] [debug] Rendering inline template.
+[Sat Dec  7 21:08:25 2013] [debug] 500 Internal Server Error (0.451731s, 2.214/s).
+[Sat Dec  7 21:09:50 2013] [debug] Your secret passphrase needs to be changed!!!
+[Sat Dec  7 21:09:50 2013] [debug] GET / (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:09:50 2013] [error] "$bin" is not exported by the FindBin module
+Can't continue after import errors at script/../lib/KiDiP/Example.pm line 4.
+BEGIN failed--compilation aborted at script/../lib/KiDiP/Example.pm line 4.
+Compilation failed in require at (eval 241) line 1.
+
+[Sat Dec  7 21:09:50 2013] [debug] Template "exception.development.html.ep" not found.
+[Sat Dec  7 21:09:50 2013] [debug] Template "exception.html.ep" not found.
+[Sat Dec  7 21:09:50 2013] [debug] Rendering inline template.
+[Sat Dec  7 21:09:51 2013] [debug] Rendering inline template.
+[Sat Dec  7 21:09:51 2013] [debug] 500 Internal Server Error (0.032862s, 30.430/s).
+[Sat Dec  7 21:10:03 2013] [debug] Your secret passphrase needs to be changed!!!
+[Sat Dec  7 21:10:03 2013] [debug] GET / (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:10:03 2013] [error] Can't locate object method "new" via package "Database::Mongo" (perhaps you forgot to load "Database::Mongo"?) at script/../lib/KiDiP/Example.pm line 8.
+Compilation failed in require at (eval 241) line 1.
+
+[Sat Dec  7 21:10:03 2013] [debug] Template "exception.development.html.ep" not found.
+[Sat Dec  7 21:10:03 2013] [debug] Template "exception.html.ep" not found.
+[Sat Dec  7 21:10:03 2013] [debug] Rendering inline template.
+[Sat Dec  7 21:10:03 2013] [debug] Rendering inline template.
+[Sat Dec  7 21:10:03 2013] [debug] 500 Internal Server Error (0.454930s, 2.198/s).
+[Sat Dec  7 21:10:53 2013] [debug] Your secret passphrase needs to be changed!!!
+[Sat Dec  7 21:10:53 2013] [debug] GET / (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:10:53 2013] [error] Can't locate object method "new" via package "MongoDB::MongoCLient" (perhaps you forgot to load "MongoDB::MongoCLient"?) at script/../lib/Database/Mongo.pm line 35.
+Compilation failed in require at (eval 241) line 1.
+
+[Sat Dec  7 21:10:53 2013] [debug] Template "exception.development.html.ep" not found.
+[Sat Dec  7 21:10:53 2013] [debug] Template "exception.html.ep" not found.
+[Sat Dec  7 21:10:53 2013] [debug] Rendering inline template.
+[Sat Dec  7 21:10:53 2013] [debug] Rendering inline template.
+[Sat Dec  7 21:10:53 2013] [debug] 500 Internal Server Error (0.450001s, 2.222/s).
+[Sat Dec  7 21:11:42 2013] [debug] Your secret passphrase needs to be changed!!!
+[Sat Dec  7 21:11:42 2013] [debug] GET / (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:11:42 2013] [debug] Routing to controller "KiDiP::Example" and action "welcome".
+[Sat Dec  7 21:11:42 2013] [debug] Rendering template "example/welcome.html.ep".
+[Sat Dec  7 21:11:42 2013] [debug] Rendering template "layouts/default.html.ep".
+[Sat Dec  7 21:11:42 2013] [debug] 200 OK (0.459088s, 2.178/s).
+[Sat Dec  7 21:11:42 2013] [debug] GET /static/main.css (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:11:42 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:11:42 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:11:42 2013] [debug] Rendering inline template.
+[Sat Dec  7 21:11:42 2013] [debug] Rendering inline template.
+[Sat Dec  7 21:11:42 2013] [debug] 404 Not Found (0.020748s, 48.197/s).
+[Sat Dec  7 21:11:42 2013] [debug] GET /static/js/jquery-ui-1.10.3.custom/css/blitzer/jquery-ui-1.10.3.custom.css (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:11:42 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:11:42 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:11:42 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:11:42 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:11:42 2013] [debug] 404 Not Found (0.008564s, 116.768/s).
+[Sat Dec  7 21:11:42 2013] [debug] GET /%5B%25%20c.request.base%20%25%5Dstatic/js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:11:42 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:11:42 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:11:42 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:11:42 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:11:42 2013] [debug] 404 Not Found (0.008286s, 120.685/s).
+[Sat Dec  7 21:11:42 2013] [debug] GET /%5B%25%20c.request.base%20%25%5Dstatic/js/jquery-ui-1.10.3.custom/js/jquery-1.9.1.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:11:42 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:11:42 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:11:42 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:11:42 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:11:42 2013] [debug] 404 Not Found (0.008199s, 121.966/s).
+[Sat Dec  7 21:11:42 2013] [debug] GET /%5B%25%20c.request.base%20%25%5Dstatic/js/my.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:11:42 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:11:42 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:11:42 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:11:42 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:11:42 2013] [debug] 404 Not Found (0.007877s, 126.952/s).
+[Sat Dec  7 21:11:42 2013] [debug] GET /%5B%25%20c.request.base%20%25%5Dstatic/js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:11:42 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:11:42 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:11:42 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:11:42 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:11:42 2013] [debug] 404 Not Found (0.007437s, 134.463/s).
+[Sat Dec  7 21:11:42 2013] [debug] GET /%5B%25%20c.request.base%20%25%5Dstatic/js/my.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:11:42 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:11:42 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:11:42 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:11:42 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:11:42 2013] [debug] 404 Not Found (0.007492s, 133.476/s).
+[Sat Dec  7 21:11:53 2013] [debug] GET /%5B%25%20c.uri_for('/')%20%25%5D (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:11:53 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:11:53 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:11:53 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:11:53 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:11:53 2013] [debug] 404 Not Found (0.008453s, 118.301/s).
+[Sat Dec  7 21:21:12 2013] [debug] Your secret passphrase needs to be changed!!!
+[Sat Dec  7 21:21:12 2013] [debug] GET / (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:21:12 2013] [error] 'collections' array not set at script/../lib/KiDiP/Example.pm line 8.
+Compilation failed in require at (eval 241) line 1.
+
+[Sat Dec  7 21:21:12 2013] [debug] Template "exception.development.html.ep" not found.
+[Sat Dec  7 21:21:12 2013] [debug] Template "exception.html.ep" not found.
+[Sat Dec  7 21:21:12 2013] [debug] Rendering inline template.
+[Sat Dec  7 21:21:12 2013] [debug] Rendering inline template.
+[Sat Dec  7 21:21:12 2013] [debug] 500 Internal Server Error (0.451048s, 2.217/s).
+[Sat Dec  7 21:22:37 2013] [debug] Your secret passphrase needs to be changed!!!
+[Sat Dec  7 21:22:37 2013] [debug] GET / (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:22:37 2013] [error] 'collections' array not set at script/../lib/KiDiP/Example.pm line 8.
+Compilation failed in require at (eval 241) line 1.
+
+[Sat Dec  7 21:22:37 2013] [debug] Template "exception.development.html.ep" not found.
+[Sat Dec  7 21:22:37 2013] [debug] Template "exception.html.ep" not found.
+[Sat Dec  7 21:22:37 2013] [debug] Rendering inline template.
+[Sat Dec  7 21:22:37 2013] [debug] Rendering inline template.
+[Sat Dec  7 21:22:37 2013] [debug] 500 Internal Server Error (0.453082s, 2.207/s).
+[Sat Dec  7 21:23:28 2013] [debug] Your secret passphrase needs to be changed!!!
+[Sat Dec  7 21:23:28 2013] [debug] GET / (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:23:29 2013] [error] Can't call method "get_database" on an undefined value at script/../lib/Database/Mongo.pm line 40.
+Compilation failed in require at (eval 241) line 1.
+
+[Sat Dec  7 21:23:29 2013] [debug] Template "exception.development.html.ep" not found.
+[Sat Dec  7 21:23:29 2013] [debug] Template "exception.html.ep" not found.
+[Sat Dec  7 21:23:29 2013] [debug] Rendering inline template.
+[Sat Dec  7 21:23:29 2013] [debug] Rendering inline template.
+[Sat Dec  7 21:23:29 2013] [debug] 500 Internal Server Error (0.460196s, 2.173/s).
+[Sat Dec  7 21:24:43 2013] [debug] Your secret passphrase needs to be changed!!!
+[Sat Dec  7 21:24:43 2013] [debug] GET / (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:24:44 2013] [error] Can't call method "get_database" on an undefined value at script/../lib/Database/Mongo.pm line 40.
+Compilation failed in require at (eval 241) line 1.
+
+[Sat Dec  7 21:24:44 2013] [debug] Template "exception.development.html.ep" not found.
+[Sat Dec  7 21:24:44 2013] [debug] Template "exception.html.ep" not found.
+[Sat Dec  7 21:24:44 2013] [debug] Rendering inline template.
+[Sat Dec  7 21:24:44 2013] [debug] Rendering inline template.
+[Sat Dec  7 21:24:44 2013] [debug] 500 Internal Server Error (0.459267s, 2.177/s).
+[Sat Dec  7 21:25:12 2013] [debug] Your secret passphrase needs to be changed!!!
+[Sat Dec  7 21:25:12 2013] [debug] GET / (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:25:13 2013] [debug] Routing to controller "KiDiP::Example" and action "welcome".
+[Sat Dec  7 21:25:13 2013] [debug] Rendering template "example/welcome.html.ep".
+[Sat Dec  7 21:25:13 2013] [debug] Rendering template "layouts/default.html.ep".
+[Sat Dec  7 21:25:13 2013] [debug] 200 OK (0.435178s, 2.298/s).
+[Sat Dec  7 21:25:13 2013] [debug] GET /static/main.css (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:25:13 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:25:13 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:25:13 2013] [debug] Rendering inline template.
+[Sat Dec  7 21:25:13 2013] [debug] Rendering inline template.
+[Sat Dec  7 21:25:13 2013] [debug] 404 Not Found (0.021483s, 46.548/s).
+[Sat Dec  7 21:25:13 2013] [debug] GET /static/js/jquery-ui-1.10.3.custom/css/blitzer/jquery-ui-1.10.3.custom.css (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:25:13 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:25:13 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:25:13 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:25:13 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:25:13 2013] [debug] 404 Not Found (0.007662s, 130.514/s).
+[Sat Dec  7 21:25:13 2013] [debug] GET /%5B%25%20c.request.base%20%25%5Dstatic/js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:25:13 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:25:13 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:25:13 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:25:13 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:25:13 2013] [debug] 404 Not Found (0.009587s, 104.308/s).
+[Sat Dec  7 21:25:13 2013] [debug] GET /%5B%25%20c.request.base%20%25%5Dstatic/js/jquery-ui-1.10.3.custom/js/jquery-1.9.1.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:25:13 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:25:13 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:25:13 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:25:13 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:25:13 2013] [debug] 404 Not Found (0.008374s, 119.417/s).
+[Sat Dec  7 21:25:13 2013] [debug] GET /%5B%25%20c.request.base%20%25%5Dstatic/js/my.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:25:13 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:25:13 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:25:13 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:25:13 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:25:13 2013] [debug] 404 Not Found (0.007280s, 137.363/s).
+[Sat Dec  7 21:25:13 2013] [debug] GET /%5B%25%20c.request.base%20%25%5Dstatic/js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:25:13 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:25:13 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:25:13 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:25:13 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:25:13 2013] [debug] 404 Not Found (0.008736s, 114.469/s).
+[Sat Dec  7 21:25:13 2013] [debug] GET /%5B%25%20c.request.base%20%25%5Dstatic/js/my.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:25:13 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:25:13 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:25:13 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:25:13 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:25:13 2013] [debug] 404 Not Found (0.009880s, 101.215/s).
+[Sat Dec  7 21:32:36 2013] [debug] Your secret passphrase needs to be changed!!!
+[Sat Dec  7 21:32:36 2013] [debug] GET / (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:32:36 2013] [error] Can't locate object method "new" via package "Database::Mongo" (perhaps you forgot to load "Database::Mongo"?) at script/../lib/KiDiP/Example.pm line 5.
+Compilation failed in require at (eval 241) line 1.
+
+[Sat Dec  7 21:32:36 2013] [debug] Template "exception.development.html.ep" not found.
+[Sat Dec  7 21:32:36 2013] [debug] Template "exception.html.ep" not found.
+[Sat Dec  7 21:32:36 2013] [debug] Rendering inline template.
+[Sat Dec  7 21:32:36 2013] [debug] Rendering inline template.
+[Sat Dec  7 21:32:36 2013] [debug] 500 Internal Server Error (0.032585s, 30.689/s).
+[Sat Dec  7 21:35:46 2013] [info] Listening at "http://*:3000".
+[Sat Dec  7 21:35:51 2013] [debug] Your secret passphrase needs to be changed!!!
+[Sat Dec  7 21:35:51 2013] [debug] GET / (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:35:51 2013] [error] Can't locate object method "new" via package "Database::Mongo" (perhaps you forgot to load "Database::Mongo"?) at ../lib/KiDiP/Example.pm line 5.
+Compilation failed in require at (eval 241) line 1.
+
+[Sat Dec  7 21:35:51 2013] [debug] Template "exception.development.html.ep" not found.
+[Sat Dec  7 21:35:51 2013] [debug] Template "exception.html.ep" not found.
+[Sat Dec  7 21:35:51 2013] [debug] Rendering inline template.
+[Sat Dec  7 21:35:51 2013] [debug] Rendering inline template.
+[Sat Dec  7 21:35:51 2013] [debug] 500 Internal Server Error (0.032234s, 31.023/s).
+[Sat Dec  7 21:37:13 2013] [debug] Your secret passphrase needs to be changed!!!
+[Sat Dec  7 21:37:13 2013] [debug] GET / (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:37:13 2013] [debug] Routing to controller "KiDiP::Example" and action "welcome".
+[Sat Dec  7 21:37:13 2013] [debug] Rendering template "example/welcome.html.ep".
+[Sat Dec  7 21:37:13 2013] [debug] Rendering template "layouts/default.html.ep".
+[Sat Dec  7 21:37:13 2013] [debug] 200 OK (0.443580s, 2.254/s).
+[Sat Dec  7 21:37:14 2013] [debug] GET /static/main.css (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:37:14 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:37:14 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:37:14 2013] [debug] Rendering inline template.
+[Sat Dec  7 21:37:14 2013] [debug] Rendering inline template.
+[Sat Dec  7 21:37:14 2013] [debug] 404 Not Found (0.022346s, 44.751/s).
+[Sat Dec  7 21:37:14 2013] [debug] GET /static/js/jquery-ui-1.10.3.custom/css/blitzer/jquery-ui-1.10.3.custom.css (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:37:14 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:37:14 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:37:14 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:37:14 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:37:14 2013] [debug] 404 Not Found (0.008026s, 124.595/s).
+[Sat Dec  7 21:37:14 2013] [debug] GET /%5B%25%20c.request.base%20%25%5Dstatic/js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:37:14 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:37:14 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:37:14 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:37:14 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:37:14 2013] [debug] 404 Not Found (0.010461s, 95.593/s).
+[Sat Dec  7 21:37:14 2013] [debug] GET /%5B%25%20c.request.base%20%25%5Dstatic/js/jquery-ui-1.10.3.custom/js/jquery-1.9.1.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:37:14 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:37:14 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:37:14 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:37:14 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:37:14 2013] [debug] 404 Not Found (0.008911s, 112.221/s).
+[Sat Dec  7 21:37:14 2013] [debug] GET /%5B%25%20c.request.base%20%25%5Dstatic/js/my.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:37:14 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:37:14 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:37:14 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:37:14 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:37:14 2013] [debug] 404 Not Found (0.007384s, 135.428/s).
+[Sat Dec  7 21:37:14 2013] [debug] GET /%5B%25%20c.request.base%20%25%5Dstatic/js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:37:14 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:37:14 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:37:14 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:37:14 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:37:14 2013] [debug] 404 Not Found (0.007391s, 135.300/s).
+[Sat Dec  7 21:37:14 2013] [debug] GET /%5B%25%20c.request.base%20%25%5Dstatic/js/my.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:37:14 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:37:14 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:37:14 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:37:14 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:37:14 2013] [debug] 404 Not Found (0.007273s, 137.495/s).
+[Sat Dec  7 21:38:55 2013] [debug] GET / (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:38:55 2013] [debug] Routing to controller "KiDiP::Example" and action "welcome".
+[Sat Dec  7 21:38:55 2013] [debug] Rendering cached template "example/welcome.html.ep".
+[Sat Dec  7 21:38:55 2013] [debug] Rendering cached template "layouts/default.html.ep".
+[Sat Dec  7 21:38:55 2013] [debug] 200 OK (0.002578s, 387.898/s).
+[Sat Dec  7 21:38:55 2013] [debug] GET /static/main.css (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:38:55 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:38:55 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:38:55 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:38:55 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:38:55 2013] [debug] 404 Not Found (0.010490s, 95.329/s).
+[Sat Dec  7 21:38:55 2013] [debug] GET /static/js/jquery-ui-1.10.3.custom/css/blitzer/jquery-ui-1.10.3.custom.css (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:38:55 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:38:55 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:38:55 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:38:55 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:38:55 2013] [debug] 404 Not Found (0.007758s, 128.899/s).
+[Sat Dec  7 21:38:55 2013] [debug] GET /%5B%25%20c.request.base%20%25%5Dstatic/js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:38:55 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:38:55 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:38:55 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:38:55 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:38:55 2013] [debug] 404 Not Found (0.009670s, 103.413/s).
+[Sat Dec  7 21:38:55 2013] [debug] GET /%5B%25%20c.request.base%20%25%5Dstatic/js/jquery-ui-1.10.3.custom/js/jquery-1.9.1.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:38:55 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:38:55 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:38:55 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:38:55 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:38:55 2013] [debug] 404 Not Found (0.009953s, 100.472/s).
+[Sat Dec  7 21:38:55 2013] [debug] GET /%5B%25%20c.request.base%20%25%5Dstatic/js/my.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:38:55 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:38:55 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:38:55 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:38:55 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:38:55 2013] [debug] 404 Not Found (0.009324s, 107.250/s).
+[Sat Dec  7 21:38:55 2013] [debug] GET /%5B%25%20c.request.base%20%25%5Dstatic/js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:38:55 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:38:55 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:38:55 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:38:55 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:38:55 2013] [debug] 404 Not Found (0.007547s, 132.503/s).
+[Sat Dec  7 21:38:55 2013] [debug] GET /%5B%25%20c.request.base%20%25%5Dstatic/js/my.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:38:55 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:38:55 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:38:55 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:38:55 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:38:55 2013] [debug] 404 Not Found (0.008667s, 115.380/s).
+[Sat Dec  7 21:42:18 2013] [debug] GET / (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:42:18 2013] [debug] Routing to controller "KiDiP::Example" and action "welcome".
+[Sat Dec  7 21:42:18 2013] [debug] Rendering cached template "example/welcome.html.ep".
+[Sat Dec  7 21:42:18 2013] [debug] Rendering cached template "layouts/default.html.ep".
+[Sat Dec  7 21:42:18 2013] [debug] 200 OK (0.002570s, 389.105/s).
+[Sat Dec  7 21:42:18 2013] [debug] GET /static/main.css (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:42:18 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:42:18 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:42:18 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:42:18 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:42:18 2013] [debug] 404 Not Found (0.009714s, 102.944/s).
+[Sat Dec  7 21:42:18 2013] [debug] GET /static/js/jquery-ui-1.10.3.custom/css/blitzer/jquery-ui-1.10.3.custom.css (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:42:18 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:42:18 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:42:18 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:42:18 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:42:18 2013] [debug] 404 Not Found (0.007689s, 130.056/s).
+[Sat Dec  7 21:42:18 2013] [debug] GET /%5B%25%20c.request.base%20%25%5Dstatic/js/jquery-ui-1.10.3.custom/js/jquery-1.9.1.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:42:18 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:42:18 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:42:18 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:42:18 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:42:18 2013] [debug] 404 Not Found (0.009332s, 107.158/s).
+[Sat Dec  7 21:42:18 2013] [debug] GET /%5B%25%20c.request.base%20%25%5Dstatic/js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:42:18 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:42:18 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:42:18 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:42:18 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:42:18 2013] [debug] 404 Not Found (0.013101s, 76.330/s).
+[Sat Dec  7 21:42:18 2013] [debug] GET /%5B%25%20c.request.base%20%25%5Dstatic/js/my.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:42:18 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:42:18 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:42:18 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:42:18 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:42:18 2013] [debug] 404 Not Found (0.008603s, 116.239/s).
+[Sat Dec  7 21:42:18 2013] [debug] GET /%5B%25%20c.request.base%20%25%5Dstatic/js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:42:18 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:42:18 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:42:18 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:42:18 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:42:18 2013] [debug] 404 Not Found (0.007809s, 128.057/s).
+[Sat Dec  7 21:42:18 2013] [debug] GET /%5B%25%20c.request.base%20%25%5Dstatic/js/my.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:42:18 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:42:18 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:42:18 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:42:18 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:42:18 2013] [debug] 404 Not Found (0.007661s, 130.531/s).
+[Sat Dec  7 21:43:42 2013] [info] Listening at "http://*:3000".
+[Sat Dec  7 21:43:45 2013] [debug] Your secret passphrase needs to be changed!!!
+[Sat Dec  7 21:43:45 2013] [debug] GET / (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:43:45 2013] [debug] Routing to controller "KiDiP::Example" and action "welcome".
+[Sat Dec  7 21:43:45 2013] [debug] Rendering template "example/welcome.html.ep".
+[Sat Dec  7 21:43:45 2013] [debug] Rendering template "layouts/default.html.ep".
+[Sat Dec  7 21:43:45 2013] [error] syntax error at template "layouts/default.html.ep" line 16, near "    </ul>".
+11:             <ul>
+12:                 <li><a href="<%= url_for('/employee', 'list') %>">Anzeigen</a></li>
+13:                 <li><a href="<%= url_for('/employee', 'new') %>">Neu</a></li>
+14:             </ul>
+15:         </li>
+16:         <li><a href="<% url_for('/settings') %>">Einstellungen</a></li>
+17:     </ul>
+18:   <body><%= content %></body>
+19:   <script type="text/javascript"
+20:         src="/js/jquery-ui-1.10.3.custom/js/jquery-1.9.1.js">
+21:     </script>
+
+[Sat Dec  7 21:43:45 2013] [debug] Template "exception.development.html.ep" not found.
+[Sat Dec  7 21:43:45 2013] [debug] Template "exception.html.ep" not found.
+[Sat Dec  7 21:43:45 2013] [debug] Rendering inline template.
+[Sat Dec  7 21:43:45 2013] [debug] Rendering inline template.
+[Sat Dec  7 21:43:45 2013] [debug] 500 Internal Server Error (0.465603s, 2.148/s).
+[Sat Dec  7 21:44:35 2013] [debug] GET / (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:44:35 2013] [debug] Routing to controller "KiDiP::Example" and action "welcome".
+[Sat Dec  7 21:44:35 2013] [debug] Rendering cached template "example/welcome.html.ep".
+[Sat Dec  7 21:44:35 2013] [debug] Rendering template "layouts/default.html.ep".
+[Sat Dec  7 21:44:35 2013] [error] Bareword "c" not allowed while "strict subs" in use at template "layouts/default.html.ep" line 9, near "        <li><a href="#">Angestellte</a>".
+4: 	  <title><%= title %></title>
+5:       <link type="text/css" rel="stylesheet" href="/static/main.css">
+6:       <link type="text/css" rel="stylesheet" href="/static/js/jquery-ui-1.10.3.custom/css/blitzer/jquery-ui-1.10.3.custom.css">
+7: 	</head>
+8: 	 <ul id="menu">
+9:         <li><a href="<%= c.url_for('/') %>">Hauptseite</a></li>
+10:         <li><a href="#">Angestellte</a>
+11:             <ul>
+12:                 <li><a href="<%= url_for('/employee', 'list') %>">Anzeigen</a></li>
+13:                 <li><a href="<%= url_for('/employee', 'new') %>">Neu</a></li>
+14:             </ul>
+
+[Sat Dec  7 21:44:35 2013] [debug] Template "exception.development.html.ep" not found.
+[Sat Dec  7 21:44:35 2013] [debug] Template "exception.html.ep" not found.
+[Sat Dec  7 21:44:35 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:44:35 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:44:35 2013] [debug] 500 Internal Server Error (0.018505s, 54.039/s).
+[Sat Dec  7 21:44:58 2013] [debug] GET / (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:44:58 2013] [debug] Routing to controller "KiDiP::Example" and action "welcome".
+[Sat Dec  7 21:44:58 2013] [debug] Rendering cached template "example/welcome.html.ep".
+[Sat Dec  7 21:44:58 2013] [debug] Rendering template "layouts/default.html.ep".
+[Sat Dec  7 21:44:58 2013] [debug] 200 OK (0.006895s, 145.033/s).
+[Sat Dec  7 21:44:58 2013] [debug] GET /static/main.css (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:44:58 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:44:58 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:44:58 2013] [debug] Rendering inline template.
+[Sat Dec  7 21:44:58 2013] [debug] Rendering inline template.
+[Sat Dec  7 21:44:58 2013] [debug] 404 Not Found (0.021359s, 46.819/s).
+[Sat Dec  7 21:44:58 2013] [debug] GET /static/js/jquery-ui-1.10.3.custom/css/blitzer/jquery-ui-1.10.3.custom.css (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:44:58 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:44:58 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:44:58 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:44:58 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:44:58 2013] [debug] 404 Not Found (0.007645s, 130.804/s).
+[Sat Dec  7 21:44:58 2013] [debug] GET /%5B/js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:44:58 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:44:58 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:44:58 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:44:58 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:44:58 2013] [debug] 404 Not Found (0.010775s, 92.807/s).
+[Sat Dec  7 21:44:58 2013] [debug] GET /js/jquery-ui-1.10.3.custom/js/jquery-1.9.1.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:44:58 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:44:58 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:44:58 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:44:58 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:44:58 2013] [debug] 404 Not Found (0.008844s, 113.071/s).
+[Sat Dec  7 21:44:58 2013] [debug] GET /js/my.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:44:58 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:44:58 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:44:58 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:44:58 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:44:58 2013] [debug] 404 Not Found (0.008104s, 123.396/s).
+[Sat Dec  7 21:44:58 2013] [debug] GET /%5B/js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:44:58 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:44:58 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:44:58 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:44:58 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:44:58 2013] [debug] 404 Not Found (0.010086s, 99.147/s).
+[Sat Dec  7 21:44:58 2013] [debug] GET /js/my.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:44:58 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:44:58 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:44:58 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:44:58 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:44:58 2013] [debug] 404 Not Found (0.008830s, 113.250/s).
+[Sat Dec  7 21:45:16 2013] [debug] GET / (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:45:16 2013] [debug] Routing to controller "KiDiP::Example" and action "welcome".
+[Sat Dec  7 21:45:16 2013] [debug] Rendering cached template "example/welcome.html.ep".
+[Sat Dec  7 21:45:16 2013] [debug] Rendering cached template "layouts/default.html.ep".
+[Sat Dec  7 21:45:16 2013] [debug] 200 OK (0.003609s, 277.085/s).
+[Sat Dec  7 21:45:16 2013] [debug] GET /static/main.css (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:45:16 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:45:16 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:45:16 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:45:16 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:45:16 2013] [debug] 404 Not Found (0.009520s, 105.042/s).
+[Sat Dec  7 21:45:16 2013] [debug] GET /static/js/jquery-ui-1.10.3.custom/css/blitzer/jquery-ui-1.10.3.custom.css (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:45:16 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:45:16 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:45:16 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:45:16 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:45:16 2013] [debug] 404 Not Found (0.008916s, 112.158/s).
+[Sat Dec  7 21:45:16 2013] [debug] GET /js/jquery-ui-1.10.3.custom/js/jquery-1.9.1.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:45:16 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:45:16 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:45:16 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:45:16 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:45:16 2013] [debug] 404 Not Found (0.009703s, 103.061/s).
+[Sat Dec  7 21:45:17 2013] [debug] GET /%5B/js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:45:17 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:45:17 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:45:17 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:45:17 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:45:17 2013] [debug] 404 Not Found (0.009755s, 102.512/s).
+[Sat Dec  7 21:45:17 2013] [debug] GET /js/my.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:45:17 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:45:17 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:45:17 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:45:17 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:45:17 2013] [debug] 404 Not Found (0.008965s, 111.545/s).
+[Sat Dec  7 21:45:17 2013] [debug] GET /%5B/js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:45:17 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:45:17 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:45:17 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:45:17 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:45:17 2013] [debug] 404 Not Found (0.009109s, 109.782/s).
+[Sat Dec  7 21:45:17 2013] [debug] GET /js/my.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:45:17 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:45:17 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:45:17 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:45:17 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:45:17 2013] [debug] 404 Not Found (0.009472s, 105.574/s).
+[Sat Dec  7 21:45:59 2013] [debug] GET / (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:45:59 2013] [debug] Routing to controller "KiDiP::Example" and action "welcome".
+[Sat Dec  7 21:45:59 2013] [debug] Rendering cached template "example/welcome.html.ep".
+[Sat Dec  7 21:45:59 2013] [debug] Rendering cached template "layouts/default.html.ep".
+[Sat Dec  7 21:45:59 2013] [debug] 200 OK (0.003499s, 285.796/s).
+[Sat Dec  7 21:45:59 2013] [debug] GET /static/main.css (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:45:59 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:45:59 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:45:59 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:45:59 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:45:59 2013] [debug] 404 Not Found (0.008279s, 120.788/s).
+[Sat Dec  7 21:45:59 2013] [debug] GET /static/js/jquery-ui-1.10.3.custom/css/blitzer/jquery-ui-1.10.3.custom.css (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:45:59 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:45:59 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:45:59 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:45:59 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:45:59 2013] [debug] 404 Not Found (0.010261s, 97.456/s).
+[Sat Dec  7 21:45:59 2013] [debug] GET /js/jquery-ui-1.10.3.custom/js/jquery-1.9.1.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:45:59 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:45:59 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:45:59 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:45:59 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:46:00 2013] [debug] 404 Not Found (0.009901s, 101.000/s).
+[Sat Dec  7 21:46:00 2013] [debug] GET /%5B/js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:46:00 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:46:00 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:46:00 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:46:00 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:46:00 2013] [debug] 404 Not Found (0.009005s, 111.049/s).
+[Sat Dec  7 21:46:00 2013] [debug] GET /js/my.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:46:00 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:46:00 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:46:00 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:46:00 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:46:00 2013] [debug] 404 Not Found (0.008137s, 122.895/s).
+[Sat Dec  7 21:46:00 2013] [debug] GET /%5B/js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:46:00 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:46:00 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:46:00 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:46:00 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:46:00 2013] [debug] 404 Not Found (0.008570s, 116.686/s).
+[Sat Dec  7 21:46:00 2013] [debug] GET /js/my.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:46:00 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:46:00 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:46:00 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:46:00 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:46:00 2013] [debug] 404 Not Found (0.007868s, 127.097/s).
+[Sat Dec  7 21:46:41 2013] [debug] GET /js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:46:41 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:46:41 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:46:41 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:46:41 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:46:41 2013] [debug] 404 Not Found (0.007468s, 133.905/s).
+[Sat Dec  7 21:46:53 2013] [debug] GET /js/jquery (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:46:53 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:46:53 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:46:53 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:46:53 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:46:53 2013] [debug] 404 Not Found (0.008739s, 114.430/s).
+[Sat Dec  7 21:48:07 2013] [info] Listening at "http://*:3000".
+[Sat Dec  7 21:48:11 2013] [debug] Your secret passphrase needs to be changed!!!
+[Sat Dec  7 21:48:11 2013] [debug] GET / (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:48:12 2013] [debug] Routing to controller "KiDiP::Example" and action "welcome".
+[Sat Dec  7 21:48:12 2013] [debug] Rendering template "example/welcome.html.ep".
+[Sat Dec  7 21:48:12 2013] [debug] Rendering template "layouts/default.html.ep".
+[Sat Dec  7 21:48:12 2013] [debug] 200 OK (0.438201s, 2.282/s).
+[Sat Dec  7 21:48:12 2013] [debug] GET /static/main.css (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:48:12 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:48:12 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:48:12 2013] [debug] Rendering inline template.
+[Sat Dec  7 21:48:12 2013] [debug] Rendering inline template.
+[Sat Dec  7 21:48:12 2013] [debug] 404 Not Found (0.023263s, 42.987/s).
+[Sat Dec  7 21:48:12 2013] [debug] GET /js/jquery-ui-1.10.3.custom/css/blitzer/jquery-ui-1.10.3.custom.css (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:48:12 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:48:12 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:48:12 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:48:12 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:48:12 2013] [debug] 404 Not Found (0.008679s, 115.221/s).
+[Sat Dec  7 21:48:12 2013] [debug] GET /js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:48:12 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:48:12 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:48:12 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:48:12 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:48:12 2013] [debug] 404 Not Found (0.009356s, 106.883/s).
+[Sat Dec  7 21:48:12 2013] [debug] GET /js/jquery-ui-1.10.3.custom/js/jquery-1.9.1.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:48:12 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:48:12 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:48:12 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:48:12 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:48:12 2013] [debug] 404 Not Found (0.008656s, 115.527/s).
+[Sat Dec  7 21:48:12 2013] [debug] GET /js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:48:12 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:48:12 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:48:12 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:48:12 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:48:12 2013] [debug] 404 Not Found (0.008513s, 117.467/s).
+[Sat Dec  7 21:54:22 2013] [debug] GET / (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:54:22 2013] [debug] Routing to controller "KiDiP::Example" and action "welcome".
+[Sat Dec  7 21:54:22 2013] [debug] Rendering cached template "example/welcome.html.ep".
+[Sat Dec  7 21:54:22 2013] [debug] Rendering cached template "layouts/default.html.ep".
+[Sat Dec  7 21:54:22 2013] [debug] 200 OK (0.003567s, 280.348/s).
+[Sat Dec  7 21:54:22 2013] [debug] GET /static/main.css (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:54:22 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:54:22 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:54:22 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:54:22 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:54:22 2013] [debug] 404 Not Found (0.009775s, 102.302/s).
+[Sat Dec  7 21:54:22 2013] [debug] GET /js/jquery-ui-1.10.3.custom/css/blitzer/jquery-ui-1.10.3.custom.css (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:54:22 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:54:22 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:54:22 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:54:22 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:54:22 2013] [debug] 404 Not Found (0.008767s, 114.064/s).
+[Sat Dec  7 21:54:22 2013] [debug] GET /js/jquery-ui-1.10.3.custom/js/jquery-1.9.1.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:54:22 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:54:22 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:54:22 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:54:22 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:54:22 2013] [debug] 404 Not Found (0.009069s, 110.266/s).
+[Sat Dec  7 21:54:22 2013] [debug] GET /js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:54:22 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:54:22 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:54:22 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:54:22 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:54:22 2013] [debug] 404 Not Found (0.008559s, 116.836/s).
+[Sat Dec  7 21:54:22 2013] [debug] GET /js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:54:22 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:54:22 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:54:22 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:54:22 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:54:22 2013] [debug] 404 Not Found (0.008160s, 122.549/s).
+[Sat Dec  7 21:54:28 2013] [debug] GET /employee (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:54:28 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:54:28 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:54:28 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:54:28 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:54:28 2013] [debug] 404 Not Found (0.008163s, 122.504/s).
+[Sat Dec  7 21:54:31 2013] [debug] GET /employee (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:54:31 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:54:31 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:54:31 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:54:31 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:54:31 2013] [debug] 404 Not Found (0.009671s, 103.402/s).
+[Sat Dec  7 21:54:57 2013] [debug] GET / (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:54:57 2013] [debug] Routing to controller "KiDiP::Example" and action "welcome".
+[Sat Dec  7 21:54:57 2013] [debug] Rendering cached template "example/welcome.html.ep".
+[Sat Dec  7 21:54:57 2013] [debug] Rendering cached template "layouts/default.html.ep".
+[Sat Dec  7 21:54:57 2013] [debug] 200 OK (0.003837s, 260.620/s).
+[Sat Dec  7 21:54:58 2013] [debug] GET /static/main.css (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:54:58 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:54:58 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:54:58 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:54:58 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:54:58 2013] [debug] 404 Not Found (0.009064s, 110.327/s).
+[Sat Dec  7 21:54:58 2013] [debug] GET /js/jquery-ui-1.10.3.custom/css/blitzer/jquery-ui-1.10.3.custom.css (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:54:58 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:54:58 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:54:58 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:54:58 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:54:58 2013] [debug] 404 Not Found (0.009296s, 107.573/s).
+[Sat Dec  7 21:54:58 2013] [debug] GET /js/jquery-ui-1.10.3.custom/js/jquery-1.9.1.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:54:58 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:54:58 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:54:58 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:54:58 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:54:58 2013] [debug] 404 Not Found (0.009307s, 107.446/s).
+[Sat Dec  7 21:54:58 2013] [debug] GET /js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:54:58 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:54:58 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:54:58 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:54:58 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:54:58 2013] [debug] 404 Not Found (0.010666s, 93.756/s).
+[Sat Dec  7 21:54:58 2013] [debug] GET /js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:54:58 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:54:58 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:54:58 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:54:58 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:54:58 2013] [debug] 404 Not Found (0.008445s, 118.413/s).
+[Sat Dec  7 21:55:03 2013] [debug] GET / (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:55:03 2013] [debug] Routing to controller "KiDiP::Example" and action "welcome".
+[Sat Dec  7 21:55:03 2013] [debug] Rendering cached template "example/welcome.html.ep".
+[Sat Dec  7 21:55:03 2013] [debug] Rendering cached template "layouts/default.html.ep".
+[Sat Dec  7 21:55:03 2013] [debug] 200 OK (0.003829s, 261.165/s).
+[Sat Dec  7 21:55:03 2013] [debug] GET /static/main.css (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:55:03 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:55:03 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:55:03 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:55:03 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:55:03 2013] [debug] 404 Not Found (0.008937s, 111.894/s).
+[Sat Dec  7 21:55:03 2013] [debug] GET /js/jquery-ui-1.10.3.custom/css/blitzer/jquery-ui-1.10.3.custom.css (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:55:03 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:55:03 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:55:03 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:55:03 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:55:03 2013] [debug] 404 Not Found (0.008660s, 115.473/s).
+[Sat Dec  7 21:55:03 2013] [debug] GET /js/jquery-ui-1.10.3.custom/js/jquery-1.9.1.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:55:03 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:55:03 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:55:03 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:55:03 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:55:03 2013] [debug] 404 Not Found (0.008657s, 115.513/s).
+[Sat Dec  7 21:55:03 2013] [debug] GET /js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:55:03 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:55:03 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:55:03 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:55:03 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:55:03 2013] [debug] 404 Not Found (0.009193s, 108.778/s).
+[Sat Dec  7 21:55:03 2013] [debug] GET /js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:55:03 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:55:03 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:55:03 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:55:03 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:55:03 2013] [debug] 404 Not Found (0.008390s, 119.190/s).
+[Sat Dec  7 21:55:11 2013] [debug] GET / (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:55:11 2013] [debug] Routing to controller "KiDiP::Example" and action "welcome".
+[Sat Dec  7 21:55:11 2013] [debug] Rendering cached template "example/welcome.html.ep".
+[Sat Dec  7 21:55:11 2013] [debug] Rendering cached template "layouts/default.html.ep".
+[Sat Dec  7 21:55:11 2013] [debug] 200 OK (0.004310s, 232.019/s).
+[Sat Dec  7 21:55:11 2013] [debug] GET /static/main.css (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:55:11 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:55:11 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:55:11 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:55:11 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:55:11 2013] [debug] 404 Not Found (0.008496s, 117.702/s).
+[Sat Dec  7 21:55:11 2013] [debug] GET /js/jquery-ui-1.10.3.custom/css/blitzer/jquery-ui-1.10.3.custom.css (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:55:11 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:55:11 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:55:11 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:55:11 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:55:11 2013] [debug] 404 Not Found (0.009212s, 108.554/s).
+[Sat Dec  7 21:55:11 2013] [debug] GET /js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:55:11 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:55:11 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:55:11 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:55:11 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:55:11 2013] [debug] 404 Not Found (0.009849s, 101.533/s).
+[Sat Dec  7 21:55:11 2013] [debug] GET /js/jquery-ui-1.10.3.custom/js/jquery-1.9.1.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:55:11 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:55:11 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:55:11 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:55:11 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:55:11 2013] [debug] 404 Not Found (0.009712s, 102.965/s).
+[Sat Dec  7 21:55:11 2013] [debug] GET /js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:55:11 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:55:11 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:55:11 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:55:11 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:55:11 2013] [debug] 404 Not Found (0.009584s, 104.341/s).
+[Sat Dec  7 21:56:56 2013] [debug] GET / (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:56:56 2013] [debug] Routing to controller "KiDiP::Example" and action "welcome".
+[Sat Dec  7 21:56:56 2013] [debug] Rendering cached template "example/welcome.html.ep".
+[Sat Dec  7 21:56:56 2013] [debug] Rendering cached template "layouts/default.html.ep".
+[Sat Dec  7 21:56:56 2013] [debug] 200 OK (0.003746s, 266.951/s).
+[Sat Dec  7 21:56:56 2013] [debug] GET /static/main.css (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:56:56 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:56:56 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:56:56 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:56:56 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:56:56 2013] [debug] 404 Not Found (0.008567s, 116.727/s).
+[Sat Dec  7 21:56:56 2013] [debug] GET /js/jquery-ui-1.10.3.custom/css/blitzer/jquery-ui-1.10.3.custom.css (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:56:56 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:56:56 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:56:56 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:56:56 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:56:56 2013] [debug] 404 Not Found (0.008609s, 116.158/s).
+[Sat Dec  7 21:56:56 2013] [debug] GET /js/jquery-ui-1.10.3.custom/js/jquery-1.9.1.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:56:56 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:56:56 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:56:56 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:56:56 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:56:56 2013] [debug] 404 Not Found (0.008927s, 112.020/s).
+[Sat Dec  7 21:56:56 2013] [debug] GET /js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:56:56 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:56:56 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:56:56 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:56:56 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:56:56 2013] [debug] 404 Not Found (0.009467s, 105.630/s).
+[Sat Dec  7 21:56:56 2013] [debug] GET /js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:56:56 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:56:56 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:56:56 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:56:56 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:56:56 2013] [debug] 404 Not Found (0.008444s, 118.427/s).
+[Sat Dec  7 21:57:05 2013] [debug] GET / (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:57:05 2013] [debug] Routing to controller "KiDiP::Example" and action "welcome".
+[Sat Dec  7 21:57:05 2013] [debug] Rendering cached template "example/welcome.html.ep".
+[Sat Dec  7 21:57:05 2013] [debug] Rendering cached template "layouts/default.html.ep".
+[Sat Dec  7 21:57:05 2013] [debug] 200 OK (0.003735s, 267.738/s).
+[Sat Dec  7 21:57:05 2013] [debug] GET /static/main.css (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:57:05 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:57:05 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:57:05 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:57:05 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:57:05 2013] [debug] 404 Not Found (0.008963s, 111.570/s).
+[Sat Dec  7 21:57:05 2013] [debug] GET /js/jquery-ui-1.10.3.custom/css/blitzer/jquery-ui-1.10.3.custom.css (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:57:05 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:57:05 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:57:05 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:57:05 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:57:05 2013] [debug] 404 Not Found (0.008692s, 115.048/s).
+[Sat Dec  7 21:57:05 2013] [debug] GET /js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:57:05 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:57:05 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:57:05 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:57:05 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:57:05 2013] [debug] 404 Not Found (0.008439s, 118.497/s).
+[Sat Dec  7 21:57:05 2013] [debug] GET /js/jquery-ui-1.10.3.custom/js/jquery-1.9.1.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:57:05 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:57:05 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:57:05 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:57:05 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:57:05 2013] [debug] 404 Not Found (0.008668s, 115.367/s).
+[Sat Dec  7 21:57:05 2013] [debug] GET /js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:57:05 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:57:05 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:57:05 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:57:05 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:57:05 2013] [debug] 404 Not Found (0.009961s, 100.392/s).
+[Sat Dec  7 21:57:22 2013] [debug] GET /welcome (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:57:22 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:57:22 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:57:22 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:57:22 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:57:22 2013] [debug] 404 Not Found (0.010192s, 98.116/s).
+[Sat Dec  7 21:57:47 2013] [debug] GET / (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:57:47 2013] [debug] Routing to controller "KiDiP::Example" and action "welcome".
+[Sat Dec  7 21:57:47 2013] [debug] Rendering cached template "example/welcome.html.ep".
+[Sat Dec  7 21:57:47 2013] [debug] Rendering cached template "layouts/default.html.ep".
+[Sat Dec  7 21:57:47 2013] [debug] 200 OK (0.004202s, 237.982/s).
+[Sat Dec  7 21:57:47 2013] [debug] GET /static/main.css (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:57:47 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:57:47 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:57:47 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:57:47 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:57:47 2013] [debug] 404 Not Found (0.010424s, 95.932/s).
+[Sat Dec  7 21:57:47 2013] [debug] GET /js/jquery-ui-1.10.3.custom/css/blitzer/jquery-ui-1.10.3.custom.css (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:57:47 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:57:47 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:57:47 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:57:47 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:57:47 2013] [debug] 404 Not Found (0.008942s, 111.832/s).
+[Sat Dec  7 21:57:47 2013] [debug] GET /js/jquery-ui-1.10.3.custom/js/jquery-1.9.1.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:57:47 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:57:47 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:57:47 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:57:47 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:57:47 2013] [debug] 404 Not Found (0.010313s, 96.965/s).
+[Sat Dec  7 21:57:47 2013] [debug] GET /js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:57:47 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:57:47 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:57:47 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:57:47 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:57:47 2013] [debug] 404 Not Found (0.010543s, 94.850/s).
+[Sat Dec  7 21:57:47 2013] [debug] GET /js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:57:47 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:57:47 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:57:47 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:57:47 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:57:47 2013] [debug] 404 Not Found (0.008988s, 111.259/s).
+[Sat Dec  7 21:59:25 2013] [debug] GET / (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:59:25 2013] [debug] Routing to controller "KiDiP::Example" and action "welcome".
+[Sat Dec  7 21:59:25 2013] [debug] Rendering cached template "example/welcome.html.ep".
+[Sat Dec  7 21:59:25 2013] [debug] Rendering cached template "layouts/default.html.ep".
+[Sat Dec  7 21:59:25 2013] [debug] 200 OK (0.003592s, 278.396/s).
+[Sat Dec  7 21:59:25 2013] [debug] GET /static/main.css (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:59:25 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:59:25 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:59:25 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:59:25 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:59:25 2013] [debug] 404 Not Found (0.009688s, 103.220/s).
+[Sat Dec  7 21:59:25 2013] [debug] GET /js/jquery-ui-1.10.3.custom/css/blitzer/jquery-ui-1.10.3.custom.css (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:59:25 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:59:25 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:59:25 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:59:25 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:59:25 2013] [debug] 404 Not Found (0.008867s, 112.778/s).
+[Sat Dec  7 21:59:25 2013] [debug] GET /js/jquery-ui-1.10.3.custom/js/jquery-1.9.1.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:59:25 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:59:25 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:59:25 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:59:25 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:59:25 2013] [debug] 404 Not Found (0.009409s, 106.281/s).
+[Sat Dec  7 21:59:25 2013] [debug] GET /js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:59:25 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:59:25 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:59:25 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:59:25 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:59:25 2013] [debug] 404 Not Found (0.009974s, 100.261/s).
+[Sat Dec  7 21:59:25 2013] [debug] GET /js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:59:25 2013] [debug] Template "not_found.development.html.ep" not found.
+[Sat Dec  7 21:59:25 2013] [debug] Template "not_found.html.ep" not found.
+[Sat Dec  7 21:59:25 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:59:25 2013] [debug] Rendering cached inline template.
+[Sat Dec  7 21:59:25 2013] [debug] 404 Not Found (0.008725s, 114.613/s).
+[Sat Dec  7 21:59:35 2013] [info] Listening at "http://*:3000".
+[Sat Dec  7 21:59:38 2013] [debug] Your secret passphrase needs to be changed!!!
+[Sat Dec  7 21:59:38 2013] [debug] GET / (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 21:59:39 2013] [debug] Routing to controller "KiDiP::Example" and action "welcome".
+[Sat Dec  7 21:59:39 2013] [debug] Rendering template "example/welcome.html.ep".
+[Sat Dec  7 21:59:39 2013] [error] Bareword "message" not allowed while "strict subs" in use at template "example/welcome.html.ep" line 3, near "This page was generated from the template "templates/example/welcome.html.ep"".
+1: % layout 'default';
+2: % title 'Kak Dienstplan Manager';
+3: <%= message %>
+4: This page was generated from the template "templates/example/welcome.html.ep"
+5: and the layout "templates/layouts/default.html.ep",
+6: <a href="<%== url_for %>">click here</a> to reload the page or
+7: <a href="/index.html">here</a> to move forward to a static page.
+
+[Sat Dec  7 21:59:39 2013] [debug] Template "exception.development.html.ep" not found.
+[Sat Dec  7 21:59:39 2013] [debug] Template "exception.html.ep" not found.
+[Sat Dec  7 21:59:39 2013] [debug] Rendering inline template.
+[Sat Dec  7 21:59:39 2013] [debug] Rendering inline template.
+[Sat Dec  7 21:59:39 2013] [debug] 500 Internal Server Error (0.464539s, 2.153/s).
+[Sat Dec  7 22:01:27 2013] [debug] GET / (Mozilla/5.0 (X11; Linux x86_64; rv:25.0) Gecko/20100101 Firefox/25.0).
+[Sat Dec  7 22:01:27 2013] [debug] Routing to controller "KiDiP::Example" and action "welcome".
+[Sat Dec  7 22:01:27 2013] [debug] Rendering template "example/welcome.html.ep".
+[Sat Dec  7 22:01:27 2013] [debug] Rendering template "layouts/default.html.ep".
+[Sat Dec  7 22:01:27 2013] [debug] 200 OK (0.009131s, 109.517/s).

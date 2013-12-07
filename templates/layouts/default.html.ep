@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <title><%= title %></title>
+      <!--
+      <link type="text/css" rel="stylesheet" href="/static/main.css">
+      <link type="text/css" rel="stylesheet" href="/js/jquery-ui-1.10.3.custom/css/blitzer/jquery-ui-1.10.3.custom.css">
+      -->
+	</head>
+	 <ul id="menu">
+        <li><a href="<%= url_for('/') %>">Hauptseite</a></li>
+        <li><a href="#">Angestellte</a>
+            <ul>
+                <li><a href="<%= url_for('/employee', 'list') %>">Anzeigen</a></li>
+                <li><a href="<%= url_for('/employee', 'new') %>">Neu</a></li>
+            </ul>
+        </li>
+        <li><a href="<%= url_for('/settings') %>">Einstellungen</a></li>
+    </ul>
+  <body><%= content %></body>
+  <!--
+  <script type="text/javascript"
+        src="/js/jquery-ui-1.10.3.custom/js/jquery-1.9.1.js">
+    </script>
+    <script src="/js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js">
+    </script>
+    -->
+    <script type="text/javascript"
+        src="/js/jquery-2.0.3.js">
+    </script>
+</html>
