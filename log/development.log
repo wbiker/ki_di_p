@@ -978,3 +978,1031 @@ Compilation failed in require at (eval 241) line 1.
 [Sat Dec  7 22:01:27 2013] [debug] Rendering template "example/welcome.html.ep".
 [Sat Dec  7 22:01:27 2013] [debug] Rendering template "layouts/default.html.ep".
 [Sat Dec  7 22:01:27 2013] [debug] 200 OK (0.009131s, 109.517/s).
+[Sun Jan 12 12:02:19 2014] [info] Listening at "http://*:3000".
+[Sun Jan 12 12:02:56 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jan 12 12:02:56 2014] [debug] GET "/".
+[Sun Jan 12 12:02:56 2014] [debug] Routing to controller "KiDiP::Kidip" and action "show".
+[Sun Jan 12 12:02:56 2014] [error] Can't locate object method "find" via package "Database::Mongo" at script/../lib/KiDiP/Kidip.pm line 11.
+
+[Sun Jan 12 12:02:56 2014] [debug] Template "exception.development.html.ep" not found.
+[Sun Jan 12 12:02:56 2014] [debug] Template "exception.html.ep" not found.
+[Sun Jan 12 12:02:56 2014] [debug] Rendering inline template.
+[Sun Jan 12 12:02:56 2014] [debug] Rendering inline template.
+[Sun Jan 12 12:02:56 2014] [debug] 500 Internal Server Error (0.322323s, 3.102/s).
+[Sun Jan 12 12:05:51 2014] [info] Listening at "http://*:3000".
+[Sun Jan 12 12:05:57 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jan 12 12:05:57 2014] [debug] GET "/".
+[Sun Jan 12 12:05:57 2014] [debug] Routing to controller "KiDiP::Kidip" and action "show".
+[Sun Jan 12 12:05:57 2014] [debug] Template "kidip/show.html.ep" not found.
+[Sun Jan 12 12:05:57 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 12:05:57 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 12:05:57 2014] [debug] Rendering inline template.
+[Sun Jan 12 12:05:57 2014] [debug] Rendering inline template.
+[Sun Jan 12 12:05:57 2014] [debug] 404 Not Found (0.307307s, 3.254/s).
+[Sun Jan 12 12:10:34 2014] [info] Listening at "http://*:3000".
+[Sun Jan 12 12:10:59 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jan 12 12:10:59 2014] [debug] GET "/".
+[Sun Jan 12 12:11:00 2014] [debug] Routing to controller "KiDiP::Dienstplan" and action "show".
+[Sun Jan 12 12:11:00 2014] [debug] Template "dienstplan/show.html.ep" not found.
+[Sun Jan 12 12:11:00 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 12:11:00 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 12:11:00 2014] [debug] Rendering inline template.
+[Sun Jan 12 12:11:00 2014] [debug] Rendering inline template.
+[Sun Jan 12 12:11:00 2014] [debug] 404 Not Found (0.315711s, 3.167/s).
+[Sun Jan 12 12:12:24 2014] [info] Listening at "http://*:3000".
+[Sun Jan 12 12:12:26 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jan 12 12:12:26 2014] [debug] GET "/".
+[Sun Jan 12 12:12:26 2014] [debug] Routing to controller "KiDiP::Dienstplan" and action "show".
+[Sun Jan 12 12:12:26 2014] [debug] Template "dienstplan/show.html.ep" not found.
+[Sun Jan 12 12:12:26 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 12:12:26 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 12:12:26 2014] [debug] Rendering inline template.
+[Sun Jan 12 12:12:26 2014] [debug] Rendering inline template.
+[Sun Jan 12 12:12:26 2014] [debug] 404 Not Found (0.275826s, 3.625/s).
+[Sun Jan 12 12:12:36 2014] [debug] GET "/show".
+[Sun Jan 12 12:12:36 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 12:12:36 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 12:12:36 2014] [debug] Rendering inline template.
+[Sun Jan 12 12:12:36 2014] [debug] Rendering inline template.
+[Sun Jan 12 12:12:36 2014] [debug] 404 Not Found (0.012167s, 82.190/s).
+[Sun Jan 12 12:17:21 2014] [info] Listening at "http://*:3000".
+[Sun Jan 12 12:17:26 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jan 12 12:17:26 2014] [debug] GET "/show".
+[Sun Jan 12 12:17:26 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 12:17:26 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 12:17:26 2014] [debug] Rendering inline template.
+[Sun Jan 12 12:17:26 2014] [debug] Rendering inline template.
+[Sun Jan 12 12:17:26 2014] [debug] 404 Not Found (0.012656s, 79.014/s).
+[Sun Jan 12 12:17:30 2014] [debug] GET "/show".
+[Sun Jan 12 12:17:30 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 12:17:30 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 12:17:30 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 12:17:30 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 12:17:30 2014] [debug] 404 Not Found (0.011900s, 84.034/s).
+[Sun Jan 12 12:17:50 2014] [debug] GET "/show".
+[Sun Jan 12 12:17:50 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 12:17:50 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 12:17:50 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 12:17:50 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 12:17:50 2014] [debug] 404 Not Found (0.004178s, 239.349/s).
+[Sun Jan 12 12:17:56 2014] [debug] GET "/".
+[Sun Jan 12 12:17:56 2014] [debug] Routing to controller "KiDiP::Dienstplan" and action "show".
+[Sun Jan 12 12:17:56 2014] [debug] Template "dienstplan/show.html.ep" not found.
+[Sun Jan 12 12:17:56 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 12:17:56 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 12:17:56 2014] [debug] Rendering inline template.
+[Sun Jan 12 12:17:56 2014] [debug] Rendering inline template.
+[Sun Jan 12 12:17:56 2014] [debug] 404 Not Found (0.296335s, 3.375/s).
+[Sun Jan 12 12:24:54 2014] [info] Listening at "http://*:3000".
+[Sun Jan 12 12:25:11 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jan 12 12:25:11 2014] [debug] GET "/show".
+[Sun Jan 12 12:25:11 2014] [debug] Routing to controller "KiDiP::Dienstplan" and action "show".
+[Sun Jan 12 12:25:11 2014] [debug] Template "dienstplan/show.html.ep" not found.
+[Sun Jan 12 12:25:11 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 12:25:11 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 12:25:11 2014] [debug] Rendering inline template.
+[Sun Jan 12 12:25:11 2014] [debug] Rendering inline template.
+[Sun Jan 12 12:25:11 2014] [debug] 404 Not Found (0.280001s, 3.571/s).
+[Sun Jan 12 12:25:42 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jan 12 12:25:42 2014] [debug] GET "/show".
+[Sun Jan 12 12:25:43 2014] [debug] Routing to controller "KiDiP::Dienstplan" and action "show".
+[Sun Jan 12 12:25:43 2014] [debug] Template "dienstplan/show.html.ep" not found.
+[Sun Jan 12 12:25:43 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 12:25:43 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 12:25:43 2014] [debug] Rendering inline template.
+[Sun Jan 12 12:25:43 2014] [debug] Rendering inline template.
+[Sun Jan 12 12:25:43 2014] [debug] 404 Not Found (0.323926s, 3.087/s).
+[Sun Jan 12 12:25:52 2014] [info] Listening at "http://*:3000".
+[Sun Jan 12 12:25:55 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jan 12 12:25:55 2014] [debug] GET "/show".
+[Sun Jan 12 12:25:55 2014] [debug] Routing to controller "KiDiP::Dienstplan" and action "show".
+[Sun Jan 12 12:25:55 2014] [debug] Template "dienstplan/show.html.ep" not found.
+[Sun Jan 12 12:25:55 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 12:25:55 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 12:25:55 2014] [debug] Rendering inline template.
+[Sun Jan 12 12:25:55 2014] [debug] Rendering inline template.
+[Sun Jan 12 12:25:55 2014] [debug] 404 Not Found (0.314053s, 3.184/s).
+[Sun Jan 12 12:26:00 2014] [debug] GET "/show".
+[Sun Jan 12 12:26:00 2014] [debug] Routing to controller "KiDiP::Dienstplan" and action "show".
+[Sun Jan 12 12:26:00 2014] [debug] Template "dienstplan/show.html.ep" not found.
+[Sun Jan 12 12:26:00 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 12:26:00 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 12:26:00 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 12:26:00 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 12:26:00 2014] [debug] 404 Not Found (0.007139s, 140.076/s).
+[Sun Jan 12 12:26:48 2014] [info] Listening at "http://*:3000".
+[Sun Jan 12 12:26:55 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jan 12 12:26:55 2014] [debug] GET "/show".
+[Sun Jan 12 12:26:56 2014] [debug] Routing to controller "KiDiP::Dienstplan" and action "show".
+[Sun Jan 12 12:26:56 2014] [debug] Template "dienstplan/show.html.ep" not found.
+[Sun Jan 12 12:26:56 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 12:26:56 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 12:26:56 2014] [debug] Rendering inline template.
+[Sun Jan 12 12:26:56 2014] [debug] Rendering inline template.
+[Sun Jan 12 12:26:56 2014] [debug] 404 Not Found (0.308002s, 3.247/s).
+[Sun Jan 12 12:28:47 2014] [info] Listening at "http://*:3000".
+[Sun Jan 12 12:28:56 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jan 12 12:28:56 2014] [debug] GET "/show".
+[Sun Jan 12 12:28:56 2014] [debug] Routing to controller "KiDiP::Dienstplan" and action "show".
+[Sun Jan 12 12:28:56 2014] [debug] Rendering template "dienstplan/show.html.ep".
+[Sun Jan 12 12:28:56 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Jan 12 12:28:56 2014] [debug] 200 OK (0.321063s, 3.115/s).
+[Sun Jan 12 12:34:07 2014] [info] Listening at "http://*:3000".
+[Sun Jan 12 12:34:09 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jan 12 12:34:09 2014] [debug] GET "/".
+[Sun Jan 12 12:34:09 2014] [debug] Controller "KiDiP::Employee" does not exist.
+[Sun Jan 12 12:34:09 2014] [debug] Rendering template "employee/list.html.ep".
+[Sun Jan 12 12:34:09 2014] [error] Global symbol "$message" requires explicit package name at template employee/list.html.ep line 3.
+1: % layout 'default';
+2: % title 'Kak Dienstplan Manager';
+3: <%= $message %>
+4: This page was generated from the template "templates/example/welcome.html.ep"
+5: and the layout "templates/layouts/default.html.ep",
+6: <a href="<%== url_for %>">click here</a> to reload the page or
+7: <a href="/index.html">here</a> to move forward to a static page.
+
+[Sun Jan 12 12:34:09 2014] [debug] Template "exception.development.html.ep" not found.
+[Sun Jan 12 12:34:09 2014] [debug] Template "exception.html.ep" not found.
+[Sun Jan 12 12:34:09 2014] [debug] Rendering inline template.
+[Sun Jan 12 12:34:09 2014] [debug] Rendering inline template.
+[Sun Jan 12 12:34:09 2014] [debug] 500 Internal Server Error (0.035480s, 28.185/s).
+[Sun Jan 12 12:35:47 2014] [info] Listening at "http://*:3000".
+[Sun Jan 12 12:35:49 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jan 12 12:35:49 2014] [debug] GET "/".
+[Sun Jan 12 12:35:49 2014] [debug] Controller "KiDiP::Employee" does not exist.
+[Sun Jan 12 12:35:49 2014] [debug] Rendering template "employee/list.html.ep".
+[Sun Jan 12 12:35:49 2014] [error] Global symbol "$message" requires explicit package name at template employee/list.html.ep line 3.
+syntax error at template employee/list.html.ep line 3, near "$message $_M "
+1: % layout 'default';
+2: % title 'Kak Dienstplan Manager';
+3: <% $message %>
+
+[Sun Jan 12 12:35:49 2014] [debug] Template "exception.development.html.ep" not found.
+[Sun Jan 12 12:35:49 2014] [debug] Template "exception.html.ep" not found.
+[Sun Jan 12 12:35:49 2014] [debug] Rendering inline template.
+[Sun Jan 12 12:35:49 2014] [debug] Rendering inline template.
+[Sun Jan 12 12:35:49 2014] [debug] 500 Internal Server Error (0.038396s, 26.044/s).
+[Sun Jan 12 12:36:45 2014] [info] Listening at "http://*:3000".
+[Sun Jan 12 12:36:47 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jan 12 12:36:47 2014] [debug] GET "/".
+[Sun Jan 12 12:36:47 2014] [debug] Controller "KiDiP::Employee" does not exist.
+[Sun Jan 12 12:36:47 2014] [debug] Rendering template "employee/list.html.ep".
+[Sun Jan 12 12:36:47 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Jan 12 12:36:47 2014] [debug] 200 OK (0.010476s, 95.456/s).
+[Sun Jan 12 12:51:54 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jan 12 12:51:54 2014] [debug] GET "/".
+[Sun Jan 12 12:51:54 2014] [debug] Controller "KiDiP::Employee" does not exist.
+[Sun Jan 12 12:51:54 2014] [debug] Rendering template "employee/list.html.ep".
+[Sun Jan 12 12:51:54 2014] [error] Global symbol "$empoyees" requires explicit package name at template employee/list.html.ep line 14.
+Global symbol "$employees" requires explicit package name at template employee/list.html.ep line 16.
+11:         </tr>
+12:     </thead>
+13: 
+14:     % for my $employee (@{$empoyees}) {
+15:         <tr>
+16:         <td><%= $employees->{surname}." ".$employee->{lastname} %></td>
+17:         </tr>
+18:     % }
+19: 
+20: </table>
+
+[Sun Jan 12 12:51:54 2014] [debug] Template "exception.development.html.ep" not found.
+[Sun Jan 12 12:51:54 2014] [debug] Template "exception.html.ep" not found.
+[Sun Jan 12 12:51:54 2014] [debug] Rendering inline template.
+[Sun Jan 12 12:51:54 2014] [debug] Rendering inline template.
+[Sun Jan 12 12:51:54 2014] [debug] 500 Internal Server Error (0.021503s, 46.505/s).
+[Sun Jan 12 12:52:27 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jan 12 12:52:27 2014] [debug] GET "/".
+[Sun Jan 12 12:52:27 2014] [debug] Controller "KiDiP::Employee" does not exist.
+[Sun Jan 12 12:52:27 2014] [debug] Rendering template "employee/list.html.ep".
+[Sun Jan 12 12:52:27 2014] [error] Global symbol "$employees" requires explicit package name at template employee/list.html.ep line 14.
+9:             <th>Total Work Time</th>
+10:             <th>Work Start</th>
+11:         </tr>
+12:     </thead>
+13: 
+14:     % for my $employee (@{$employees}) {
+15:         <tr>
+16:         <td><%= $employee->{surname}." ".$employee->{lastname} %></td>
+17:         </tr>
+18:     % }
+19: 
+
+[Sun Jan 12 12:52:27 2014] [debug] Template "exception.development.html.ep" not found.
+[Sun Jan 12 12:52:27 2014] [debug] Template "exception.html.ep" not found.
+[Sun Jan 12 12:52:27 2014] [debug] Rendering inline template.
+[Sun Jan 12 12:52:27 2014] [debug] Rendering inline template.
+[Sun Jan 12 12:52:27 2014] [debug] 500 Internal Server Error (0.029273s, 34.161/s).
+[Sun Jan 12 12:55:33 2014] [info] Listening at "http://*:3000".
+[Sun Jan 12 12:55:35 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jan 12 12:55:35 2014] [debug] GET "/".
+[Sun Jan 12 12:55:35 2014] [debug] Controller "KiDiP::Employee" does not exist.
+[Sun Jan 12 12:55:35 2014] [debug] Rendering template "employee/list.html.ep".
+[Sun Jan 12 12:55:35 2014] [error] Global symbol "$employees" requires explicit package name at template employee/list.html.ep line 14.
+9:             <th>Total Work Time</th>
+10:             <th>Work Start</th>
+11:         </tr>
+12:     </thead>
+13: 
+14:     % for my $employee (@{$employees}) {
+15:         <tr>
+16:         <td><%= $employee->{surname}." ".$employee->{lastname} %></td>
+17:         </tr>
+18:     % }
+19: 
+
+[Sun Jan 12 12:55:35 2014] [debug] Template "exception.development.html.ep" not found.
+[Sun Jan 12 12:55:35 2014] [debug] Template "exception.html.ep" not found.
+[Sun Jan 12 12:55:35 2014] [debug] Rendering inline template.
+[Sun Jan 12 12:55:35 2014] [debug] Rendering inline template.
+[Sun Jan 12 12:55:35 2014] [debug] 500 Internal Server Error (0.033675s, 29.696/s).
+[Sun Jan 12 12:56:23 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jan 12 12:56:23 2014] [debug] GET "/".
+[Sun Jan 12 12:56:23 2014] [error] Global symbol "$emplyees" requires explicit package name at script/../lib/KiDiP/Employee.pm line 15.
+Compilation failed in require at (eval 257) line 1.
+
+[Sun Jan 12 12:56:23 2014] [debug] Template "exception.development.html.ep" not found.
+[Sun Jan 12 12:56:23 2014] [debug] Template "exception.html.ep" not found.
+[Sun Jan 12 12:56:23 2014] [debug] Rendering inline template.
+[Sun Jan 12 12:56:23 2014] [debug] Rendering inline template.
+[Sun Jan 12 12:56:23 2014] [debug] 500 Internal Server Error (0.276626s, 3.615/s).
+[Sun Jan 12 12:57:25 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jan 12 12:57:25 2014] [debug] GET "/".
+[Sun Jan 12 12:57:25 2014] [debug] Routing to controller "KiDiP::Employee" and action "list".
+[Sun Jan 12 12:57:25 2014] [error] Can't locate object method "log" via package "KiDiP::Employee" at /usr/local/share/perl5/Mojolicious.pm line 157.
+
+[Sun Jan 12 12:57:25 2014] [debug] Template "exception.development.html.ep" not found.
+[Sun Jan 12 12:57:25 2014] [debug] Template "exception.html.ep" not found.
+[Sun Jan 12 12:57:25 2014] [debug] Rendering inline template.
+[Sun Jan 12 12:57:25 2014] [debug] Rendering inline template.
+[Sun Jan 12 12:57:25 2014] [debug] 500 Internal Server Error (0.333434s, 2.999/s).
+[Sun Jan 12 12:57:42 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jan 12 12:57:42 2014] [debug] GET "/".
+[Sun Jan 12 12:57:42 2014] [debug] Routing to controller "KiDiP::Employee" and action "list".
+[Sun Jan 12 12:57:42 2014] [info] list action called
+[Sun Jan 12 12:57:42 2014] [info] Employee: $VAR1 = bless( {
+                 '_skip' => 0,
+                 '_ns' => 'kidip.employee',
+                 '_grrrr' => 0,
+                 'partial' => 0,
+                 '_query' => {},
+                 '_tailable' => 0,
+                 '_client' => bless( {
+                                       'w' => 1,
+                                       'query_timeout' => 30000,
+                                       'find_master' => 0,
+                                       '_servers' => {},
+                                       'sasl' => 0,
+                                       'wtimeout' => 1000,
+                                       'j' => 0,
+                                       'timeout' => 20000,
+                                       'sasl_mechanism' => 'GSSAPI',
+                                       'auto_connect' => 1,
+                                       'auto_reconnect' => 1,
+                                       'db_name' => 'admin',
+                                       'ts' => 0,
+                                       'ssl' => 0,
+                                       'inflate_dbrefs' => 1,
+                                       'port' => 27017,
+                                       'host' => 'mongodb://localhost:27017',
+                                       'dt_type' => 'DateTime',
+                                       'max_bson_size' => 16777216
+                                     }, 'MongoDB::MongoClient' ),
+                 '_limit' => 0,
+                 'slave_okay' => 0,
+                 '_request_id' => 0,
+                 'immortal' => 0,
+                 'started_iterating' => 0
+               }, 'MongoDB::Cursor' );
+
+[Sun Jan 12 12:57:42 2014] [debug] Rendering template "employee/list.html.ep".
+[Sun Jan 12 12:57:42 2014] [error] Not an ARRAY reference at template employee/list.html.ep line 14.
+9:             <th>Total Work Time</th>
+10:             <th>Work Start</th>
+11:         </tr>
+12:     </thead>
+13: 
+14:     % for my $employee (@{$employees}) {
+15:         <tr>
+16:         <td><%= $employee->{surname}." ".$employee->{lastname} %></td>
+17:         </tr>
+18:     % }
+19: 
+
+[Sun Jan 12 12:57:42 2014] [debug] Template "exception.development.html.ep" not found.
+[Sun Jan 12 12:57:42 2014] [debug] Template "exception.html.ep" not found.
+[Sun Jan 12 12:57:42 2014] [debug] Rendering inline template.
+[Sun Jan 12 12:57:42 2014] [debug] Rendering inline template.
+[Sun Jan 12 12:57:42 2014] [debug] 500 Internal Server Error (0.324141s, 3.085/s).
+[Sun Jan 12 13:04:16 2014] [info] Listening at "http://*:3000".
+[Sun Jan 12 13:04:21 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jan 12 13:04:21 2014] [debug] GET "/".
+[Sun Jan 12 13:04:22 2014] [debug] Routing to controller "KiDiP::Employee" and action "list".
+[Sun Jan 12 13:04:22 2014] [info] list action called
+[Sun Jan 12 13:04:22 2014] [debug] Rendering template "employee/list.html.ep".
+[Sun Jan 12 13:04:22 2014] [error] syntax error at template employee/list.html.ep line 14, near "while my "
+Global symbol "$employee" requires explicit package name at template employee/list.html.ep line 14.
+Global symbol "$employee" requires explicit package name at template employee/list.html.ep line 16.
+Global symbol "$employee" requires explicit package name at template employee/list.html.ep line 16.
+syntax error at template employee/list.html.ep line 19, near "} 
+$_M "
+syntax error at template employee/list.html.ep line 20, near "} }"
+15:         <tr>
+16:         <td><%= $employee->{surname}." ".$employee->{lastname} %></td>
+17:         </tr>
+18:     % }
+19: 
+20: </table>
+
+[Sun Jan 12 13:04:22 2014] [debug] Template "exception.development.html.ep" not found.
+[Sun Jan 12 13:04:22 2014] [debug] Template "exception.html.ep" not found.
+[Sun Jan 12 13:04:22 2014] [debug] Rendering inline template.
+[Sun Jan 12 13:04:22 2014] [debug] Rendering inline template.
+[Sun Jan 12 13:04:22 2014] [debug] 500 Internal Server Error (0.329708s, 3.033/s).
+[Sun Jan 12 13:05:03 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jan 12 13:05:03 2014] [debug] GET "/".
+[Sun Jan 12 13:05:03 2014] [debug] Routing to controller "KiDiP::Employee" and action "list".
+[Sun Jan 12 13:05:03 2014] [info] list action called
+[Sun Jan 12 13:05:03 2014] [debug] Rendering template "employee/list.html.ep".
+[Sun Jan 12 13:05:03 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Jan 12 13:05:03 2014] [debug] 200 OK (0.276567s, 3.616/s).
+[Sun Jan 12 13:06:15 2014] [debug] GET "/".
+[Sun Jan 12 13:06:15 2014] [debug] Routing to controller "KiDiP::Employee" and action "list".
+[Sun Jan 12 13:06:15 2014] [info] list action called
+[Sun Jan 12 13:06:15 2014] [debug] Rendering cached template "employee/list.html.ep".
+[Sun Jan 12 13:06:15 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Sun Jan 12 13:06:15 2014] [debug] 200 OK (0.004873s, 205.212/s).
+[Sun Jan 12 13:06:16 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jan 12 13:06:24 2014] [info] Listening at "http://*:3000".
+[Sun Jan 12 13:06:26 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jan 12 13:06:26 2014] [debug] GET "/".
+[Sun Jan 12 13:06:26 2014] [debug] Routing to controller "KiDiP::Employee" and action "list".
+[Sun Jan 12 13:06:26 2014] [info] list action called
+[Sun Jan 12 13:06:26 2014] [debug] Rendering template "employee/list.html.ep".
+[Sun Jan 12 13:06:26 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Jan 12 13:06:26 2014] [debug] 200 OK (0.301865s, 3.313/s).
+[Sun Jan 12 13:11:06 2014] [debug] GET "/".
+[Sun Jan 12 13:11:06 2014] [debug] Routing to controller "KiDiP::Employee" and action "list".
+[Sun Jan 12 13:11:06 2014] [info] list action called
+[Sun Jan 12 13:11:06 2014] [debug] Rendering cached template "employee/list.html.ep".
+[Sun Jan 12 13:11:06 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Sun Jan 12 13:11:06 2014] [debug] 200 OK (0.004006s, 249.626/s).
+[Sun Jan 12 13:17:16 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jan 12 13:17:16 2014] [debug] GET "/".
+[Sun Jan 12 13:17:17 2014] [debug] Routing to controller "KiDiP::Employee" and action "list".
+[Sun Jan 12 13:17:17 2014] [info] list action called
+[Sun Jan 12 13:17:17 2014] [debug] Rendering template "employee/list.html.ep".
+[Sun Jan 12 13:17:17 2014] [error] Global symbol "$employee_" requires explicit package name at template employee/list.html.ep line 21.
+16:         <tr>
+17:         <td><%= $employee->{surname}." ".$employee->{lastname} %></td>
+18:         <td><%= $employee->{vacation} %>
+19:         <td><%= $employee->{total_work_time} %>
+20:         <td><%= $employee->{work_start} %>
+21:         <td><%= uri_for('/')->path('employee', "$employee_>{id}")  %>
+22:         </tr>
+23:     % }
+24: 
+25: </table>
+
+[Sun Jan 12 13:17:17 2014] [debug] Template "exception.development.html.ep" not found.
+[Sun Jan 12 13:17:17 2014] [debug] Template "exception.html.ep" not found.
+[Sun Jan 12 13:17:17 2014] [debug] Rendering inline template.
+[Sun Jan 12 13:17:17 2014] [debug] Rendering inline template.
+[Sun Jan 12 13:17:17 2014] [debug] 500 Internal Server Error (0.320027s, 3.125/s).
+[Sun Jan 12 13:17:32 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jan 12 13:17:32 2014] [debug] GET "/".
+[Sun Jan 12 13:17:32 2014] [debug] Routing to controller "KiDiP::Employee" and action "list".
+[Sun Jan 12 13:17:32 2014] [info] list action called
+[Sun Jan 12 13:17:32 2014] [debug] Rendering template "employee/list.html.ep".
+[Sun Jan 12 13:17:32 2014] [error] Undefined subroutine &Mojo::Template::SandBox::uri_for called at template employee/list.html.ep line 21.
+16:         <tr>
+17:         <td><%= $employee->{surname}." ".$employee->{lastname} %></td>
+18:         <td><%= $employee->{vacation} %>
+19:         <td><%= $employee->{total_work_time} %>
+20:         <td><%= $employee->{work_start} %>
+21:         <td><%= uri_for('/')->path('employee', "$employee->{id}")  %>
+22:         </tr>
+23:     % }
+24: 
+25: </table>
+
+[Sun Jan 12 13:17:32 2014] [debug] Template "exception.development.html.ep" not found.
+[Sun Jan 12 13:17:32 2014] [debug] Template "exception.html.ep" not found.
+[Sun Jan 12 13:17:32 2014] [debug] Rendering inline template.
+[Sun Jan 12 13:17:32 2014] [debug] Rendering inline template.
+[Sun Jan 12 13:17:32 2014] [debug] 500 Internal Server Error (0.305505s, 3.273/s).
+[Sun Jan 12 13:17:50 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jan 12 13:17:50 2014] [debug] GET "/".
+[Sun Jan 12 13:17:50 2014] [debug] Routing to controller "KiDiP::Employee" and action "list".
+[Sun Jan 12 13:17:50 2014] [info] list action called
+[Sun Jan 12 13:17:50 2014] [debug] Rendering template "employee/list.html.ep".
+[Sun Jan 12 13:17:50 2014] [error] Undefined subroutine &Mojo::Template::SandBox::uri_to called at template employee/list.html.ep line 21.
+16:         <tr>
+17:         <td><%= $employee->{surname}." ".$employee->{lastname} %></td>
+18:         <td><%= $employee->{vacation} %>
+19:         <td><%= $employee->{total_work_time} %>
+20:         <td><%= $employee->{work_start} %>
+21:         <td><%= uri_to('/')->path('employee', "$employee->{id}")  %>
+22:         </tr>
+23:     % }
+24: 
+25: </table>
+
+[Sun Jan 12 13:17:50 2014] [debug] Template "exception.development.html.ep" not found.
+[Sun Jan 12 13:17:50 2014] [debug] Template "exception.html.ep" not found.
+[Sun Jan 12 13:17:50 2014] [debug] Rendering inline template.
+[Sun Jan 12 13:17:50 2014] [debug] Rendering inline template.
+[Sun Jan 12 13:17:50 2014] [debug] 500 Internal Server Error (0.285128s, 3.507/s).
+[Sun Jan 12 13:20:05 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jan 12 13:20:05 2014] [debug] GET "/".
+[Sun Jan 12 13:20:06 2014] [debug] Routing to controller "KiDiP::Employee" and action "list".
+[Sun Jan 12 13:20:06 2014] [info] list action called
+[Sun Jan 12 13:20:06 2014] [debug] Rendering template "employee/list.html.ep".
+[Sun Jan 12 13:20:06 2014] [error] Can't locate object method "path" via package "uri_for" (perhaps you forgot to load "uri_for"?) at template employee/list.html.ep line 21.
+16:         <tr>
+17:         <td><%= $employee->{surname}." ".$employee->{lastname} %></td>
+18:         <td><%= $employee->{vacation} %>
+19:         <td><%= $employee->{total_work_time} %>
+20:         <td><%= $employee->{work_start} %>
+21:         <td><%= uri_for->path('/employee', "$employee->{id}")  %>
+22:         </tr>
+23:     % }
+24: 
+25: </table>
+
+[Sun Jan 12 13:20:06 2014] [debug] Template "exception.development.html.ep" not found.
+[Sun Jan 12 13:20:06 2014] [debug] Template "exception.html.ep" not found.
+[Sun Jan 12 13:20:06 2014] [debug] Rendering inline template.
+[Sun Jan 12 13:20:06 2014] [debug] Rendering inline template.
+[Sun Jan 12 13:20:06 2014] [debug] 500 Internal Server Error (0.321657s, 3.109/s).
+[Sun Jan 12 13:22:17 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jan 12 13:22:17 2014] [debug] GET "/".
+[Sun Jan 12 13:22:18 2014] [debug] Routing to controller "KiDiP::Employee" and action "list".
+[Sun Jan 12 13:22:18 2014] [info] list action called
+[Sun Jan 12 13:22:18 2014] [debug] Rendering template "employee/list.html.ep".
+[Sun Jan 12 13:22:18 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Jan 12 13:22:18 2014] [debug] 200 OK (0.289875s, 3.450/s).
+[Sun Jan 12 13:23:26 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jan 12 13:23:26 2014] [debug] GET "/".
+[Sun Jan 12 13:23:27 2014] [debug] Routing to controller "KiDiP::Employee" and action "list".
+[Sun Jan 12 13:23:27 2014] [info] list action called
+[Sun Jan 12 13:23:27 2014] [debug] Rendering template "employee/list.html.ep".
+[Sun Jan 12 13:23:27 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Jan 12 13:23:27 2014] [debug] 200 OK (0.302704s, 3.304/s).
+[Sun Jan 12 17:03:03 2014] [info] Listening at "http://*:3000".
+[Sun Jan 12 17:05:44 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jan 12 17:05:44 2014] [debug] GET "/employee".
+[Sun Jan 12 17:05:44 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 17:05:44 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 17:05:44 2014] [debug] Rendering inline template.
+[Sun Jan 12 17:05:44 2014] [debug] Rendering inline template.
+[Sun Jan 12 17:05:44 2014] [debug] 404 Not Found (0.022852s, 43.760/s).
+[Sun Jan 12 17:06:01 2014] [info] Listening at "http://*:3000".
+[Sun Jan 12 17:08:14 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jan 12 17:08:14 2014] [debug] GET "/employee".
+[Sun Jan 12 17:08:14 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 17:08:14 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 17:08:14 2014] [debug] Rendering inline template.
+[Sun Jan 12 17:08:14 2014] [debug] Rendering inline template.
+[Sun Jan 12 17:08:14 2014] [debug] 404 Not Found (0.015023s, 66.565/s).
+[Sun Jan 12 17:08:27 2014] [debug] GET "/employee".
+[Sun Jan 12 17:08:27 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 17:08:27 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 17:08:27 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:08:27 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:08:27 2014] [debug] 404 Not Found (0.005179s, 193.087/s).
+[Sun Jan 12 17:09:23 2014] [debug] GET "/".
+[Sun Jan 12 17:09:23 2014] [debug] Routing to controller "KiDiP::Employee" and action "list".
+[Sun Jan 12 17:09:23 2014] [info] list action called
+[Sun Jan 12 17:09:23 2014] [debug] Rendering template "employee/list.html.ep".
+[Sun Jan 12 17:09:23 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Jan 12 17:09:23 2014] [debug] 200 OK (0.298412s, 3.351/s).
+[Sun Jan 12 17:09:54 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jan 12 17:09:54 2014] [debug] GET "/".
+[Sun Jan 12 17:09:54 2014] [debug] Routing to controller "KiDiP::Employee" and action "list".
+[Sun Jan 12 17:09:54 2014] [info] list action called
+[Sun Jan 12 17:09:54 2014] [debug] Rendering template "employee/list.html.ep".
+[Sun Jan 12 17:09:54 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Jan 12 17:09:54 2014] [debug] 200 OK (0.279436s, 3.579/s).
+[Sun Jan 12 17:10:06 2014] [info] Listening at "http://*:3000".
+[Sun Jan 12 17:10:10 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jan 12 17:10:10 2014] [debug] GET "/".
+[Sun Jan 12 17:10:10 2014] [debug] Routing to controller "KiDiP::Employee" and action "list".
+[Sun Jan 12 17:10:10 2014] [info] list action called
+[Sun Jan 12 17:10:10 2014] [debug] Rendering template "employee/list.html.ep".
+[Sun Jan 12 17:10:10 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Jan 12 17:10:10 2014] [debug] 200 OK (0.280046s, 3.571/s).
+[Sun Jan 12 17:10:38 2014] [debug] GET "/employee".
+[Sun Jan 12 17:10:38 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 17:10:38 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 17:10:38 2014] [debug] Rendering inline template.
+[Sun Jan 12 17:10:38 2014] [debug] Rendering inline template.
+[Sun Jan 12 17:10:38 2014] [debug] 404 Not Found (0.012026s, 83.153/s).
+[Sun Jan 12 17:10:38 2014] [debug] GET "/mojo/jquery/jquery-2.0.3.min.map".
+[Sun Jan 12 17:10:38 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 17:10:38 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 17:10:38 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:10:38 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:10:38 2014] [debug] 404 Not Found (0.004812s, 207.814/s).
+[Sun Jan 12 17:10:38 2014] [debug] GET "/mojo/jquery/jquery-2.0.3.min.map".
+[Sun Jan 12 17:10:38 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 17:10:38 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 17:10:38 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:10:38 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:10:38 2014] [debug] 404 Not Found (0.004825s, 207.254/s).
+[Sun Jan 12 17:10:38 2014] [debug] GET "/mojo/jquery/jquery-2.0.3.min.map".
+[Sun Jan 12 17:10:38 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 17:10:38 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 17:10:38 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:10:38 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:10:38 2014] [debug] 404 Not Found (0.004641s, 215.471/s).
+[Sun Jan 12 17:10:38 2014] [debug] GET "/mojo/jquery/jquery-2.0.3.min.map".
+[Sun Jan 12 17:10:38 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 17:10:38 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 17:10:38 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:10:38 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:10:38 2014] [debug] 404 Not Found (0.005265s, 189.934/s).
+[Sun Jan 12 17:10:38 2014] [debug] GET "/mojo/jquery/jquery-2.0.3.min.map".
+[Sun Jan 12 17:10:38 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 17:10:38 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 17:10:38 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:10:38 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:10:38 2014] [debug] 404 Not Found (0.004567s, 218.962/s).
+[Sun Jan 12 17:12:06 2014] [info] Listening at "http://*:3000".
+[Sun Jan 12 17:12:29 2014] [info] Listening at "http://*:3000".
+[Sun Jan 12 17:12:40 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jan 12 17:12:40 2014] [debug] GET "/".
+[Sun Jan 12 17:12:40 2014] [debug] Routing to controller "KiDiP::Employee" and action "list".
+[Sun Jan 12 17:12:40 2014] [info] list action called
+[Sun Jan 12 17:12:40 2014] [debug] Rendering template "employee/list.html.ep".
+[Sun Jan 12 17:12:40 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Jan 12 17:12:40 2014] [debug] 200 OK (0.293929s, 3.402/s).
+[Sun Jan 12 17:15:27 2014] [debug] GET "/".
+[Sun Jan 12 17:15:27 2014] [debug] Routing to controller "KiDiP::Employee" and action "list".
+[Sun Jan 12 17:15:27 2014] [info] list action called
+[Sun Jan 12 17:15:27 2014] [debug] Rendering cached template "employee/list.html.ep".
+[Sun Jan 12 17:15:27 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Sun Jan 12 17:15:27 2014] [debug] 200 OK (0.002683s, 372.717/s).
+[Sun Jan 12 17:15:48 2014] [info] Listening at "http://*:3000".
+[Sun Jan 12 17:15:53 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jan 12 17:15:53 2014] [debug] GET "/".
+[Sun Jan 12 17:15:53 2014] [debug] Routing to controller "KiDiP::Employee" and action "list".
+[Sun Jan 12 17:15:53 2014] [info] list action called
+[Sun Jan 12 17:15:53 2014] [debug] Rendering template "employee/list.html.ep".
+[Sun Jan 12 17:15:53 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Jan 12 17:15:53 2014] [debug] 200 OK (0.279272s, 3.581/s).
+[Sun Jan 12 17:16:46 2014] [info] Listening at "http://*:3000".
+[Sun Jan 12 17:16:50 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jan 12 17:16:50 2014] [debug] GET "/".
+[Sun Jan 12 17:16:51 2014] [debug] Routing to controller "KiDiP::Employee" and action "list".
+[Sun Jan 12 17:16:51 2014] [info] list action called
+[Sun Jan 12 17:16:51 2014] [debug] Rendering template "employee/list.html.ep".
+[Sun Jan 12 17:16:51 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Jan 12 17:16:51 2014] [debug] 200 OK (0.292167s, 3.423/s).
+[Sun Jan 12 17:17:38 2014] [info] Listening at "http://*:3000".
+[Sun Jan 12 17:17:41 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jan 12 17:17:41 2014] [debug] GET "/".
+[Sun Jan 12 17:17:41 2014] [debug] Routing to controller "KiDiP::Employee" and action "list".
+[Sun Jan 12 17:17:41 2014] [info] list action called
+[Sun Jan 12 17:17:41 2014] [debug] Rendering template "employee/list.html.ep".
+[Sun Jan 12 17:17:41 2014] [error] Not a CODE reference at template employee/list.html.ep line 21.
+16:         <tr>
+17:         <td><%= $employee->{surname}." ".$employee->{lastname} %></td>
+18:         <td><%= $employee->{vacation} %>
+19:         <td><%= $employee->{total_work_time} %>
+20:         <td><%= $employee->{work_start} %>
+21:         <td><a href="<%= url_for->('/employee')->path('wolf', $employee->{_id})  %>">Ändern</a>
+22:         </tr>
+23:     % }
+24: 
+25: </table>
+
+[Sun Jan 12 17:17:41 2014] [debug] Template "exception.development.html.ep" not found.
+[Sun Jan 12 17:17:41 2014] [debug] Template "exception.html.ep" not found.
+[Sun Jan 12 17:17:41 2014] [debug] Rendering inline template.
+[Sun Jan 12 17:17:41 2014] [debug] Rendering inline template.
+[Sun Jan 12 17:17:41 2014] [debug] 500 Internal Server Error (0.317815s, 3.146/s).
+[Sun Jan 12 17:17:42 2014] [debug] GET "/mojo/jquery/jquery-2.0.3.min.map".
+[Sun Jan 12 17:17:42 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 17:17:42 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 17:17:42 2014] [debug] Rendering inline template.
+[Sun Jan 12 17:17:42 2014] [debug] Rendering inline template.
+[Sun Jan 12 17:17:42 2014] [debug] 404 Not Found (0.014375s, 69.565/s).
+[Sun Jan 12 17:17:42 2014] [debug] GET "/mojo/jquery/jquery-2.0.3.min.map".
+[Sun Jan 12 17:17:42 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 17:17:42 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 17:17:42 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:17:42 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:17:42 2014] [debug] 404 Not Found (0.004372s, 228.728/s).
+[Sun Jan 12 17:17:42 2014] [debug] GET "/mojo/jquery/jquery-2.0.3.min.map".
+[Sun Jan 12 17:17:42 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 17:17:42 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 17:17:42 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:17:42 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:17:42 2014] [debug] 404 Not Found (0.005101s, 196.040/s).
+[Sun Jan 12 17:17:42 2014] [debug] GET "/mojo/jquery/jquery-2.0.3.min.map".
+[Sun Jan 12 17:17:42 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 17:17:42 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 17:17:42 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:17:42 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:17:42 2014] [debug] 404 Not Found (0.004839s, 206.654/s).
+[Sun Jan 12 17:17:42 2014] [debug] GET "/mojo/jquery/jquery-2.0.3.min.map".
+[Sun Jan 12 17:17:42 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 17:17:42 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 17:17:42 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:17:42 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:17:42 2014] [debug] 404 Not Found (0.004728s, 211.506/s).
+[Sun Jan 12 17:17:42 2014] [debug] GET "/mojo/jquery/jquery-2.0.3.min.map".
+[Sun Jan 12 17:17:42 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 17:17:42 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 17:17:42 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:17:42 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:17:42 2014] [debug] 404 Not Found (0.004660s, 214.592/s).
+[Sun Jan 12 17:17:42 2014] [debug] GET "/mojo/jquery/jquery-2.0.3.min.map".
+[Sun Jan 12 17:17:42 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 17:17:42 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 17:17:42 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:17:42 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:17:42 2014] [debug] 404 Not Found (0.004385s, 228.050/s).
+[Sun Jan 12 17:17:42 2014] [debug] GET "/mojo/jquery/jquery-2.0.3.min.map".
+[Sun Jan 12 17:17:42 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 17:17:42 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 17:17:42 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:17:42 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:17:42 2014] [debug] 404 Not Found (0.004595s, 217.628/s).
+[Sun Jan 12 17:17:42 2014] [debug] GET "/mojo/jquery/jquery-2.0.3.min.map".
+[Sun Jan 12 17:17:42 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 17:17:42 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 17:17:42 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:17:42 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:17:42 2014] [debug] 404 Not Found (0.004740s, 210.970/s).
+[Sun Jan 12 17:19:40 2014] [info] Listening at "http://*:3000".
+[Sun Jan 12 17:19:47 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jan 12 17:19:47 2014] [debug] GET "/".
+[Sun Jan 12 17:19:47 2014] [debug] Routing to controller "KiDiP::Employee" and action "list".
+[Sun Jan 12 17:19:47 2014] [info] list action called
+[Sun Jan 12 17:19:47 2014] [debug] Rendering template "employee/list.html.ep".
+[Sun Jan 12 17:19:47 2014] [error] Not a CODE reference at template employee/list.html.ep line 21.
+16:         <tr>
+17:         <td><%= $employee->{surname}." ".$employee->{lastname} %></td>
+18:         <td><%= $employee->{vacation} %>
+19:         <td><%= $employee->{total_work_time} %>
+20:         <td><%= $employee->{work_start} %>
+21:         <td><a href="<%= url_for->('/')->path('employee', 'wolf', $employee->{_id})  %>">Ändern</a>
+22:         </tr>
+23:     % }
+24: 
+25: </table>
+
+[Sun Jan 12 17:19:47 2014] [debug] Template "exception.development.html.ep" not found.
+[Sun Jan 12 17:19:47 2014] [debug] Template "exception.html.ep" not found.
+[Sun Jan 12 17:19:47 2014] [debug] Rendering inline template.
+[Sun Jan 12 17:19:47 2014] [debug] Rendering inline template.
+[Sun Jan 12 17:19:47 2014] [debug] 500 Internal Server Error (0.315745s, 3.167/s).
+[Sun Jan 12 17:19:48 2014] [debug] GET "/mojo/jquery/jquery-2.0.3.min.map".
+[Sun Jan 12 17:19:48 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 17:19:48 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 17:19:48 2014] [debug] Rendering inline template.
+[Sun Jan 12 17:19:48 2014] [debug] Rendering inline template.
+[Sun Jan 12 17:19:48 2014] [debug] 404 Not Found (0.011616s, 86.088/s).
+[Sun Jan 12 17:19:48 2014] [debug] GET "/mojo/jquery/jquery-2.0.3.min.map".
+[Sun Jan 12 17:19:48 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 17:19:48 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 17:19:48 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:19:48 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:19:48 2014] [debug] 404 Not Found (0.004730s, 211.416/s).
+[Sun Jan 12 17:19:48 2014] [debug] GET "/mojo/jquery/jquery-2.0.3.min.map".
+[Sun Jan 12 17:19:48 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 17:19:48 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 17:19:48 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:19:48 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:19:48 2014] [debug] 404 Not Found (0.004867s, 205.465/s).
+[Sun Jan 12 17:19:48 2014] [debug] GET "/mojo/jquery/jquery-2.0.3.min.map".
+[Sun Jan 12 17:19:48 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 17:19:48 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 17:19:48 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:19:48 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:19:48 2014] [debug] 404 Not Found (0.007176s, 139.353/s).
+[Sun Jan 12 17:19:48 2014] [debug] GET "/mojo/jquery/jquery-2.0.3.min.map".
+[Sun Jan 12 17:19:48 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 17:19:48 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 17:19:48 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:19:48 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:19:48 2014] [debug] 404 Not Found (0.005790s, 172.712/s).
+[Sun Jan 12 17:19:48 2014] [debug] GET "/mojo/jquery/jquery-2.0.3.min.map".
+[Sun Jan 12 17:19:48 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 17:19:48 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 17:19:48 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:19:48 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:19:48 2014] [debug] 404 Not Found (0.005130s, 194.932/s).
+[Sun Jan 12 17:19:48 2014] [debug] GET "/mojo/jquery/jquery-2.0.3.min.map".
+[Sun Jan 12 17:19:48 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 17:19:48 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 17:19:48 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:19:48 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:19:48 2014] [debug] 404 Not Found (0.004873s, 205.212/s).
+[Sun Jan 12 17:19:48 2014] [debug] GET "/mojo/jquery/jquery-2.0.3.min.map".
+[Sun Jan 12 17:19:48 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 17:19:48 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 17:19:48 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:19:48 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:19:48 2014] [debug] 404 Not Found (0.004453s, 224.568/s).
+[Sun Jan 12 17:19:49 2014] [debug] GET "/mojo/jquery/jquery-2.0.3.min.map".
+[Sun Jan 12 17:19:49 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 17:19:49 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 17:19:49 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:19:49 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:19:49 2014] [debug] 404 Not Found (0.004370s, 228.833/s).
+[Sun Jan 12 17:26:22 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jan 12 17:26:22 2014] [debug] GET "/".
+[Sun Jan 12 17:26:22 2014] [debug] Routing to controller "KiDiP::Employee" and action "list".
+[Sun Jan 12 17:26:22 2014] [info] list action called
+[Sun Jan 12 17:26:22 2014] [debug] Rendering template "employee/list.html.ep".
+[Sun Jan 12 17:26:22 2014] [error] Not a CODE reference at template employee/list.html.ep line 21.
+16:         <tr>
+17:         <td><%= $employee->{surname}." ".$employee->{lastname} %></td>
+18:         <td><%= $employee->{vacation} %>
+19:         <td><%= $employee->{total_work_time} %>
+20:         <td><%= $employee->{work_start} %>
+21:         <td><a href="<%= url_for->('/employee')->path('wolf', $employee->{_id})  %>">Ändern</a>
+22:         </tr>
+23:     % }
+24: 
+25: </table>
+
+[Sun Jan 12 17:26:22 2014] [debug] Template "exception.development.html.ep" not found.
+[Sun Jan 12 17:26:22 2014] [debug] Template "exception.html.ep" not found.
+[Sun Jan 12 17:26:22 2014] [debug] Rendering inline template.
+[Sun Jan 12 17:26:22 2014] [debug] Rendering inline template.
+[Sun Jan 12 17:26:22 2014] [debug] 500 Internal Server Error (0.307341s, 3.254/s).
+[Sun Jan 12 17:26:23 2014] [debug] GET "/mojo/jquery/jquery-2.0.3.min.map".
+[Sun Jan 12 17:26:23 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 17:26:23 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 17:26:23 2014] [debug] Rendering inline template.
+[Sun Jan 12 17:26:23 2014] [debug] Rendering inline template.
+[Sun Jan 12 17:26:23 2014] [debug] 404 Not Found (0.012111s, 82.570/s).
+[Sun Jan 12 17:26:23 2014] [debug] GET "/mojo/jquery/jquery-2.0.3.min.map".
+[Sun Jan 12 17:26:23 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 17:26:23 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 17:26:23 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:26:23 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:26:23 2014] [debug] 404 Not Found (0.004906s, 203.832/s).
+[Sun Jan 12 17:26:23 2014] [debug] GET "/mojo/jquery/jquery-2.0.3.min.map".
+[Sun Jan 12 17:26:23 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 17:26:23 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 17:26:23 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:26:23 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:26:23 2014] [debug] 404 Not Found (0.005458s, 183.217/s).
+[Sun Jan 12 17:26:23 2014] [debug] GET "/mojo/jquery/jquery-2.0.3.min.map".
+[Sun Jan 12 17:26:23 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 17:26:23 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 17:26:23 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:26:23 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:26:23 2014] [debug] 404 Not Found (0.004452s, 224.618/s).
+[Sun Jan 12 17:26:24 2014] [debug] GET "/mojo/jquery/jquery-2.0.3.min.map".
+[Sun Jan 12 17:26:24 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 17:26:24 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 17:26:24 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:26:24 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:26:24 2014] [debug] 404 Not Found (0.005349s, 186.951/s).
+[Sun Jan 12 17:26:24 2014] [debug] GET "/mojo/jquery/jquery-2.0.3.min.map".
+[Sun Jan 12 17:26:24 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 17:26:24 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 17:26:24 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:26:24 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:26:24 2014] [debug] 404 Not Found (0.004364s, 229.148/s).
+[Sun Jan 12 17:26:24 2014] [debug] GET "/mojo/jquery/jquery-2.0.3.min.map".
+[Sun Jan 12 17:26:24 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 17:26:24 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 17:26:24 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:26:24 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:26:24 2014] [debug] 404 Not Found (0.004213s, 237.361/s).
+[Sun Jan 12 17:26:24 2014] [debug] GET "/mojo/jquery/jquery-2.0.3.min.map".
+[Sun Jan 12 17:26:24 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 17:26:24 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 17:26:24 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:26:24 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:26:24 2014] [debug] 404 Not Found (0.004291s, 233.046/s).
+[Sun Jan 12 17:26:24 2014] [debug] GET "/mojo/jquery/jquery-2.0.3.min.map".
+[Sun Jan 12 17:26:24 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 17:26:24 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 17:26:24 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:26:24 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:26:24 2014] [debug] 404 Not Found (0.004590s, 217.865/s).
+[Sun Jan 12 17:35:38 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jan 12 17:35:38 2014] [debug] GET "/".
+[Sun Jan 12 17:35:38 2014] [debug] Routing to controller "KiDiP::Employee" and action "list".
+[Sun Jan 12 17:35:38 2014] [info] list action called
+[Sun Jan 12 17:35:38 2014] [debug] Rendering template "employee/list.html.ep".
+[Sun Jan 12 17:35:38 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Jan 12 17:35:38 2014] [debug] 200 OK (0.305489s, 3.273/s).
+[Sun Jan 12 17:36:08 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jan 12 17:36:08 2014] [debug] GET "/".
+[Sun Jan 12 17:36:08 2014] [debug] Routing to controller "KiDiP::Employee" and action "list".
+[Sun Jan 12 17:36:08 2014] [info] list action called
+[Sun Jan 12 17:36:08 2014] [debug] Rendering template "employee/list.html.ep".
+[Sun Jan 12 17:36:08 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Jan 12 17:36:08 2014] [debug] 200 OK (0.293623s, 3.406/s).
+[Sun Jan 12 17:36:43 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jan 12 17:36:43 2014] [debug] GET "/".
+[Sun Jan 12 17:36:44 2014] [debug] Routing to controller "KiDiP::Employee" and action "list".
+[Sun Jan 12 17:36:44 2014] [info] list action called
+[Sun Jan 12 17:36:44 2014] [debug] Rendering template "employee/list.html.ep".
+[Sun Jan 12 17:36:44 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Jan 12 17:36:44 2014] [debug] 200 OK (0.298897s, 3.346/s).
+[Sun Jan 12 17:37:47 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jan 12 17:37:47 2014] [debug] GET "/".
+[Sun Jan 12 17:37:47 2014] [debug] Routing to controller "KiDiP::Employee" and action "list".
+[Sun Jan 12 17:37:47 2014] [info] list action called
+[Sun Jan 12 17:37:47 2014] [debug] Rendering template "employee/list.html.ep".
+[Sun Jan 12 17:37:47 2014] [error] Not a CODE reference at template employee/list.html.ep line 21.
+16:         <tr>
+17:         <td><%= $employee->{surname}." ".$employee->{lastname} %></td>
+18:         <td><%= $employee->{vacation} %>
+19:         <td><%= $employee->{total_work_time} %>
+20:         <td><%= $employee->{_id} %>
+21:         <td><a href="<%= url_for->('/')->path('employee', $employee->{_id})  %>">Ändern</a>
+22:         </tr>
+23:     % }
+24: 
+25: </table>
+
+[Sun Jan 12 17:37:47 2014] [debug] Template "exception.development.html.ep" not found.
+[Sun Jan 12 17:37:47 2014] [debug] Template "exception.html.ep" not found.
+[Sun Jan 12 17:37:47 2014] [debug] Rendering inline template.
+[Sun Jan 12 17:37:47 2014] [debug] Rendering inline template.
+[Sun Jan 12 17:37:47 2014] [debug] 500 Internal Server Error (0.290200s, 3.446/s).
+[Sun Jan 12 17:37:47 2014] [debug] GET "/mojo/jquery/jquery-2.0.3.min.map".
+[Sun Jan 12 17:37:47 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 17:37:47 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 17:37:47 2014] [debug] Rendering inline template.
+[Sun Jan 12 17:37:47 2014] [debug] Rendering inline template.
+[Sun Jan 12 17:37:47 2014] [debug] 404 Not Found (0.011218s, 89.142/s).
+[Sun Jan 12 17:37:47 2014] [debug] GET "/mojo/jquery/jquery-2.0.3.min.map".
+[Sun Jan 12 17:37:47 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 17:37:47 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 17:37:47 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:37:47 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:37:47 2014] [debug] 404 Not Found (0.004478s, 223.314/s).
+[Sun Jan 12 17:37:47 2014] [debug] GET "/mojo/jquery/jquery-2.0.3.min.map".
+[Sun Jan 12 17:37:47 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 17:37:47 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 17:37:47 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:37:47 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:37:47 2014] [debug] 404 Not Found (0.004539s, 220.313/s).
+[Sun Jan 12 17:37:47 2014] [debug] GET "/mojo/jquery/jquery-2.0.3.min.map".
+[Sun Jan 12 17:37:47 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 17:37:47 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 17:37:47 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:37:47 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:37:47 2014] [debug] 404 Not Found (0.004701s, 212.721/s).
+[Sun Jan 12 17:37:48 2014] [debug] GET "/mojo/jquery/jquery-2.0.3.min.map".
+[Sun Jan 12 17:37:48 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 17:37:48 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 17:37:48 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:37:48 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:37:48 2014] [debug] 404 Not Found (0.004523s, 221.092/s).
+[Sun Jan 12 17:37:48 2014] [debug] GET "/mojo/jquery/jquery-2.0.3.min.map".
+[Sun Jan 12 17:37:48 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 17:37:48 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 17:37:48 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:37:48 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:37:48 2014] [debug] 404 Not Found (0.004212s, 237.417/s).
+[Sun Jan 12 17:37:48 2014] [debug] GET "/mojo/jquery/jquery-2.0.3.min.map".
+[Sun Jan 12 17:37:48 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 17:37:48 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 17:37:48 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:37:48 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:37:48 2014] [debug] 404 Not Found (0.004140s, 241.546/s).
+[Sun Jan 12 17:37:48 2014] [debug] GET "/mojo/jquery/jquery-2.0.3.min.map".
+[Sun Jan 12 17:37:48 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 17:37:48 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 17:37:48 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:37:48 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:37:48 2014] [debug] 404 Not Found (0.004259s, 234.797/s).
+[Sun Jan 12 17:37:48 2014] [debug] GET "/mojo/jquery/jquery-2.0.3.min.map".
+[Sun Jan 12 17:37:48 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 17:37:48 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 17:37:48 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:37:48 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:37:48 2014] [debug] 404 Not Found (0.005122s, 195.236/s).
+[Sun Jan 12 17:38:22 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jan 12 17:38:22 2014] [debug] GET "/".
+[Sun Jan 12 17:38:22 2014] [debug] Routing to controller "KiDiP::Employee" and action "list".
+[Sun Jan 12 17:38:22 2014] [info] list action called
+[Sun Jan 12 17:38:22 2014] [debug] Rendering template "employee/list.html.ep".
+[Sun Jan 12 17:38:22 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Jan 12 17:38:22 2014] [debug] 200 OK (0.295198s, 3.388/s).
+[Sun Jan 12 17:39:14 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jan 12 17:39:14 2014] [debug] GET "/".
+[Sun Jan 12 17:39:14 2014] [debug] Routing to controller "KiDiP::Employee" and action "list".
+[Sun Jan 12 17:39:14 2014] [info] list action called
+[Sun Jan 12 17:39:14 2014] [debug] Rendering template "employee/list.html.ep".
+[Sun Jan 12 17:39:14 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Jan 12 17:39:14 2014] [debug] 200 OK (0.287181s, 3.482/s).
+[Sun Jan 12 17:39:49 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jan 12 17:39:49 2014] [debug] GET "/".
+[Sun Jan 12 17:39:49 2014] [debug] Routing to controller "KiDiP::Employee" and action "list".
+[Sun Jan 12 17:39:49 2014] [info] list action called
+[Sun Jan 12 17:39:49 2014] [debug] Rendering template "employee/list.html.ep".
+[Sun Jan 12 17:39:49 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Jan 12 17:39:49 2014] [debug] 200 OK (0.288077s, 3.471/s).
+[Sun Jan 12 17:40:13 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jan 12 17:40:13 2014] [debug] GET "/".
+[Sun Jan 12 17:40:13 2014] [debug] Routing to controller "KiDiP::Employee" and action "list".
+[Sun Jan 12 17:40:13 2014] [info] list action called
+[Sun Jan 12 17:40:13 2014] [debug] Rendering template "employee/list.html.ep".
+[Sun Jan 12 17:40:13 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Jan 12 17:40:13 2014] [debug] 200 OK (0.284493s, 3.515/s).
+[Sun Jan 12 17:54:28 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jan 12 17:54:28 2014] [debug] GET "/".
+[Sun Jan 12 17:54:28 2014] [error] Can't modify constant item in scalar assignment at script/../lib/KiDiP/Employee.pm line 25, near "$employee_id }"
+Compilation failed in require at (eval 257) line 1.
+
+[Sun Jan 12 17:54:28 2014] [debug] Template "exception.development.html.ep" not found.
+[Sun Jan 12 17:54:28 2014] [debug] Template "exception.html.ep" not found.
+[Sun Jan 12 17:54:28 2014] [debug] Rendering inline template.
+[Sun Jan 12 17:54:28 2014] [debug] Rendering inline template.
+[Sun Jan 12 17:54:28 2014] [debug] 500 Internal Server Error (0.300247s, 3.331/s).
+[Sun Jan 12 17:54:28 2014] [debug] GET "/mojo/jquery/jquery-2.0.3.min.map".
+[Sun Jan 12 17:54:28 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 17:54:28 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 17:54:28 2014] [debug] Rendering inline template.
+[Sun Jan 12 17:54:28 2014] [debug] Rendering inline template.
+[Sun Jan 12 17:54:28 2014] [debug] 404 Not Found (0.013595s, 73.556/s).
+[Sun Jan 12 17:54:28 2014] [debug] GET "/mojo/jquery/jquery-2.0.3.min.map".
+[Sun Jan 12 17:54:28 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 17:54:28 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 17:54:28 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:54:28 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:54:28 2014] [debug] 404 Not Found (0.004885s, 204.708/s).
+[Sun Jan 12 17:54:28 2014] [debug] GET "/mojo/jquery/jquery-2.0.3.min.map".
+[Sun Jan 12 17:54:28 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 17:54:28 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 17:54:28 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:54:28 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:54:28 2014] [debug] 404 Not Found (0.004811s, 207.857/s).
+[Sun Jan 12 17:54:28 2014] [debug] GET "/mojo/jquery/jquery-2.0.3.min.map".
+[Sun Jan 12 17:54:28 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 17:54:28 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 17:54:28 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:54:28 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:54:28 2014] [debug] 404 Not Found (0.005963s, 167.701/s).
+[Sun Jan 12 17:54:28 2014] [debug] GET "/mojo/jquery/jquery-2.0.3.min.map".
+[Sun Jan 12 17:54:28 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 17:54:28 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 17:54:28 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:54:28 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:54:28 2014] [debug] 404 Not Found (0.006963s, 143.616/s).
+[Sun Jan 12 17:54:28 2014] [debug] GET "/mojo/jquery/jquery-2.0.3.min.map".
+[Sun Jan 12 17:54:28 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 17:54:28 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 17:54:28 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:54:28 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:54:28 2014] [debug] 404 Not Found (0.004748s, 210.615/s).
+[Sun Jan 12 17:54:28 2014] [debug] GET "/mojo/jquery/jquery-2.0.3.min.map".
+[Sun Jan 12 17:54:28 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 17:54:28 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 17:54:28 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:54:28 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:54:28 2014] [debug] 404 Not Found (0.004770s, 209.644/s).
+[Sun Jan 12 17:54:28 2014] [debug] GET "/mojo/jquery/jquery-2.0.3.min.map".
+[Sun Jan 12 17:54:28 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 17:54:28 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 17:54:28 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:54:28 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:54:28 2014] [debug] 404 Not Found (0.004511s, 221.680/s).
+[Sun Jan 12 17:54:29 2014] [debug] GET "/mojo/jquery/jquery-2.0.3.min.map".
+[Sun Jan 12 17:54:29 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Jan 12 17:54:29 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Jan 12 17:54:29 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:54:29 2014] [debug] Rendering cached inline template.
+[Sun Jan 12 17:54:29 2014] [debug] 404 Not Found (0.004631s, 215.936/s).
+[Sun Jan 12 17:54:48 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jan 12 17:54:48 2014] [debug] GET "/".
+[Sun Jan 12 17:54:48 2014] [debug] Routing to controller "KiDiP::Employee" and action "list".
+[Sun Jan 12 17:54:48 2014] [info] list action called
+[Sun Jan 12 17:54:48 2014] [debug] Rendering template "employee/list.html.ep".
+[Sun Jan 12 17:54:48 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Jan 12 17:54:48 2014] [debug] 200 OK (0.295656s, 3.382/s).
+[Sun Jan 12 17:55:07 2014] [debug] GET "/".
+[Sun Jan 12 17:55:07 2014] [debug] Routing to controller "KiDiP::Employee" and action "list".
+[Sun Jan 12 17:55:07 2014] [info] list action called
+[Sun Jan 12 17:55:07 2014] [debug] Rendering cached template "employee/list.html.ep".
+[Sun Jan 12 17:55:07 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Sun Jan 12 17:55:07 2014] [debug] 200 OK (0.003302s, 302.847/s).
+[Sun Jan 12 17:55:11 2014] [debug] GET "/employee/52d27295f4caa6c784f717c6".
+[Sun Jan 12 17:55:11 2014] [debug] Routing to controller "KiDiP::Employee" and action "employee".
+[Sun Jan 12 17:55:11 2014] [debug] Template "employee/employee.html.ep" not found.
+[Sun Jan 12 17:55:11 2014] [debug] Nothing has been rendered, expecting delayed response.
+[Sun Jan 12 17:55:26 2014] [debug] Inactivity timeout.
+[Sun Jan 12 17:55:26 2014] [debug] GET "/employee/52d27295f4caa6c784f717c6".
+[Sun Jan 12 17:55:26 2014] [debug] Routing to controller "KiDiP::Employee" and action "employee".
+[Sun Jan 12 17:55:26 2014] [debug] Template "employee/employee.html.ep" not found.
+[Sun Jan 12 17:55:26 2014] [debug] Nothing has been rendered, expecting delayed response.
+[Sun Jan 12 17:56:41 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Jan 12 17:56:41 2014] [debug] GET "/employee/52d27295f4caa6c784f717c6".
+[Sun Jan 12 17:56:42 2014] [debug] Routing to controller "KiDiP::Employee" and action "employee".
+[Sun Jan 12 17:56:42 2014] [debug] Rendering template "employee/employee.html.ep".
+[Sun Jan 12 17:56:42 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Jan 12 17:56:42 2014] [debug] 200 OK (0.300208s, 3.331/s).

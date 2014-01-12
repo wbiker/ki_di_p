@@ -1,0 +1,25 @@
+% layout 'default';
+% title 'Kak Dienstplan Manager';
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Vacation</th>
+            <th>Total Work Time</th>
+            <th>Work Start</th>
+            <th></th>
+        </tr>
+    </thead>
+
+    % while(my $employee = $employees->next) {
+        <tr>
+        <td><%= $employee->{surname}." ".$employee->{lastname} %></td>
+        <td><%= $employee->{vacation} %>
+        <td><%= $employee->{total_work_time} %>
+        <td><%= $employee->{work_start} %>
+        <td><a href="<%= url_for->path("/employee/$employee->{_id}")  %>">Ändern</a>
+        </tr>
+    % }
+
+</table>

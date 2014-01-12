@@ -12,7 +12,8 @@ sub startup {
   my $r = $self->routes;
 
   # Normal route to controller
-  $r->get('/')->to('example#welcome');
+  $r->get('/')->to(controller => 'employee', action => 'list');
+  $r->get('/employee/:employee_id')->to(controller => 'employee', action => 'employee');
 }
 
 1;

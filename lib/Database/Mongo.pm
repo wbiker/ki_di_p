@@ -56,4 +56,22 @@ sub insert {
     return;
 }
 
+sub update {
+    my $self = shift;
+    my $collection = shift;
+    my $criteria = shift;
+    my $hash = shift;
+
+    $self->{collections}->{$collection}->update($criteria, $hash);
+}
+
+sub find {
+    my $self = shift;
+    my $collection = shift;
+    my $criteria = shift;
+
+    my $find = $self->{collections}->{$collection}->find($criteria);
+    return $find;
+}
+
 1;
