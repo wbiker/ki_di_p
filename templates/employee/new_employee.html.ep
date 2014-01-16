@@ -1,0 +1,15 @@
+% layout 'default';
+
+<form name="employee" action="<%= url_for("/employee/new") %>">
+Name: <input type="text" name="firstname"><br>
+Nachname: <input type="text" name="lastname"><br>
+Urlaub: <input type="number" name="vacation" value="25"><br>
+Aktuelle Stunden: <input type="number" name="total_work_time" value="0"><br>
+Arbeitszeit: 
+<input type="radio" name="work_shift" value="38.5">38,5
+<input type="radio" name="work_shift" value="35" checked>35
+<input type="radio" name="work_shift" value="25">25
+<input type="radio" name="work_shift" value="20">20<br>
+Arbeitsbeginn: <input type="date" name="work_start"><br>
+<input type="submit" value="Submit">
+</form>

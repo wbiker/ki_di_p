@@ -1,0 +1,37 @@
+% layout 'default';
+% title 'Kak Dienstplan Manager';
+
+<form name="employee" action="<%= url_for("/employee/$employee->{_id}") %>">
+ Name: <input type="text" name="firstname" value="<%= $employee->{firstname} %>"><br>
+ Nachname: <input type="text" name="lastname" value="<%= $employee->{lastname} %>"><br>
+ Urlaub: <input type="number" name="vacation" value="<%= $employee->{vacation} %>"><br>
+ Aktuelle Stunden: <input type="number" name="total_work_time" value="<%= $employee->{total_work_time} %>"><br>
+ Arbeitszeit: 
+% if("38.5" eq $employee->{work_shift}) {
+    <input type="radio" name="work_shift" value="38.5" checked>38,5
+    <input type="radio" name="work_shift" value="35">35
+    <input type="radio" name="work_shift" value="25">25
+    <input type="radio" name="work_shift" value="20">20<br>
+% }
+% elsif(35 == $employee->{work_shift}) {
+    <input type="radio" name="work_shift" value="38.5">38,5
+    <input type="radio" name="work_shift" value="35" checked>35
+    <input type="radio" name="work_shift" value="25">25
+    <input type="radio" name="work_shift" value="20">20<br>
+% }
+% if(25 == $employee->{work_shift}) {
+    <input type="radio" name="work_shift" value="38.5">38,5
+    <input type="radio" name="work_shift" value="35">35
+     <input type="radio" name="work_shift" value="25" checked>25
+     <input type="radio" name="work_shift" value="20">20<br>
+% }
+% if(20 == $employee->{work_shift}) {
+     <input type="radio" name="work_shift" value="38.5">38,5
+     <input type="radio" name="work_shift" value="35">35
+     <input type="radio" name="work_shift" value="25">25
+     <input type="radio" name="work_shift" value="20" checked>20<br>
+% }
+ Arbeitsbeginn: <input type="date" name="work_start" value="<%= $employee->{work_start} %>"><br>
+ <input type="submit" value="Submit">
+</form>
+
