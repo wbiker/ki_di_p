@@ -1,0 +1,171 @@
+% layout 'default';
+% title 'Kak Dienstplan Manager';
+
+% if(0 < $employees->count) {
+    <div style="padding:5px;border:1px; solid #ddd;">
+        <a href="#" id="T" class="easyui-linkbutton" data-options="toggle:true,group:'workshifts',selected:true" onclick="click_t(this)">T</a>
+        <a href="#" id="V" class="easyui-linkbutton" data-options="toggle:true,group:'workshifts'" onclick="click_t(this)">V</a>
+        <a href="#" id="N" class="easyui-linkbutton" data-options="toggle:true,group:'workshifts'" onclick="click_t(this)">N</a>
+        <a href="#" id="U" class="easyui-linkbutton" data-options="toggle:true,group:'workshifts'" onclick="click_t(this)">U</a>
+        <a href="#" id="K" class="easyui-linkbutton" data-options="toggle:true,group:'workshifts'" onclick="click_t(this)">K</a>
+        <a href="#" id="F" class="easyui-linkbutton" data-options="toggle:true,group:'workshifts'" onclick="click_t(this)">/</a>
+    </div>
+
+
+    <table id="dg" class="easyui-datagrid" data-options="idField:'id',selectOnCheck:false,singleSelect:true" style="width:auto">
+        <thead>
+            <tr>
+                <th data-options="field:'id',hidden:true"></th>
+                <th data-options="field:'name',width:250">Name</th>
+                <th data-options="field:'<%= $dates->{date1} %>',align:'center'"><%= $dates->{date1_string} %></th>
+                <th data-options="field:'<%= $dates->{date2} %>',align:'center'"><%= $dates->{date2_string} %></th>
+                <th data-options="field:'<%= $dates->{date3} %>',align:'center'"><%= $dates->{date3_string} %></th>
+                <th data-options="field:'<%= $dates->{date4} %>',align:'center'"><%= $dates->{date4_string} %></th>
+                <th data-options="field:'<%= $dates->{date5} %>',align:'center'"><%= $dates->{date5_string} %></th>
+                <th data-options="field:'<%= $dates->{date6} %>',align:'center'"><%= $dates->{date6_string} %></th>
+                <th data-options="field:'<%= $dates->{date7} %>',align:'center'"><%= $dates->{date7_string} %></th>
+                <th data-options="field:'total_work_time',align:'center'">Arbeitsstunden</th>
+                <th data-options="field:'vacation'">Urlaub</th>
+            </tr>
+        </thead>
+        <tbody> 
+        % while(my $employee = $employees->next) {
+            <tr>
+            <td><%= $employee->{_id} %></td>
+            <td><%= $employee->{firstname}." ".$employee->{lastname} %></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><%= $employee->{total_work_time} %></td>
+            <td><%= $employee->{vacation} %></td>
+            </tr>
+        % }
+            <tr>
+            <td></td>
+            <td>Zusammen:</td>
+            <td>0-0</td>
+            <td>0-0</td>
+            <td>0-0</td>
+            <td>0-0</td>
+            <td>0-0</td>
+            <td>0-0</td>
+            <td>0-0</td>
+            <td></td>
+            <td></td>
+            </tr>
+        </tbody>
+    </table>
+% } else {
+    Keine Angestellten gefunden.
+% }
+
+<script>
+    sessionStorage.workshift = 'T';
+
+    $('#dg').datagrid({
+        onClickCell: function(rowIndex, field, value) {
+            console.log("rowIndex: " + rowIndex);
+            console.log("field: " + field);
+            console.log("value: " + value);
+            var newWorkshift = sessionStorage.workshift;
+            
+            if(newWorkshift == value  || "name" == field || "total_work_time" == field || "vacation" == field) {
+                return;
+            }
+            
+            console.log("Workshift: " + sessionStorage.workshift);
+            var data = $('#dg').datagrid('getData');
+            var total_work_time = Number(data.rows[rowIndex].total_work_time);
+
+            if(rowIndex == data.rows.length-1) {
+                return;
+            }
+
+            if("T" == value) {
+                total_work_time -= 9;
+            }
+            else if("V" == value) {
+                total_work_time -= 4.5;
+            }
+            else if("N" == value) {
+                total_work_time -= 5.5;
+            }
+
+            var workshift = sessionStorage.workshift;
+            if("T" == workshift) {
+                total_work_time += 9;
+            }
+            else if("V" == workshift) {
+                total_work_time += 4.5;
+            }
+            else if("N" == workshift) {
+                total_work_time += 5.5;
+            }
+            
+            if("F" == workshift) {
+                workshift = '/';
+            }
+            var params = {};
+            params.index = rowIndex;
+            
+            var row_my = new Object();
+            row_my[field] = workshift;
+            row_my.total_work_time = total_work_time;
+
+            console.log(row_my);
+
+            params.row = row_my;
+
+            $('#dg').datagrid('updateRow', params);
+
+            var sumary = {};
+            for(var i = 0; i < data.rows.length - 1; i++) {
+                var row = data.rows[i];
+                var keys = Object.keys(row);
+                for(var index in keys) {
+                    var key = keys[index];
+                    if("id" != key && "name" != key && "total_work_time" != key && "vacation" != key) {
+                        var value = row[key];
+
+                        if(! sumary[key]) {
+                            sumary[key] = {};
+                            sumary[key].v = 0;
+                            sumary[key].n = 0;
+                        }
+
+                        if("T" == value) {
+                            sumary[key].v += 1;
+                            sumary[key].n += 1;
+                        }
+                        else if("V" == value) {
+                            sumary[key].v += 1;
+                        }
+                        else if("N" == value) {
+                            sumary[key].n += 1;
+                        }
+                    }
+                }
+            }
+            console.log(sumary);
+            var sumary_keys = Object.keys(sumary);
+            var sum = {};
+            sum.index = data.rows.length - 1;
+            sum.row = {};
+            for(var index in sumary_keys) {
+                var sum_key = sumary_keys[index];
+                var workersPerDay = sumary[sum_key];
+                sum.row[sum_key] = workersPerDay.v + "-" + workersPerDay.n;
+            }
+
+            $('#dg').datagrid('updateRow', sum);
+        }
+    });
+
+    function click_t(opt) {
+        sessionStorage.workshift = opt.id;
+    };
+</script> 
