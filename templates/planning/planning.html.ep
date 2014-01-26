@@ -73,6 +73,7 @@
             console.log("value: " + value);
             var newWorkshift = sessionStorage.workshift;
             
+            // If new workshift is the same as the current one, or if the click was in the name, totatl_work_timeor in the vacation column I return and do nothing.
             if(newWorkshift == value  || "name" == field || "total_work_time" == field || "vacation" == field) {
                 return;
             }
@@ -80,11 +81,23 @@
             console.log("Workshift: " + sessionStorage.workshift);
             var data = $('#dg').datagrid('getData');
             var total_work_time = Number(data.rows[rowIndex].total_work_time);
-
+            var total_vacation = Number(data.rows[rowIndex].vacation);
+            // If clicked in the last row. This is row is the sumary and not editable.
             if(rowIndex == data.rows.length-1) {
                 return;
             }
 
+            var currentRow = data.rows[rowIndex];
+            var employees = JSON.parse(sessionStorage.employees);
+            var em = employees[currentRow.id];
+            var workshifts = JSON.parse(sessionStorage.workshifts);
+            var ws = workshifts[em.work_shift];
+            var d = new Date(field);
+            var day = d.getDay();
+            console.log("Week day: Sunday to Saturday 0 - 6: " + day);
+
+            // Check the old value of the clicked cell. If already a workshift was entered.
+            // I subtract the hour of the total_work_time column
             if("T" == value) {
                 total_work_time -= 9;
             }
@@ -94,7 +107,22 @@
             else if("N" == value) {
                 total_work_time -= 5.5;
             }
+            else if("U" == value || "K" == value) {
+                if(day > 0 && day < 6) {
+                    // work day:
+                    total_work_time -= Number(ws.workday_plus);
+                }
+                else {
+                    total_work_time -= Number(ws.weekend_plus);
+                }
+                
+                // vacation column must also be set to the new value
+                if("U" == value) {
+                    total_vacation += Number(1);
+                }
+            }
 
+            // Add the hours corresponding to the new workshift to the total_work_time column.
             var workshift = sessionStorage.workshift;
             if("T" == workshift) {
                 total_work_time += 9;
@@ -105,16 +133,33 @@
             else if("N" == workshift) {
                 total_work_time += 5.5;
             }
+            else if("U" == workshift || "K" == workshift) {
+                if(day > 0 && day < 6) {
+                    // work day:
+                    total_work_time += Number(ws.workday_plus);
+                }
+                else {
+                    total_work_time += Number(ws.weekend_plus);
+                }
+                
+                // The same for the vacation column if U is set
+                if("U" == workshift) {
+                    total_vacation -= Number(1);
+                }
+            }
             
             if("F" == workshift) {
                 workshift = '/';
             }
+
+            // build an object to update the clicked cell and the total_work_time column.
             var params = {};
             params.index = rowIndex;
             
             var row_my = new Object();
             row_my[field] = workshift;
             row_my.total_work_time = total_work_time;
+            row_my.vacation = total_vacation;
 
             console.log(row_my);
 
@@ -122,6 +167,7 @@
 
             $('#dg').datagrid('updateRow', params);
 
+            // Go through all rows and check whether employees are working at the morning and the evening
             var sumary = {};
             for(var i = 0; i < data.rows.length - 1; i++) {
                 var row = data.rows[i];
@@ -168,4 +214,33 @@
     function click_t(opt) {
         sessionStorage.workshift = opt.id;
     };
+
+    var whs = {};
+    % while(my $wh = $workhours->next) {
+        whs['<%= $wh->{_id} %>'] = {};
+        whs['<%= $wh->{_id} %>'].workday_plus = <%= $wh->{workday_plus} %>;
+        whs['<%= $wh->{_id} %>'].weekend_plus = <%= $wh->{weekend_plus} %>;
+    % }
+    sessionStorage.workhours = JSON.stringify(whs);
+        
+        $.ajax({
+            url:'getlocaldata',
+            dataType: 'json',
+
+            success: function (json, textStatus) {
+                console.log("got all employees");
+                console.log(json);
+                $.each(json, function(key, value) {
+                    console.log("Add " + key + " to sessionStorage");
+                    sessionStorage[key] = JSON.stringify(value);
+                });
+            },
+
+            error: function (xhr, textStatus, errorThrown) {
+                console.log("Failed to fetch emplyoees data:");
+                console.log("Text Status: " + textStatus);
+                console.log("Error Thrown: " + errorThrown);
+            }
+        });
+
 </script> 

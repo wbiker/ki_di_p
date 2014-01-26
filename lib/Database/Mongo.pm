@@ -59,10 +59,12 @@ sub insert {
 sub update {
     my $self = shift;
     my $collection = shift;
-    my $criteria = shift;
+    my $id = shift;
     my $hash = shift;
 
-    $self->{collections}->{$collection}->update($criteria, $hash);
+    my $iod = MongoDB::OID->new($id);
+
+    $self->{collections}->{$collection}->update({_id => $iod}, $hash);
 }
 
 sub find {
@@ -71,6 +73,30 @@ sub find {
     my $criteria = shift;
 
     my $find = $self->{collections}->{$collection}->find($criteria);
+    return $find;
+}
+
+sub find_one {
+    my $self = shift;
+    my $collection = shift;
+    my $id = shift;
+    
+    my $oid;
+    $oid = MongoDB::OID->new($id);
+    my $find = $self->{collections}->{$collection}->find_one({_id => $oid});
+
+    return $find;
+}
+
+sub delete {
+    my $self = shift;
+    my $collection = shift;
+    my $id = shift;
+    
+    my $oid;
+    $oid = MongoDB::OID->new($id);
+    my $find = $self->{collections}->{$collection}->remove({_id => $oid});
+
     return $find;
 }
 

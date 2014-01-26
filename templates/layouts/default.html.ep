@@ -2,32 +2,23 @@
 <html>
   <head>
 	  <title><%= title %></title>
-      <!--
-      <link type="text/css" rel="stylesheet" href="/static/main.css">
-      <link type="text/css" rel="stylesheet" href="/js/jquery-ui-1.10.3.custom/css/blitzer/jquery-ui-1.10.3.custom.css">
-      -->
+      <link type="text/css" rel="stylesheet" href="/js/easyui/themes/default/easyui.css">
+      <link type="text/css" rel="stylesheet" href="/js/easyui/themes/icon.css">
+      <script type="text/javascript" src="/js/easyui/jquery.min.js"></script>
+      <script type="text/javascript" src="/js/easyui/jquery.easyui.min.js"></script>
 	</head>
 	<body>
-    <ul id="menu">
-        <li><a href="<%= url_for('/') %>">Hauptseite</a></li>
-        <li><a href="#">Angestellte</a>
-            <ul>
-                <li><a href="<%= url_for('/employee', 'list') %>">Anzeigen</a></li>
-                <li><a href="<%= url_for('/employee', 'new') %>">Neu</a></li>
-            </ul>
-        </li>
-        <li><a href="<%= url_for('/settings') %>">Einstellungen</a></li>
-    </ul>
+    <div style="margin:10px 0;"></div>
+    <div style="padding:5px;border:1px solid #ddd">
+        <a class="easyui-linkbutton" data-options="plain:true" href="<%= url_for('/') %>">Hauptseite</a>
+        <a class="easyui-linkbutton" data-options="plain:true" href="<%= url_for('/planning') %>">Plannen</a>
+        <a href="#" class="easyui-menubutton" data-options="menu:'#mm1_employee'">Angestellte</a>
+        <a class="easyui-linkbutton" data-options="plain:true" href="<%= url_for('/workhour/list') %>">Arbeitsstunden</a>
+    </div>
+    <div id="mm1_employee" style="width:150px;">
+                <div><a class="easyui-linkbutton" data-options="plain:true" href="<%= url_for('/employee/list') %>">Anzeigen</a></div>
+                <div><a class="easyui-linkbutton" data-options="plain:true" href="<%= url_for('/employee/new') %>">Neu</a></div>
+    </div>
     <%= content %>
-  <!--
-  <script type="text/javascript"
-        src="/js/jquery-ui-1.10.3.custom/js/jquery-1.9.1.js">
-    </script>
-    <script src="/js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js">
-    </script>
-    -->
-    <script type="text/javascript"
-        src="/js/jquery-2.0.3.js">
-    </script>
     </body>
 </html>

@@ -1,0 +1,36 @@
+% layout 'default';
+
+<div style="margin:10px 0;"></div>
+<div class="easyui-panel" title="Neue Arbeitsstunden" style="width:400px">
+    <div style="padding:10px 0 10px 60px">
+        <form id="workhour" method="post" action="<%= url_for("/workhour/new") %>">
+            <table>
+            <tr>
+                <td>Name:</td>
+                <td><input class="easyui-validatebox" type="text" name="name" data-options="required:true" /></td>
+            </tr>
+            <tr>
+                <td>Urlaub plus</td>
+                <td><input class="easyui-numberbox" name="vacation_plus" value="25" /></td>
+            </tr>
+            <tr>
+                <td>Wochenendestunden plus:</td>
+                <td><input class="easyui-numberbox" data-options="precision:2" name="weekend_plus" value="4.75" /></td>
+            </tr>
+            <tr>
+                <td>Wochentagstunden plus:</td>
+                <td><input class="easyui-numberbox" data-options="precision:2" name="workday_plus" value="6.75" /></td>
+            </tr>
+        </table>
+    </form>
+    </div>
+    <div style="text-align:center;padding:5px">
+        <a href="javascript:void(0)" class="easyui-linkbutton" onclick="submitForm()">Speichern</a>
+    </div>
+</div>
+
+<script type="text/javascript">
+    function submitForm() {
+        $('#workhour').form('submit');
+    }
+</script>

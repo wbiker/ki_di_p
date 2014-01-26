@@ -1,25 +1,31 @@
 % layout 'default';
 % title 'Kak Dienstplan Manager';
 
-<table>
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Vacation</th>
-            <th>Total Work Time</th>
-            <th>Work Start</th>
-            <th></th>
-        </tr>
-    </thead>
-
-    % while(my $employee = $employees->next) {
-        <tr>
-        <td><%= $employee->{surname}." ".$employee->{lastname} %></td>
-        <td><%= $employee->{vacation} %>
-        <td><%= $employee->{total_work_time} %>
-        <td><%= $employee->{work_start} %>
-        <td><a href="<%= url_for->path("/employee/$employee->{_id}")  %>">Ändern</a>
-        </tr>
-    % }
-
-</table>
+% if(0 < $employees->count) {
+    <table class="easyui-datagrid" data-options="idField:'id'" style="width:auto">
+        <thead>
+            <tr>
+                <th data-options="field:'id',hidden:true"></th>
+                <th data-options="field:'name'">Name</th>
+                <th data-options="field:'vacation',align:'center'">Urlaub</th>
+                <th data-options="field:'total_work_time',align:'center'">Arbeitsstunden</th>
+                <th data-options="field:'edit'">Ändern</th>
+                <th data-options="field:'delete'">Löschen</th>
+            </tr>
+        </thead>
+        <tbody> 
+        % while(my $employee = $employees->next) {
+            <tr>
+            <td><%= $employee->{_id} %></td>
+            <td><%= $employee->{firstname}." ".$employee->{lastname} %></td>
+            <td><%= $employee->{vacation} %>
+            <td><%= $employee->{total_work_time} %>
+            <td><a class="easyui-linkbutton" data-options="iconCls:'icon-edit'" href="<%= url_for->path("/employee/$employee->{_id}")  %>">Ändern</a>
+            <td><a class="easyui-linkbutton" data-options="iconCls:'icon-remove'" href="<%= url_for->path("/employee/$employee->{_id}/delete")  %>">Löschen</a>
+            </tr>
+        % }
+        </tbody>
+    </table>
+% } else {
+    Keine Angestellten gefunden.
+% }

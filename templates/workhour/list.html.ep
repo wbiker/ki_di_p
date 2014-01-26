@@ -1,0 +1,28 @@
+% layout 'default';
+% title 'Kak Dienstplan Manager';
+% if(0 < $workhours->count) {
+    <table id="dg" class="easyui-datagrid" data-options="idField:'id',selectOnCheck:false,singleSelect:true" style="width:auto">
+        <thead>
+            <tr>
+                <th data-options="field:'id',hidden:true"></th>
+                <th data-options="field:'name',width:250">Dienst</th>
+                <th data-options="field:'vacation_plus',align:'center'">Neuer Urlaub</th>
+                <th data-options="field:'weekend_plus',align:'center'">Wochenendstunden plus</th>
+                <th data-options="field:'workday_plus',align:'center'">Wochentagstunden plus</th>
+            </tr>
+        </thead>
+        <tbody> 
+        % while(my $wh = $workhours->next) {
+            <tr>
+            <td><%= $wh->{id} %></td>
+            <td><%= $wh->{name} %></td>
+            <td><%= $wh->{vacation_plus} %></td>
+            <td><%= $wh->{weekend_plus} %></td>
+            <td><%= $wh->{workday_plus} %></td>
+            </tr>
+        % }
+        </tbody>
+    </table>
+% } else {
+    Keine Arbeitsstunden gefunden.
+% }

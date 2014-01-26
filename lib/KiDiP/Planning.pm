@@ -31,6 +31,9 @@ sub planning {
     $cur += ONE_DAY;
   }
   $self->stash(dates => $dates);
+
+  my $work_hours = $self->app->{mongo}->find('work_hour', {});
+  $self->stash(workhours => $work_hours);
   $self->render(
     message => 'Welcome to the Mojolicious real-time web framework!');
 }

@@ -1,37 +1,63 @@
 % layout 'default';
-% title 'Kak Dienstplan Manager';
 
-<form name="employee" action="<%= url_for("/employee/$employee->{_id}") %>">
- Name: <input type="text" name="firstname" value="<%= $employee->{firstname} %>"><br>
- Nachname: <input type="text" name="lastname" value="<%= $employee->{lastname} %>"><br>
- Urlaub: <input type="number" name="vacation" value="<%= $employee->{vacation} %>"><br>
- Aktuelle Stunden: <input type="number" name="total_work_time" value="<%= $employee->{total_work_time} %>"><br>
- Arbeitszeit: 
-% if("38.5" eq $employee->{work_shift}) {
-    <input type="radio" name="work_shift" value="38.5" checked>38,5
-    <input type="radio" name="work_shift" value="35">35
-    <input type="radio" name="work_shift" value="25">25
-    <input type="radio" name="work_shift" value="20">20<br>
-% }
-% elsif(35 == $employee->{work_shift}) {
-    <input type="radio" name="work_shift" value="38.5">38,5
-    <input type="radio" name="work_shift" value="35" checked>35
-    <input type="radio" name="work_shift" value="25">25
-    <input type="radio" name="work_shift" value="20">20<br>
-% }
-% if(25 == $employee->{work_shift}) {
-    <input type="radio" name="work_shift" value="38.5">38,5
-    <input type="radio" name="work_shift" value="35">35
-     <input type="radio" name="work_shift" value="25" checked>25
-     <input type="radio" name="work_shift" value="20">20<br>
-% }
-% if(20 == $employee->{work_shift}) {
-     <input type="radio" name="work_shift" value="38.5">38,5
-     <input type="radio" name="work_shift" value="35">35
-     <input type="radio" name="work_shift" value="25">25
-     <input type="radio" name="work_shift" value="20" checked>20<br>
-% }
- Arbeitsbeginn: <input type="date" name="work_start" value="<%= $employee->{work_start} %>"><br>
- <input type="submit" value="Submit">
-</form>
+<div style="margin:10px 0;"></div>
+<div class="easyui-panel" title="Mitarbeiter ändern" style="width:400px">
+    <div style="padding:10px 0 10px 60px">
+        <form id="employee" method="post" action="<%= url_for("/employee/$employee->{_id}") %>">
+            <table>
+            <tr>
+                <td>Name:</td>
+                    <td><input class="easyui-validatebox" type="text" name="firstname" value="<%= $employee->{firstname} %>"/></td>
+            </tr>
+            <tr>
+                <td>Nachname:</td>
+                <td><input class="easyui-validatebox" type="text" name="lastname" value="<%= $employee->{lastname} %>"/></td>
+            </tr>
+            <tr>
+                <td>Urlaub:</td>
+                <td><input class="easyui-numberbox" name="vacation" value="<%= $employee->{vacation} %>" /></td>
+            </tr>
+            <tr>
+                <td>Aktuelle Stunden:</td>
+                <td><input class="easyui-numberbox" name="total_work_time"  value="<%= $employee->{total_work_time} %>"/></td>
+            </tr>
+            <tr>
+                <td>Arbeitszeit:</td>
+                <td>
+                    <select class="easyui-combobox" name="work_shift">
+                    % for my $wh (@{$workshifts}) {
+                        % if($employee->{work_shift}  eq $wh->{_id}) {
+                            <option value="<%= $wh->{_id} %>" selected="selected"><%= $wh->{name} %></option>
+                        % } else {
+                            <option value="<%= $wh->{_id} %>"><%= $wh->{name} %></option>
+                        % }
+                    % }
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Arbeitsbeginn:</td>
+                <td><div class="easyui-calendar" id="cal" data-options="firstDay:1" style="width:180px;heigh:180px;"></div></td>
+            </tr>
+        </table>
+        <input id="ws" type="text" hidden="true" name="work_start" value="<%= $employee->{work_start} %>"/>
+    </form>
+    </div>
+    <div style="text-align:center;padding:5px">
+        <a href="javascript:void(0)" class="easyui-linkbutton" onclick="submitForm()">Speichern</a>
+    </div>
+</div>
+<script>
+    function submitForm() {
+        $('#employee').form('submit');
+    }
+
+    $('#cal').calendar({
+        onSelect: function(date) {
+            $('#ws').val(date.toJSON());
+        }
+    });
+
+    $('#cal').calendar('moveTo', new Date("<%= $employee->{work_start} %>"));
+</script>
 
