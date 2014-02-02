@@ -6,6 +6,8 @@ use Data::Dumper;
 use Time::Piece;
 use Time::Seconds;
 
+my @wdays = qw(So Mo Di Mi Do Fr Sa);
+
 # This action will render a template
 sub planning {
   my $self = shift;
@@ -13,11 +15,24 @@ sub planning {
   my $log = $self->app->log;
   $log->info("list action called");
   my $employees = $self->app->{mongo}->find('employee', {});
+  my $work_hours = $self->app->{mongo}->find('work_hour', {});
+
+  # walk through the employees and add the work hor data
+  my $empl = [];
+  while(my $em = $employees->next) {
+    my $wh = $self->app->{mongo}->find_one('work_hour', $em->{work_shift});
+    $em->{work_hour} = $wh;
+    push($empl, $em);
+  }
+  say Dumper $empl;
+
   # Render template "employee/list.html.ep" with message
-  $self->stash(employees => $employees);
+  $self->stash(employees => $empl);
 
   # calculate days for one week
   my $cur = Time::Piece->new;
+  # if current day is a monday I add one day because I want the next week not the current one.
+  $cur += ONE_DAY if $cur->wday == 2;
   while($cur->wday != 2) {
     # asl long as date is not monday add one day
     $cur += ONE_DAY;
@@ -26,13 +41,12 @@ sub planning {
   my $dates = {};
   for(1..7) {
     $dates->{'date'.$_} = $cur->ymd;
-    $dates->{'date'.$_."_string"} = $cur->dmy('.');
+    $dates->{'date'.$_."_string"} = $wdays[$cur->day_of_week]." ".$cur->dmy('.');
 
     $cur += ONE_DAY;
   }
   $self->stash(dates => $dates);
 
-  my $work_hours = $self->app->{mongo}->find('work_hour', {});
   $self->stash(workhours => $work_hours);
   $self->render(
     message => 'Welcome to the Mojolicious real-time web framework!');

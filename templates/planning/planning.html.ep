@@ -1,7 +1,7 @@
 % layout 'default';
 % title 'Kak Dienstplan Manager';
 
-% if(0 < $employees->count) {
+% if($employees) {
     <div style="padding:5px;border:1px; solid #ddd;">
         <a href="#" id="T" class="easyui-linkbutton" data-options="toggle:true,group:'workshifts',selected:true" onclick="click_t(this)">T</a>
         <a href="#" id="V" class="easyui-linkbutton" data-options="toggle:true,group:'workshifts'" onclick="click_t(this)">V</a>
@@ -23,13 +23,14 @@
                 <th data-options="field:'<%= $dates->{date4} %>',align:'center'"><%= $dates->{date4_string} %></th>
                 <th data-options="field:'<%= $dates->{date5} %>',align:'center'"><%= $dates->{date5_string} %></th>
                 <th data-options="field:'<%= $dates->{date6} %>',align:'center'"><%= $dates->{date6_string} %></th>
-                <th data-options="field:'<%= $dates->{date7} %>',align:'center'"><%= $dates->{date7_string} %></th>
+                <th data-options="field:'is_hours',align:'center'" formatter="formatIsHours">Ist Stunden</th>
+                <th data-options="field:'should_hours',align:'center'">Soll Stunden</th>
                 <th data-options="field:'total_work_time',align:'center'">Arbeitsstunden</th>
                 <th data-options="field:'vacation'">Urlaub</th>
             </tr>
         </thead>
         <tbody> 
-        % while(my $employee = $employees->next) {
+        % for my $employee (@{$employees}) {
             <tr>
             <td><%= $employee->{_id} %></td>
             <td><%= $employee->{firstname}." ".$employee->{lastname} %></td>
@@ -39,7 +40,8 @@
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
+            <td>0</td>
+            <td><%= $employee->{work_hour}->{worktime} %></td>
             <td><%= $employee->{total_work_time} %></td>
             <td><%= $employee->{vacation} %></td>
             </tr>
@@ -47,7 +49,6 @@
             <tr>
             <td></td>
             <td>Zusammen:</td>
-            <td>0-0</td>
             <td>0-0</td>
             <td>0-0</td>
             <td>0-0</td>
@@ -66,6 +67,23 @@
 <script>
     sessionStorage.workshift = 'T';
 
+    function formatIsHours(val, row) {
+        // skip last row because it is the sumary row
+        var datagrid = $('#dg');
+        var allRows = datagrid.datagrid('getData');
+        var rowIndex = datagrid.datagrid('getRowIndex', row);
+        if(rowIndex == allRows.rows.length-1) {
+            return val;
+        }
+
+        var shouldHours = row.should_hours;
+        if(val > shouldHours) {
+            return '<span style="color:orange;">'+val+'</span>';
+        }
+
+        return val;
+    }
+
     $('#dg').datagrid({
         onClickCell: function(rowIndex, field, value) {
             console.log("rowIndex: " + rowIndex);
@@ -74,13 +92,15 @@
             var newWorkshift = sessionStorage.workshift;
             
             // If new workshift is the same as the current one, or if the click was in the name, totatl_work_timeor in the vacation column I return and do nothing.
-            if(newWorkshift == value  || "name" == field || "total_work_time" == field || "vacation" == field) {
+            if(newWorkshift == value  || "name" == field || "total_work_time" == field || "vacation" == field || "is_hours" == field || "should_hours" == field) {
                 return;
             }
             
             console.log("Workshift: " + sessionStorage.workshift);
             var data = $('#dg').datagrid('getData');
             var total_work_time = Number(data.rows[rowIndex].total_work_time);
+            var is_hours = Number(data.rows[rowIndex].is_hours);
+            var should_hours = Number(data.rows[rowIndex].should_hours);
             var total_vacation = Number(data.rows[rowIndex].vacation);
             // If clicked in the last row. This is row is the sumary and not editable.
             if(rowIndex == data.rows.length-1) {
@@ -97,23 +117,43 @@
             console.log("Week day: Sunday to Saturday 0 - 6: " + day);
 
             // Check the old value of the clicked cell. If already a workshift was entered.
-            // I subtract the hour of the total_work_time column
+            // I subtract the hour of the is_hours column
+            // must also substruct the overtime of the total_time_hours
+            var overtimeValue = 0;
+            if(is_hours > should_hours) {
+                overtimeValue = is_hours - should_hours;
+            }
             if("T" == value) {
-                total_work_time -= 9;
+		        is_hours -= 9;
+                if(9 < overtimeValue) {
+                    overtimeValue = 9;
+                }
             }
             else if("V" == value) {
-                total_work_time -= 4.5;
+		        is_hours -= 4.5;
+                if(4.5 < overtimeValue) {
+                    overtimeValue = 4.5;
+                }
             }
             else if("N" == value) {
-                total_work_time -= 5.5;
+		        is_hours -= 5.5;
+                if(5.5 < overtimeValue) {
+                    overtimeValue = 5.5;
+                }
             }
             else if("U" == value || "K" == value) {
                 if(day > 0 && day < 6) {
                     // work day:
-                    total_work_time -= Number(ws.workday_plus);
+                    is_hours -= Number(ws.workday_plus);
+                    if(Numer(ws.workday_plus) < overtimeValue) {
+                        overtimeValue = Number(ws.workday_plus);
+                    }
                 }
                 else {
-                    total_work_time -= Number(ws.weekend_plus);
+                    is_hours -= Number(ws.weekend_plus);
+                    if(Number(ws.weekend_plus) < overtimeValue) {
+                        overtimeValue = Number(ws.weekend_plus);
+                    }
                 }
                 
                 // vacation column must also be set to the new value
@@ -122,24 +162,27 @@
                 }
             }
 
-            // Add the hours corresponding to the new workshift to the total_work_time column.
+            console.log("Overtime: " + overtimeValue);
+            total_work_time -= overtimeValue;
+
+            // Add the hours corresponding to the new workshift to the is_hours column.
             var workshift = sessionStorage.workshift;
             if("T" == workshift) {
-                total_work_time += 9;
+                is_hours += 9;
             }
             else if("V" == workshift) {
-                total_work_time += 4.5;
+                is_hours += 4.5;
             }
             else if("N" == workshift) {
-                total_work_time += 5.5;
+                is_hours += 5.5;
             }
             else if("U" == workshift || "K" == workshift) {
                 if(day > 0 && day < 6) {
                     // work day:
-                    total_work_time += Number(ws.workday_plus);
+                    is_hours += Number(ws.workday_plus);
                 }
                 else {
-                    total_work_time += Number(ws.weekend_plus);
+                    is_hours += Number(ws.weekend_plus);
                 }
                 
                 // The same for the vacation column if U is set
@@ -147,9 +190,16 @@
                     total_vacation -= Number(1);
                 }
             }
-            
+
             if("F" == workshift) {
                 workshift = '/';
+            }
+            else {
+                // new work shift was added to the is_hour value. Check now whether is_hours value is greater then the should value. if yes add this to the total_work_time value, because it tis the overtime.
+                if(is_hours > should_hours) {
+                    var overtime = is_hours - should_hours;
+                    total_work_time += Number(overtime);
+                }
             }
 
             // build an object to update the clicked cell and the total_work_time column.
@@ -159,6 +209,7 @@
             var row_my = new Object();
             row_my[field] = workshift;
             row_my.total_work_time = total_work_time;
+	        row_my.is_hours = is_hours;
             row_my.vacation = total_vacation;
 
             console.log(row_my);
@@ -174,7 +225,7 @@
                 var keys = Object.keys(row);
                 for(var index in keys) {
                     var key = keys[index];
-                    if("id" != key && "name" != key && "total_work_time" != key && "vacation" != key) {
+                    if("id" != key && "name" != key && "total_work_time" != key && "vacation" != key && "is_hours" != key && "should_hours" != key) {
                         var value = row[key];
 
                         if(! sumary[key]) {

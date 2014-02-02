@@ -9605,3 +9605,1449 @@ Compilation failed in require at (eval 600) line 1.
 [Sun Jan 26 17:38:40 2014] [debug] GET "/getlocaldata".
 [Sun Jan 26 17:38:40 2014] [debug] Routing to controller "KiDiP::Employee" and action "getlocaldata".
 [Sun Jan 26 17:38:40 2014] [debug] 200 OK (0.002614s, 382.555/s).
+[Sat Feb  1 08:00:31 2014] [info] Listening at "http://*:3000".
+[Sat Feb  1 08:00:38 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  1 08:00:38 2014] [debug] GET "/".
+[Sat Feb  1 08:00:38 2014] [debug] Routing to controller "KiDiP::Employee" and action "welcome".
+[Sat Feb  1 08:00:38 2014] [debug] Action not found in controller.
+[Sat Feb  1 08:00:38 2014] [debug] Rendering template "employee/welcome.html.ep".
+[Sat Feb  1 08:00:38 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sat Feb  1 08:00:38 2014] [debug] 200 OK (0.012129s, 82.447/s).
+[Sat Feb  1 08:00:41 2014] [debug] GET "/planning".
+[Sat Feb  1 08:00:41 2014] [error] Can't locate Time/Piece.pm in @INC (you may need to install the Time::Piece module) (@INC contains: script/../lib /usr/local/bin/../lib /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5 .) at script/../lib/KiDiP/Planning.pm line 6.
+BEGIN failed--compilation aborted at script/../lib/KiDiP/Planning.pm line 6.
+Compilation failed in require at (eval 538) line 1.
+
+[Sat Feb  1 08:00:41 2014] [debug] Template "exception.development.html.ep" not found.
+[Sat Feb  1 08:00:41 2014] [debug] Template "exception.html.ep" not found.
+[Sat Feb  1 08:00:41 2014] [debug] Rendering inline template "3c057dacc1089aca8e7d6d310c180d08".
+[Sat Feb  1 08:00:41 2014] [debug] Rendering inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sat Feb  1 08:00:41 2014] [debug] 500 Internal Server Error (0.034316s, 29.141/s).
+[Sat Feb  1 08:01:02 2014] [debug] GET "/planning".
+[Sat Feb  1 08:01:02 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sat Feb  1 08:01:02 2014] [debug] Action not found in controller.
+[Sat Feb  1 08:01:02 2014] [debug] Rendering template "planning/planning.html.ep".
+[Sat Feb  1 08:01:02 2014] [error] Global symbol "$employees" requires explicit package name at template planning/planning.html.ep line 4.
+Global symbol "$dates" requires explicit package name at template planning/planning.html.ep line 20.
+Global symbol "$dates" requires explicit package name at template planning/planning.html.ep line 20.
+Global symbol "$dates" requires explicit package name at template planning/planning.html.ep line 21.
+Global symbol "$dates" requires explicit package name at template planning/planning.html.ep line 21.
+Global symbol "$dates" requires explicit package name at template planning/planning.html.ep line 22.
+Global symbol "$dates" requires explicit package name at template planning/planning.html.ep line 22.
+Global symbol "$dates" requires explicit package name at template planning/planning.html.ep line 23.
+Global symbol "$dates" requires explicit package name at template planning/planning.html.ep line 23.
+Global symbol "$dates" requires explicit package name at template planning/planning.html.ep line 24.
+Global symbol "$dates" requires explicit package name at template planning/planning.html.ep line 24.
+Global symbol "$dates" requires explicit package name at template planning/planning.html.ep line 25.
+Global symbol "$dates" requires explicit package name at template planning/planning.html.ep line 25.
+Global symbol "$dates" requires explicit package name at template planning/planning.html.ep line 26.
+Global symbol "$dates" requires explicit package name at template planning/planning.html.ep line 26.
+Global symbol "$employees" requires explicit package name at template planning/planning.html.ep line 32.
+Global symbol "$workhours" requires explicit package name at template planning/planning.html.ep line 219.
+214:     function click_t(opt) {
+215:         sessionStorage.workshift = opt.id;
+216:     };
+217: 
+218:     var whs = {};
+219:     % while(my $wh = $workhours->next) {
+220:         whs['<%= $wh->{_id} %>'] = {};
+221:         whs['<%= $wh->{_id} %>'].workday_plus = <%= $wh->{workday_plus} %>;
+222:         whs['<%= $wh->{_id} %>'].weekend_plus = <%= $wh->{weekend_plus} %>;
+223:     % }
+224:     sessionStorage.workhours = JSON.stringify(whs);
+
+[Sat Feb  1 08:01:02 2014] [debug] Template "exception.development.html.ep" not found.
+[Sat Feb  1 08:01:02 2014] [debug] Template "exception.html.ep" not found.
+[Sat Feb  1 08:01:02 2014] [debug] Rendering cached inline template "3c057dacc1089aca8e7d6d310c180d08".
+[Sat Feb  1 08:01:02 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sat Feb  1 08:01:02 2014] [debug] 500 Internal Server Error (0.029413s, 33.999/s).
+[Sat Feb  1 08:05:10 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  1 08:05:10 2014] [debug] GET "/".
+[Sat Feb  1 08:05:10 2014] [debug] Routing to controller "KiDiP::Employee" and action "welcome".
+[Sat Feb  1 08:05:10 2014] [debug] Action not found in controller.
+[Sat Feb  1 08:05:10 2014] [debug] Rendering template "employee/welcome.html.ep".
+[Sat Feb  1 08:05:10 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sat Feb  1 08:05:10 2014] [debug] 200 OK (0.009307s, 107.446/s).
+[Sat Feb  1 08:05:13 2014] [debug] GET "/employee/list".
+[Sat Feb  1 08:05:13 2014] [debug] Routing to controller "KiDiP::Employee" and action "list".
+[Sat Feb  1 08:05:13 2014] [info] list action called
+[Sat Feb  1 08:05:13 2014] [debug] Rendering template "employee/list.html.ep".
+[Sat Feb  1 08:05:13 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sat Feb  1 08:05:13 2014] [debug] 200 OK (0.008711s, 114.797/s).
+[Sat Feb  1 08:05:15 2014] [debug] GET "/workhour/list".
+[Sat Feb  1 08:05:15 2014] [debug] Routing to controller "KiDiP::Workhour" and action "list".
+[Sat Feb  1 08:05:15 2014] [info] list action called
+[Sat Feb  1 08:05:15 2014] [debug] Rendering template "workhour/list.html.ep".
+[Sat Feb  1 08:05:15 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sat Feb  1 08:05:15 2014] [debug] 200 OK (0.015389s, 64.981/s).
+[Sat Feb  1 08:05:17 2014] [debug] GET "/planning".
+[Sat Feb  1 08:05:17 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sat Feb  1 08:05:17 2014] [info] list action called
+[Sat Feb  1 08:05:17 2014] [debug] Rendering template "planning/planning.html.ep".
+[Sat Feb  1 08:05:17 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sat Feb  1 08:05:17 2014] [debug] 200 OK (0.019088s, 52.389/s).
+[Sat Feb  1 08:05:17 2014] [debug] GET "/getlocaldata".
+[Sat Feb  1 08:05:17 2014] [debug] Routing to controller "KiDiP::Employee" and action "getlocaldata".
+[Sat Feb  1 08:05:17 2014] [debug] 200 OK (0.001748s, 572.082/s).
+[Sat Feb  1 08:05:21 2014] [debug] GET "/".
+[Sat Feb  1 08:05:21 2014] [debug] Routing to controller "KiDiP::Employee" and action "welcome".
+[Sat Feb  1 08:05:21 2014] [debug] Action not found in controller.
+[Sat Feb  1 08:05:21 2014] [debug] Rendering cached template "employee/welcome.html.ep".
+[Sat Feb  1 08:05:21 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Sat Feb  1 08:05:21 2014] [debug] 200 OK (0.002257s, 443.066/s).
+[Sat Feb  1 08:05:22 2014] [debug] GET "/planning".
+[Sat Feb  1 08:05:22 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sat Feb  1 08:05:22 2014] [info] list action called
+[Sat Feb  1 08:05:22 2014] [debug] Rendering cached template "planning/planning.html.ep".
+[Sat Feb  1 08:05:22 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Sat Feb  1 08:05:22 2014] [debug] 200 OK (0.003710s, 269.542/s).
+[Sat Feb  1 08:05:22 2014] [debug] GET "/getlocaldata".
+[Sat Feb  1 08:05:22 2014] [debug] Routing to controller "KiDiP::Employee" and action "getlocaldata".
+[Sat Feb  1 08:05:22 2014] [debug] 200 OK (0.001225s, 816.327/s).
+[Sat Feb  1 08:09:01 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  1 08:09:01 2014] [debug] GET "/planning".
+[Sat Feb  1 08:09:01 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sat Feb  1 08:09:01 2014] [info] list action called
+[Sat Feb  1 08:09:01 2014] [debug] Rendering template "planning/planning.html.ep".
+[Sat Feb  1 08:09:01 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sat Feb  1 08:09:01 2014] [debug] 200 OK (0.028529s, 35.052/s).
+[Sat Feb  1 08:09:01 2014] [debug] GET "/getlocaldata".
+[Sat Feb  1 08:09:01 2014] [debug] Routing to controller "KiDiP::Employee" and action "getlocaldata".
+[Sat Feb  1 08:09:01 2014] [debug] 200 OK (0.003547s, 281.928/s).
+[Sat Feb  1 08:09:03 2014] [debug] GET "/employee/new".
+[Sat Feb  1 08:09:03 2014] [debug] Routing to controller "KiDiP::Employee" and action "new_employee".
+[Sat Feb  1 08:09:03 2014] [debug] Rendering template "employee/new_employee.html.ep".
+[Sat Feb  1 08:09:03 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sat Feb  1 08:09:03 2014] [debug] 200 OK (0.008997s, 111.148/s).
+[Sat Feb  1 08:09:12 2014] [debug] POST "/employee/new".
+[Sat Feb  1 08:09:12 2014] [debug] Routing to controller "KiDiP::Employee" and action "new_employee".
+[Sat Feb  1 08:09:12 2014] [debug] Store new employee
+[Sat Feb  1 08:09:12 2014] [debug] 302 Found (0.019658s, 50.870/s).
+[Sat Feb  1 08:09:12 2014] [debug] GET "/employee/list".
+[Sat Feb  1 08:09:12 2014] [debug] Routing to controller "KiDiP::Employee" and action "list".
+[Sat Feb  1 08:09:12 2014] [info] list action called
+[Sat Feb  1 08:09:12 2014] [debug] Rendering template "employee/list.html.ep".
+[Sat Feb  1 08:09:12 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sat Feb  1 08:09:12 2014] [debug] 200 OK (0.009140s, 109.409/s).
+[Sat Feb  1 08:09:14 2014] [debug] GET "/planning".
+[Sat Feb  1 08:09:14 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sat Feb  1 08:09:14 2014] [info] list action called
+[Sat Feb  1 08:09:14 2014] [debug] Rendering cached template "planning/planning.html.ep".
+[Sat Feb  1 08:09:14 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Sat Feb  1 08:09:14 2014] [debug] 200 OK (0.006497s, 153.917/s).
+[Sat Feb  1 08:09:15 2014] [debug] GET "/getlocaldata".
+[Sat Feb  1 08:09:15 2014] [debug] Routing to controller "KiDiP::Employee" and action "getlocaldata".
+[Sat Feb  1 08:09:15 2014] [debug] 200 OK (0.001726s, 579.374/s).
+[Sat Feb  1 08:12:40 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  1 08:12:40 2014] [debug] GET "/planning".
+[Sat Feb  1 08:12:41 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sat Feb  1 08:12:41 2014] [info] list action called
+[Sat Feb  1 08:12:41 2014] [debug] Rendering template "planning/planning.html.ep".
+[Sat Feb  1 08:12:41 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sat Feb  1 08:12:41 2014] [debug] 200 OK (0.031414s, 31.833/s).
+[Sat Feb  1 08:12:41 2014] [debug] GET "/getlocaldata".
+[Sat Feb  1 08:12:41 2014] [debug] Routing to controller "KiDiP::Employee" and action "getlocaldata".
+[Sat Feb  1 08:12:41 2014] [debug] 200 OK (0.003752s, 266.525/s).
+[Sat Feb  1 08:14:10 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  1 08:14:10 2014] [debug] GET "/planning".
+[Sat Feb  1 08:14:10 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sat Feb  1 08:14:10 2014] [info] list action called
+[Sat Feb  1 08:14:10 2014] [debug] Rendering template "planning/planning.html.ep".
+[Sat Feb  1 08:14:10 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sat Feb  1 08:14:10 2014] [debug] 200 OK (0.032229s, 31.028/s).
+[Sat Feb  1 08:14:11 2014] [debug] GET "/getlocaldata".
+[Sat Feb  1 08:14:11 2014] [debug] Routing to controller "KiDiP::Employee" and action "getlocaldata".
+[Sat Feb  1 08:14:11 2014] [debug] 200 OK (0.003532s, 283.126/s).
+[Sat Feb  1 08:14:48 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  1 08:14:48 2014] [debug] GET "/planning".
+[Sat Feb  1 08:14:48 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sat Feb  1 08:14:48 2014] [info] list action called
+[Sat Feb  1 08:14:48 2014] [debug] Rendering template "planning/planning.html.ep".
+[Sat Feb  1 08:14:48 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sat Feb  1 08:14:48 2014] [debug] 200 OK (0.030911s, 32.351/s).
+[Sat Feb  1 08:14:48 2014] [debug] GET "/getlocaldata".
+[Sat Feb  1 08:14:48 2014] [debug] Routing to controller "KiDiP::Employee" and action "getlocaldata".
+[Sat Feb  1 08:14:48 2014] [debug] 200 OK (0.003732s, 267.953/s).
+[Sat Feb  1 08:19:19 2014] [debug] GET "/workhour/list".
+[Sat Feb  1 08:19:19 2014] [debug] Routing to controller "KiDiP::Workhour" and action "list".
+[Sat Feb  1 08:19:19 2014] [info] list action called
+[Sat Feb  1 08:19:19 2014] [debug] Rendering template "workhour/list.html.ep".
+[Sat Feb  1 08:19:19 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sat Feb  1 08:19:19 2014] [debug] 200 OK (0.008972s, 111.458/s).
+[Sat Feb  1 08:19:27 2014] [debug] GET "/workhour/new".
+[Sat Feb  1 08:19:27 2014] [debug] Routing to controller "KiDiP::Workhour" and action "new_workhour".
+[Sat Feb  1 08:19:27 2014] [debug] Rendering template "workhour/new_workhour.html.ep".
+[Sat Feb  1 08:19:27 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sat Feb  1 08:19:27 2014] [debug] 200 OK (0.016453s, 60.779/s).
+[Sat Feb  1 08:19:42 2014] [debug] POST "/workhour/new".
+[Sat Feb  1 08:19:42 2014] [debug] Routing to controller "KiDiP::Workhour" and action "new_workhour".
+[Sat Feb  1 08:19:42 2014] [debug] Rendering cached template "workhour/new_workhour.html.ep".
+[Sat Feb  1 08:19:42 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Sat Feb  1 08:19:42 2014] [debug] 200 OK (0.006278s, 159.286/s).
+[Sat Feb  1 08:20:17 2014] [debug] POST "/workhour/new".
+[Sat Feb  1 08:20:17 2014] [debug] Routing to controller "KiDiP::Workhour" and action "new_workhour".
+[Sat Feb  1 08:20:17 2014] [debug] Rendering cached template "workhour/new_workhour.html.ep".
+[Sat Feb  1 08:20:17 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Sat Feb  1 08:20:17 2014] [debug] 200 OK (0.004975s, 201.005/s).
+[Sat Feb  1 08:20:37 2014] [debug] POST "/workhour/new".
+[Sat Feb  1 08:20:37 2014] [debug] Routing to controller "KiDiP::Workhour" and action "new_workhour".
+[Sat Feb  1 08:20:37 2014] [debug] Rendering cached template "workhour/new_workhour.html.ep".
+[Sat Feb  1 08:20:37 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Sat Feb  1 08:20:37 2014] [debug] 200 OK (0.005163s, 193.686/s).
+[Sat Feb  1 08:20:51 2014] [debug] POST "/workhour/new".
+[Sat Feb  1 08:20:51 2014] [debug] Routing to controller "KiDiP::Workhour" and action "new_workhour".
+[Sat Feb  1 08:20:51 2014] [debug] Rendering cached template "workhour/new_workhour.html.ep".
+[Sat Feb  1 08:20:51 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Sat Feb  1 08:20:51 2014] [debug] 200 OK (0.004707s, 212.450/s).
+[Sat Feb  1 08:21:14 2014] [debug] POST "/workhour/new".
+[Sat Feb  1 08:21:14 2014] [debug] Routing to controller "KiDiP::Workhour" and action "new_workhour".
+[Sat Feb  1 08:21:14 2014] [debug] Rendering cached template "workhour/new_workhour.html.ep".
+[Sat Feb  1 08:21:14 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Sat Feb  1 08:21:14 2014] [debug] 200 OK (0.005104s, 195.925/s).
+[Sat Feb  1 08:21:16 2014] [debug] GET "/employee/list".
+[Sat Feb  1 08:21:16 2014] [debug] Routing to controller "KiDiP::Employee" and action "list".
+[Sat Feb  1 08:21:16 2014] [info] list action called
+[Sat Feb  1 08:21:16 2014] [debug] Rendering template "employee/list.html.ep".
+[Sat Feb  1 08:21:16 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sat Feb  1 08:21:16 2014] [debug] 200 OK (0.009742s, 102.648/s).
+[Sat Feb  1 08:21:19 2014] [debug] GET "/employee/52ec9d983b04336a05000000".
+[Sat Feb  1 08:21:19 2014] [debug] Routing to controller "KiDiP::Employee" and action "edit_employee".
+[Sat Feb  1 08:21:19 2014] [debug] employee ID: 52ec9d983b04336a05000000
+[Sat Feb  1 08:21:19 2014] [debug] Rendering template "employee/edit_employee.html.ep".
+[Sat Feb  1 08:21:19 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sat Feb  1 08:21:19 2014] [debug] 200 OK (0.010927s, 91.516/s).
+[Sat Feb  1 08:21:25 2014] [debug] POST "/employee/52ec9d983b04336a05000000".
+[Sat Feb  1 08:21:25 2014] [debug] Routing to controller "KiDiP::Employee" and action "edit_employee".
+[Sat Feb  1 08:21:25 2014] [debug] employee ID: 52ec9d983b04336a05000000
+[Sat Feb  1 08:21:25 2014] [debug] 302 Found (0.002193s, 455.996/s).
+[Sat Feb  1 08:21:25 2014] [debug] GET "/employee/list".
+[Sat Feb  1 08:21:25 2014] [debug] Routing to controller "KiDiP::Employee" and action "list".
+[Sat Feb  1 08:21:25 2014] [info] list action called
+[Sat Feb  1 08:21:25 2014] [debug] Rendering cached template "employee/list.html.ep".
+[Sat Feb  1 08:21:25 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Sat Feb  1 08:21:25 2014] [debug] 200 OK (0.004261s, 234.687/s).
+[Sat Feb  1 08:21:27 2014] [debug] GET "/planning".
+[Sat Feb  1 08:21:27 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sat Feb  1 08:21:27 2014] [info] list action called
+[Sat Feb  1 08:21:27 2014] [debug] Rendering cached template "planning/planning.html.ep".
+[Sat Feb  1 08:21:27 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Sat Feb  1 08:21:27 2014] [debug] 200 OK (0.004830s, 207.039/s).
+[Sat Feb  1 08:21:28 2014] [debug] GET "/getlocaldata".
+[Sat Feb  1 08:21:28 2014] [debug] Routing to controller "KiDiP::Employee" and action "getlocaldata".
+[Sat Feb  1 08:21:28 2014] [debug] 200 OK (0.001744s, 573.394/s).
+[Sat Feb  1 08:31:09 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sat Feb  1 08:31:09 2014] [debug] GET "/planning".
+[Sat Feb  1 08:31:09 2014] [error] syntax error at script/../lib/KiDiP/Planning.pm line 23, near "};"
+Global symbol "$wh" requires explicit package name at script/../lib/KiDiP/Planning.pm line 24.
+Compilation failed in require at (eval 535) line 1.
+
+[Sat Feb  1 08:31:09 2014] [debug] Template "exception.development.html.ep" not found.
+[Sat Feb  1 08:31:09 2014] [debug] Template "exception.html.ep" not found.
+[Sat Feb  1 08:31:09 2014] [debug] Rendering inline template "3c057dacc1089aca8e7d6d310c180d08".
+[Sat Feb  1 08:31:09 2014] [debug] Rendering inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sat Feb  1 08:31:09 2014] [debug] 500 Internal Server Error (0.042740s, 23.397/s).
+[Sat Feb  1 18:56:24 2014] [debug] GET "/planning".
+[Sat Feb  1 18:56:24 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sat Feb  1 18:56:24 2014] [debug] Action not found in controller.
+[Sat Feb  1 18:56:24 2014] [debug] Rendering template "planning/planning.html.ep".
+[Sat Feb  1 18:56:24 2014] [error] Global symbol "$employees" requires explicit package name at template planning/planning.html.ep line 4.
+Global symbol "$dates" requires explicit package name at template planning/planning.html.ep line 20.
+Global symbol "$dates" requires explicit package name at template planning/planning.html.ep line 20.
+Global symbol "$dates" requires explicit package name at template planning/planning.html.ep line 21.
+Global symbol "$dates" requires explicit package name at template planning/planning.html.ep line 21.
+Global symbol "$dates" requires explicit package name at template planning/planning.html.ep line 22.
+Global symbol "$dates" requires explicit package name at template planning/planning.html.ep line 22.
+Global symbol "$dates" requires explicit package name at template planning/planning.html.ep line 23.
+Global symbol "$dates" requires explicit package name at template planning/planning.html.ep line 23.
+Global symbol "$dates" requires explicit package name at template planning/planning.html.ep line 24.
+Global symbol "$dates" requires explicit package name at template planning/planning.html.ep line 24.
+Global symbol "$dates" requires explicit package name at template planning/planning.html.ep line 25.
+Global symbol "$dates" requires explicit package name at template planning/planning.html.ep line 25.
+Global symbol "$employees" requires explicit package name at template planning/planning.html.ep line 33.
+Global symbol "$workhours" requires explicit package name at template planning/planning.html.ep line 221.
+216:     function click_t(opt) {
+217:         sessionStorage.workshift = opt.id;
+218:     };
+219: 
+220:     var whs = {};
+221:     % while(my $wh = $workhours->next) {
+222:         whs['<%= $wh->{_id} %>'] = {};
+223:         whs['<%= $wh->{_id} %>'].workday_plus = <%= $wh->{workday_plus} %>;
+224:         whs['<%= $wh->{_id} %>'].weekend_plus = <%= $wh->{weekend_plus} %>;
+225:     % }
+226:     sessionStorage.workhours = JSON.stringify(whs);
+
+[Sat Feb  1 18:56:24 2014] [debug] Template "exception.development.html.ep" not found.
+[Sat Feb  1 18:56:24 2014] [debug] Template "exception.html.ep" not found.
+[Sat Feb  1 18:56:24 2014] [debug] Rendering cached inline template "3c057dacc1089aca8e7d6d310c180d08".
+[Sat Feb  1 18:56:24 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sat Feb  1 18:56:24 2014] [debug] 500 Internal Server Error (0.027550s, 36.298/s).
+[Sun Feb  2 07:46:25 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  2 07:46:25 2014] [debug] GET "/planning".
+[Sun Feb  2 07:46:26 2014] [error] syntax error at script/../lib/KiDiP/Planning.pm line 23, near "};"
+Global symbol "$wh" requires explicit package name at script/../lib/KiDiP/Planning.pm line 24.
+Compilation failed in require at (eval 535) line 1.
+
+[Sun Feb  2 07:46:26 2014] [debug] Template "exception.development.html.ep" not found.
+[Sun Feb  2 07:46:26 2014] [debug] Template "exception.html.ep" not found.
+[Sun Feb  2 07:46:26 2014] [debug] Rendering inline template "3c057dacc1089aca8e7d6d310c180d08".
+[Sun Feb  2 07:46:26 2014] [debug] Rendering inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 07:46:26 2014] [debug] 500 Internal Server Error (0.041234s, 24.252/s).
+[Sun Feb  2 07:47:02 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  2 07:47:02 2014] [debug] GET "/planning".
+[Sun Feb  2 07:47:02 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sun Feb  2 07:47:02 2014] [info] list action called
+[Sun Feb  2 07:47:02 2014] [debug] Rendering template "planning/planning.html.ep".
+[Sun Feb  2 07:47:02 2014] [error] Can't call method "count" on unblessed reference at template planning/planning.html.ep line 4.
+1: % layout 'default';
+2: % title 'Kak Dienstplan Manager';
+3: 
+4: % if(0 < $employees->count) {
+5:     <div style="padding:5px;border:1px; solid #ddd;">
+6:         <a href="#" id="T" class="easyui-linkbutton" data-options="toggle:true,group:'workshifts',selected:true" onclick="click_t(this)">T</a>
+7:         <a href="#" id="V" class="easyui-linkbutton" data-options="toggle:true,group:'workshifts'" onclick="click_t(this)">V</a>
+8:         <a href="#" id="N" class="easyui-linkbutton" data-options="toggle:true,group:'workshifts'" onclick="click_t(this)">N</a>
+9:         <a href="#" id="U" class="easyui-linkbutton" data-options="toggle:true,group:'workshifts'" onclick="click_t(this)">U</a>
+
+[Sun Feb  2 07:47:02 2014] [debug] Template "exception.development.html.ep" not found.
+[Sun Feb  2 07:47:02 2014] [debug] Template "exception.html.ep" not found.
+[Sun Feb  2 07:47:02 2014] [debug] Rendering inline template "3c057dacc1089aca8e7d6d310c180d08".
+[Sun Feb  2 07:47:02 2014] [debug] Rendering inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 07:47:02 2014] [debug] 500 Internal Server Error (0.058053s, 17.226/s).
+[Sun Feb  2 07:47:43 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  2 07:47:43 2014] [debug] GET "/planning".
+[Sun Feb  2 07:47:43 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sun Feb  2 07:47:43 2014] [info] list action called
+[Sun Feb  2 07:47:43 2014] [debug] Rendering template "planning/planning.html.ep".
+[Sun Feb  2 07:47:43 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  2 07:47:43 2014] [debug] 200 OK (0.040336s, 24.792/s).
+[Sun Feb  2 07:47:44 2014] [debug] GET "/getlocaldata".
+[Sun Feb  2 07:47:44 2014] [debug] Routing to controller "KiDiP::Employee" and action "getlocaldata".
+[Sun Feb  2 07:47:44 2014] [debug] 200 OK (0.004424s, 226.040/s).
+[Sun Feb  2 07:48:24 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  2 07:48:24 2014] [debug] GET "/planning".
+[Sun Feb  2 07:48:24 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sun Feb  2 07:48:24 2014] [info] list action called
+[Sun Feb  2 07:48:24 2014] [debug] Rendering template "planning/planning.html.ep".
+[Sun Feb  2 07:48:24 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  2 07:48:24 2014] [debug] 200 OK (0.031945s, 31.304/s).
+[Sun Feb  2 07:48:25 2014] [debug] GET "/getlocaldata".
+[Sun Feb  2 07:48:25 2014] [debug] Routing to controller "KiDiP::Employee" and action "getlocaldata".
+[Sun Feb  2 07:48:25 2014] [debug] 200 OK (0.003824s, 261.506/s).
+[Sun Feb  2 07:51:43 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  2 07:51:43 2014] [debug] GET "/planning".
+[Sun Feb  2 07:51:43 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sun Feb  2 07:51:43 2014] [info] list action called
+[Sun Feb  2 07:51:43 2014] [debug] Rendering template "planning/planning.html.ep".
+[Sun Feb  2 07:51:43 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  2 07:51:43 2014] [debug] 200 OK (0.029321s, 34.105/s).
+[Sun Feb  2 07:51:43 2014] [debug] GET "/getlocaldata".
+[Sun Feb  2 07:51:43 2014] [debug] Routing to controller "KiDiP::Employee" and action "getlocaldata".
+[Sun Feb  2 07:51:43 2014] [debug] 200 OK (0.003746s, 266.951/s).
+[Sun Feb  2 07:53:27 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  2 07:53:27 2014] [debug] GET "/planning".
+[Sun Feb  2 07:53:27 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sun Feb  2 07:53:27 2014] [info] list action called
+[Sun Feb  2 07:53:27 2014] [debug] Rendering template "planning/planning.html.ep".
+[Sun Feb  2 07:53:28 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  2 07:53:28 2014] [debug] 200 OK (0.033272s, 30.055/s).
+[Sun Feb  2 07:53:28 2014] [debug] GET "/getlocaldata".
+[Sun Feb  2 07:53:28 2014] [debug] Routing to controller "KiDiP::Employee" and action "getlocaldata".
+[Sun Feb  2 07:53:28 2014] [debug] 200 OK (0.003813s, 262.261/s).
+[Sun Feb  2 07:55:01 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  2 07:55:01 2014] [debug] GET "/planning".
+[Sun Feb  2 07:55:01 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sun Feb  2 07:55:01 2014] [info] list action called
+[Sun Feb  2 07:55:01 2014] [debug] Rendering template "planning/planning.html.ep".
+[Sun Feb  2 07:55:01 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  2 07:55:01 2014] [debug] 200 OK (0.031889s, 31.359/s).
+[Sun Feb  2 07:55:02 2014] [debug] GET "/getlocaldata".
+[Sun Feb  2 07:55:02 2014] [debug] Routing to controller "KiDiP::Employee" and action "getlocaldata".
+[Sun Feb  2 07:55:02 2014] [debug] 200 OK (0.003829s, 261.165/s).
+[Sun Feb  2 08:01:44 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  2 08:01:44 2014] [debug] GET "/planning".
+[Sun Feb  2 08:01:44 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sun Feb  2 08:01:44 2014] [info] list action called
+[Sun Feb  2 08:01:44 2014] [debug] Rendering template "planning/planning.html.ep".
+[Sun Feb  2 08:01:44 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  2 08:01:44 2014] [debug] 200 OK (0.035081s, 28.505/s).
+[Sun Feb  2 08:01:45 2014] [debug] GET "/getlocaldata".
+[Sun Feb  2 08:01:45 2014] [debug] Routing to controller "KiDiP::Employee" and action "getlocaldata".
+[Sun Feb  2 08:01:45 2014] [debug] 200 OK (0.004051s, 246.853/s).
+[Sun Feb  2 08:04:20 2014] [debug] GET "/planning".
+[Sun Feb  2 08:04:20 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sun Feb  2 08:04:20 2014] [info] list action called
+[Sun Feb  2 08:04:20 2014] [debug] Rendering cached template "planning/planning.html.ep".
+[Sun Feb  2 08:04:20 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Sun Feb  2 08:04:20 2014] [debug] 200 OK (0.005659s, 176.710/s).
+[Sun Feb  2 08:04:21 2014] [debug] GET "/getlocaldata".
+[Sun Feb  2 08:04:21 2014] [debug] Routing to controller "KiDiP::Employee" and action "getlocaldata".
+[Sun Feb  2 08:04:21 2014] [debug] 200 OK (0.001920s, 520.833/s).
+[Sun Feb  2 08:04:30 2014] [debug] GET "/planning".
+[Sun Feb  2 08:04:30 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sun Feb  2 08:04:30 2014] [info] list action called
+[Sun Feb  2 08:04:30 2014] [debug] Rendering cached template "planning/planning.html.ep".
+[Sun Feb  2 08:04:30 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Sun Feb  2 08:04:30 2014] [debug] 200 OK (0.004923s, 203.128/s).
+[Sun Feb  2 08:04:31 2014] [debug] GET "/getlocaldata".
+[Sun Feb  2 08:04:31 2014] [debug] Routing to controller "KiDiP::Employee" and action "getlocaldata".
+[Sun Feb  2 08:04:31 2014] [debug] 200 OK (0.001834s, 545.256/s).
+[Sun Feb  2 08:05:35 2014] [debug] GET "/planning".
+[Sun Feb  2 08:05:35 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sun Feb  2 08:05:35 2014] [info] list action called
+[Sun Feb  2 08:05:35 2014] [debug] Rendering cached template "planning/planning.html.ep".
+[Sun Feb  2 08:05:35 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Sun Feb  2 08:05:35 2014] [debug] 200 OK (0.005119s, 195.351/s).
+[Sun Feb  2 08:05:36 2014] [debug] GET "/getlocaldata".
+[Sun Feb  2 08:05:36 2014] [debug] Routing to controller "KiDiP::Employee" and action "getlocaldata".
+[Sun Feb  2 08:05:36 2014] [debug] 200 OK (0.002000s, 500.000/s).
+[Sun Feb  2 08:05:39 2014] [debug] GET "/employee/list".
+[Sun Feb  2 08:05:39 2014] [debug] Routing to controller "KiDiP::Employee" and action "list".
+[Sun Feb  2 08:05:39 2014] [info] list action called
+[Sun Feb  2 08:05:39 2014] [debug] Rendering template "employee/list.html.ep".
+[Sun Feb  2 08:05:39 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  2 08:05:39 2014] [debug] 200 OK (0.009285s, 107.701/s).
+[Sun Feb  2 08:05:41 2014] [debug] GET "/employee/52ec9d983b04336a05000000".
+[Sun Feb  2 08:05:41 2014] [debug] Routing to controller "KiDiP::Employee" and action "edit_employee".
+[Sun Feb  2 08:05:41 2014] [debug] employee ID: 52ec9d983b04336a05000000
+[Sun Feb  2 08:05:41 2014] [debug] Rendering template "employee/edit_employee.html.ep".
+[Sun Feb  2 08:05:41 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  2 08:05:41 2014] [debug] 200 OK (0.012196s, 81.994/s).
+[Sun Feb  2 08:05:48 2014] [debug] POST "/employee/52ec9d983b04336a05000000".
+[Sun Feb  2 08:05:48 2014] [debug] Routing to controller "KiDiP::Employee" and action "edit_employee".
+[Sun Feb  2 08:05:48 2014] [debug] employee ID: 52ec9d983b04336a05000000
+[Sun Feb  2 08:05:48 2014] [debug] 302 Found (0.002469s, 405.022/s).
+[Sun Feb  2 08:05:48 2014] [debug] GET "/employee/list".
+[Sun Feb  2 08:05:48 2014] [debug] Routing to controller "KiDiP::Employee" and action "list".
+[Sun Feb  2 08:05:48 2014] [info] list action called
+[Sun Feb  2 08:05:48 2014] [debug] Rendering cached template "employee/list.html.ep".
+[Sun Feb  2 08:05:48 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Sun Feb  2 08:05:48 2014] [debug] 200 OK (0.004107s, 243.487/s).
+[Sun Feb  2 08:05:49 2014] [debug] GET "/planning".
+[Sun Feb  2 08:05:49 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sun Feb  2 08:05:49 2014] [info] list action called
+[Sun Feb  2 08:05:49 2014] [debug] Rendering cached template "planning/planning.html.ep".
+[Sun Feb  2 08:05:49 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Sun Feb  2 08:05:49 2014] [debug] 200 OK (0.004851s, 206.143/s).
+[Sun Feb  2 08:05:49 2014] [debug] GET "/getlocaldata".
+[Sun Feb  2 08:05:49 2014] [debug] Routing to controller "KiDiP::Employee" and action "getlocaldata".
+[Sun Feb  2 08:05:49 2014] [debug] 200 OK (0.001991s, 502.260/s).
+[Sun Feb  2 15:31:17 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  2 15:31:17 2014] [debug] GET "/planning".
+[Sun Feb  2 15:31:17 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sun Feb  2 15:31:17 2014] [info] list action called
+[Sun Feb  2 15:31:17 2014] [debug] Rendering template "planning/planning.html.ep".
+[Sun Feb  2 15:31:17 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  2 15:31:17 2014] [debug] 200 OK (0.036275s, 27.567/s).
+[Sun Feb  2 15:32:06 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 15:32:06 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 15:32:06 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 15:32:06 2014] [debug] Rendering inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 15:32:06 2014] [debug] Rendering inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 15:32:06 2014] [debug] 404 Not Found (0.019549s, 51.154/s).
+[Sun Feb  2 15:33:11 2014] [debug] GET "/planning".
+[Sun Feb  2 15:33:11 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sun Feb  2 15:33:11 2014] [info] list action called
+[Sun Feb  2 15:33:11 2014] [debug] Rendering cached template "planning/planning.html.ep".
+[Sun Feb  2 15:33:11 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Sun Feb  2 15:33:11 2014] [debug] 200 OK (0.005881s, 170.039/s).
+[Sun Feb  2 15:33:11 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 15:33:11 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 15:33:11 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 15:33:11 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 15:33:11 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 15:33:11 2014] [debug] 404 Not Found (0.008280s, 120.773/s).
+[Sun Feb  2 15:33:11 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 15:33:11 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 15:33:11 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 15:33:11 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 15:33:11 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 15:33:11 2014] [debug] 404 Not Found (0.007548s, 132.485/s).
+[Sun Feb  2 15:33:11 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 15:33:11 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 15:33:11 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 15:33:11 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 15:33:11 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 15:33:11 2014] [debug] 404 Not Found (0.007543s, 132.573/s).
+[Sun Feb  2 15:33:11 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 15:33:11 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 15:33:11 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 15:33:11 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 15:33:11 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 15:33:11 2014] [debug] 404 Not Found (0.008078s, 123.793/s).
+[Sun Feb  2 15:33:12 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 15:33:12 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 15:33:12 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 15:33:12 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 15:33:12 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 15:33:12 2014] [debug] 404 Not Found (0.007877s, 126.952/s).
+[Sun Feb  2 15:33:45 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  2 15:33:45 2014] [debug] GET "/planning".
+[Sun Feb  2 15:33:45 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sun Feb  2 15:33:45 2014] [info] list action called
+[Sun Feb  2 15:33:45 2014] [debug] Rendering template "planning/planning.html.ep".
+[Sun Feb  2 15:33:45 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  2 15:33:45 2014] [debug] 200 OK (0.041692s, 23.985/s).
+[Sun Feb  2 15:33:45 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 15:33:45 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 15:33:45 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 15:33:45 2014] [debug] Rendering inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 15:33:45 2014] [debug] Rendering inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 15:33:45 2014] [debug] 404 Not Found (0.026931s, 37.132/s).
+[Sun Feb  2 15:33:45 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 15:33:45 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 15:33:45 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 15:33:45 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 15:33:45 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 15:33:45 2014] [debug] 404 Not Found (0.009394s, 106.451/s).
+[Sun Feb  2 15:33:46 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 15:33:46 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 15:33:46 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 15:33:46 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 15:33:46 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 15:33:46 2014] [debug] 404 Not Found (0.009318s, 107.319/s).
+[Sun Feb  2 15:33:46 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 15:33:46 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 15:33:46 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 15:33:46 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 15:33:46 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 15:33:46 2014] [debug] 404 Not Found (0.012580s, 79.491/s).
+[Sun Feb  2 15:33:46 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 15:33:46 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 15:33:46 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 15:33:46 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 15:33:46 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 15:33:46 2014] [debug] 404 Not Found (0.008614s, 116.090/s).
+[Sun Feb  2 15:34:26 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  2 15:34:26 2014] [debug] GET "/planning".
+[Sun Feb  2 15:34:26 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sun Feb  2 15:34:26 2014] [info] list action called
+[Sun Feb  2 15:34:26 2014] [debug] Rendering template "planning/planning.html.ep".
+[Sun Feb  2 15:34:26 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  2 15:34:26 2014] [debug] 200 OK (0.031656s, 31.590/s).
+[Sun Feb  2 15:34:26 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 15:34:26 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 15:34:26 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 15:34:26 2014] [debug] Rendering inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 15:34:26 2014] [debug] Rendering inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 15:34:26 2014] [debug] 404 Not Found (0.027214s, 36.746/s).
+[Sun Feb  2 15:34:26 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 15:34:26 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 15:34:26 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 15:34:26 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 15:34:26 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 15:34:26 2014] [debug] 404 Not Found (0.009049s, 110.509/s).
+[Sun Feb  2 15:34:26 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 15:34:26 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 15:34:26 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 15:34:26 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 15:34:26 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 15:34:26 2014] [debug] 404 Not Found (0.008466s, 118.120/s).
+[Sun Feb  2 15:34:26 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 15:34:26 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 15:34:26 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 15:34:26 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 15:34:26 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 15:34:26 2014] [debug] 404 Not Found (0.008487s, 117.827/s).
+[Sun Feb  2 15:34:26 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 15:34:26 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 15:34:26 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 15:34:26 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 15:34:26 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 15:34:26 2014] [debug] 404 Not Found (0.008549s, 116.973/s).
+[Sun Feb  2 15:35:01 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  2 15:35:01 2014] [debug] GET "/planning".
+[Sun Feb  2 15:35:01 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sun Feb  2 15:35:01 2014] [info] list action called
+[Sun Feb  2 15:35:01 2014] [debug] Rendering template "planning/planning.html.ep".
+[Sun Feb  2 15:35:01 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  2 15:35:01 2014] [debug] 200 OK (0.032216s, 31.040/s).
+[Sun Feb  2 15:35:02 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 15:35:02 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 15:35:02 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 15:35:02 2014] [debug] Rendering inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 15:35:02 2014] [debug] Rendering inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 15:35:02 2014] [debug] 404 Not Found (0.020203s, 49.498/s).
+[Sun Feb  2 15:35:02 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 15:35:02 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 15:35:02 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 15:35:02 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 15:35:02 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 15:35:02 2014] [debug] 404 Not Found (0.008860s, 112.867/s).
+[Sun Feb  2 15:35:02 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 15:35:02 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 15:35:02 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 15:35:02 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 15:35:02 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 15:35:02 2014] [debug] 404 Not Found (0.010004s, 99.960/s).
+[Sun Feb  2 15:35:02 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 15:35:02 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 15:35:02 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 15:35:02 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 15:35:02 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 15:35:02 2014] [debug] 404 Not Found (0.008559s, 116.836/s).
+[Sun Feb  2 15:35:02 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 15:35:02 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 15:35:02 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 15:35:02 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 15:35:02 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 15:35:02 2014] [debug] 404 Not Found (0.008760s, 114.155/s).
+[Sun Feb  2 15:35:49 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  2 15:35:49 2014] [debug] GET "/planning".
+[Sun Feb  2 15:35:49 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sun Feb  2 15:35:49 2014] [info] list action called
+[Sun Feb  2 15:35:49 2014] [debug] Rendering template "planning/planning.html.ep".
+[Sun Feb  2 15:35:49 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  2 15:35:49 2014] [debug] 200 OK (0.037580s, 26.610/s).
+[Sun Feb  2 15:35:50 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 15:35:50 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 15:35:50 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 15:35:50 2014] [debug] Rendering inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 15:35:50 2014] [debug] Rendering inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 15:35:50 2014] [debug] 404 Not Found (0.027950s, 35.778/s).
+[Sun Feb  2 15:35:50 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 15:35:50 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 15:35:50 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 15:35:50 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 15:35:50 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 15:35:50 2014] [debug] 404 Not Found (0.008606s, 116.198/s).
+[Sun Feb  2 15:35:50 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 15:35:50 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 15:35:50 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 15:35:50 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 15:35:50 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 15:35:50 2014] [debug] 404 Not Found (0.008684s, 115.154/s).
+[Sun Feb  2 15:35:50 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 15:35:50 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 15:35:50 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 15:35:50 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 15:35:50 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 15:35:50 2014] [debug] 404 Not Found (0.008714s, 114.758/s).
+[Sun Feb  2 15:35:50 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 15:35:50 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 15:35:50 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 15:35:50 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 15:35:50 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 15:35:50 2014] [debug] 404 Not Found (0.008012s, 124.813/s).
+[Sun Feb  2 15:36:56 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  2 15:36:56 2014] [debug] GET "/planning".
+[Sun Feb  2 15:36:56 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sun Feb  2 15:36:56 2014] [info] list action called
+[Sun Feb  2 15:36:56 2014] [debug] Rendering template "planning/planning.html.ep".
+[Sun Feb  2 15:36:56 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  2 15:36:56 2014] [debug] 200 OK (0.038602s, 25.905/s).
+[Sun Feb  2 15:36:57 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 15:36:57 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 15:36:57 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 15:36:57 2014] [debug] Rendering inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 15:36:57 2014] [debug] Rendering inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 15:36:57 2014] [debug] 404 Not Found (0.022165s, 45.116/s).
+[Sun Feb  2 15:36:57 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 15:36:57 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 15:36:57 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 15:36:57 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 15:36:57 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 15:36:57 2014] [debug] 404 Not Found (0.009136s, 109.457/s).
+[Sun Feb  2 15:36:57 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 15:36:57 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 15:36:57 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 15:36:57 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 15:36:57 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 15:36:57 2014] [debug] 404 Not Found (0.009020s, 110.865/s).
+[Sun Feb  2 15:36:57 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 15:36:57 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 15:36:57 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 15:36:57 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 15:36:57 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 15:36:57 2014] [debug] 404 Not Found (0.010347s, 96.646/s).
+[Sun Feb  2 15:36:57 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 15:36:57 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 15:36:57 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 15:36:57 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 15:36:57 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 15:36:57 2014] [debug] 404 Not Found (0.007898s, 126.614/s).
+[Sun Feb  2 15:37:57 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  2 15:37:57 2014] [debug] GET "/planning".
+[Sun Feb  2 15:37:57 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sun Feb  2 15:37:57 2014] [info] list action called
+[Sun Feb  2 15:37:57 2014] [debug] Rendering template "planning/planning.html.ep".
+[Sun Feb  2 15:37:57 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  2 15:37:57 2014] [debug] 200 OK (0.038579s, 25.921/s).
+[Sun Feb  2 15:37:58 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 15:37:58 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 15:37:58 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 15:37:58 2014] [debug] Rendering inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 15:37:58 2014] [debug] Rendering inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 15:37:58 2014] [debug] 404 Not Found (0.022341s, 44.761/s).
+[Sun Feb  2 15:37:58 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 15:37:58 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 15:37:58 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 15:37:58 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 15:37:58 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 15:37:58 2014] [debug] 404 Not Found (0.008761s, 114.142/s).
+[Sun Feb  2 15:37:58 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 15:37:58 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 15:37:58 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 15:37:58 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 15:37:58 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 15:37:58 2014] [debug] 404 Not Found (0.010050s, 99.502/s).
+[Sun Feb  2 15:37:58 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 15:37:58 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 15:37:58 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 15:37:58 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 15:37:58 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 15:37:58 2014] [debug] 404 Not Found (0.009451s, 105.809/s).
+[Sun Feb  2 15:37:58 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 15:37:58 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 15:37:58 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 15:37:58 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 15:37:58 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 15:37:58 2014] [debug] 404 Not Found (0.008779s, 113.908/s).
+[Sun Feb  2 15:38:25 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  2 15:38:25 2014] [debug] GET "/planning".
+[Sun Feb  2 15:38:25 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sun Feb  2 15:38:25 2014] [info] list action called
+[Sun Feb  2 15:38:25 2014] [debug] Rendering template "planning/planning.html.ep".
+[Sun Feb  2 15:38:25 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  2 15:38:25 2014] [debug] 200 OK (0.039698s, 25.190/s).
+[Sun Feb  2 15:38:25 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 15:38:25 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 15:38:25 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 15:38:25 2014] [debug] Rendering inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 15:38:25 2014] [debug] Rendering inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 15:38:25 2014] [debug] 404 Not Found (0.022693s, 44.066/s).
+[Sun Feb  2 15:38:25 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 15:38:25 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 15:38:25 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 15:38:25 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 15:38:25 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 15:38:25 2014] [debug] 404 Not Found (0.008888s, 112.511/s).
+[Sun Feb  2 15:38:25 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 15:38:25 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 15:38:25 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 15:38:25 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 15:38:25 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 15:38:25 2014] [debug] 404 Not Found (0.023749s, 42.107/s).
+[Sun Feb  2 15:38:25 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 15:38:25 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 15:38:25 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 15:38:25 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 15:38:25 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 15:38:25 2014] [debug] 404 Not Found (0.009225s, 108.401/s).
+[Sun Feb  2 15:38:25 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 15:38:25 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 15:38:25 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 15:38:25 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 15:38:25 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 15:38:25 2014] [debug] 404 Not Found (0.008043s, 124.332/s).
+[Sun Feb  2 15:46:50 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  2 15:46:50 2014] [debug] GET "/planning".
+[Sun Feb  2 15:46:50 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sun Feb  2 15:46:50 2014] [info] list action called
+[Sun Feb  2 15:46:50 2014] [debug] Rendering template "planning/planning.html.ep".
+[Sun Feb  2 15:46:50 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  2 15:46:50 2014] [debug] 200 OK (0.031787s, 31.459/s).
+[Sun Feb  2 15:46:50 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 15:46:50 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 15:46:50 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 15:46:50 2014] [debug] Rendering inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 15:46:50 2014] [debug] Rendering inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 15:46:50 2014] [debug] 404 Not Found (0.022237s, 44.970/s).
+[Sun Feb  2 15:46:50 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 15:46:50 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 15:46:50 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 15:46:50 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 15:46:50 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 15:46:50 2014] [debug] 404 Not Found (0.018952s, 52.765/s).
+[Sun Feb  2 15:46:50 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 15:46:50 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 15:46:50 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 15:46:50 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 15:46:50 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 15:46:50 2014] [debug] 404 Not Found (0.013385s, 74.710/s).
+[Sun Feb  2 15:46:50 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 15:46:50 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 15:46:50 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 15:46:50 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 15:46:50 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 15:46:50 2014] [debug] 404 Not Found (0.008903s, 112.322/s).
+[Sun Feb  2 15:46:50 2014] [debug] GET "/getlocaldata".
+[Sun Feb  2 15:46:50 2014] [debug] Routing to controller "KiDiP::Employee" and action "getlocaldata".
+[Sun Feb  2 15:46:50 2014] [debug] 200 OK (0.003944s, 253.550/s).
+[Sun Feb  2 15:46:51 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 15:46:51 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 15:46:51 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 15:46:51 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 15:46:51 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 15:46:51 2014] [debug] 404 Not Found (0.008732s, 114.521/s).
+[Sun Feb  2 15:57:04 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  2 15:57:04 2014] [debug] GET "/planning".
+[Sun Feb  2 15:57:04 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sun Feb  2 15:57:04 2014] [info] list action called
+[Sun Feb  2 15:57:04 2014] [debug] Rendering template "planning/planning.html.ep".
+[Sun Feb  2 15:57:04 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  2 15:57:04 2014] [debug] 200 OK (0.031469s, 31.777/s).
+[Sun Feb  2 15:57:05 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 15:57:05 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 15:57:05 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 15:57:05 2014] [debug] Rendering inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 15:57:05 2014] [debug] Rendering inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 15:57:05 2014] [debug] 404 Not Found (0.020493s, 48.797/s).
+[Sun Feb  2 15:57:05 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 15:57:05 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 15:57:05 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 15:57:05 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 15:57:05 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 15:57:05 2014] [debug] 404 Not Found (0.008491s, 117.772/s).
+[Sun Feb  2 15:57:05 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 15:57:05 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 15:57:05 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 15:57:05 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 15:57:05 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 15:57:05 2014] [debug] 404 Not Found (0.020328s, 49.193/s).
+[Sun Feb  2 15:57:05 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 15:57:05 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 15:57:05 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 15:57:05 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 15:57:05 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 15:57:05 2014] [debug] 404 Not Found (0.010147s, 98.551/s).
+[Sun Feb  2 15:57:05 2014] [debug] GET "/getlocaldata".
+[Sun Feb  2 15:57:05 2014] [debug] Routing to controller "KiDiP::Employee" and action "getlocaldata".
+[Sun Feb  2 15:57:05 2014] [debug] 200 OK (0.003820s, 261.780/s).
+[Sun Feb  2 15:57:06 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 15:57:06 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 15:57:06 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 15:57:06 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 15:57:06 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 15:57:06 2014] [debug] 404 Not Found (0.008689s, 115.088/s).
+[Sun Feb  2 16:06:19 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  2 16:06:19 2014] [debug] GET "/planning".
+[Sun Feb  2 16:06:19 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sun Feb  2 16:06:19 2014] [info] list action called
+[Sun Feb  2 16:06:20 2014] [debug] Rendering template "planning/planning.html.ep".
+[Sun Feb  2 16:06:20 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  2 16:06:20 2014] [debug] 200 OK (0.035407s, 28.243/s).
+[Sun Feb  2 16:06:20 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:06:20 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:06:20 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:06:20 2014] [debug] Rendering inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:06:20 2014] [debug] Rendering inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:06:20 2014] [debug] 404 Not Found (0.022962s, 43.550/s).
+[Sun Feb  2 16:06:20 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:06:20 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:06:20 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:06:20 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:06:20 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:06:20 2014] [debug] 404 Not Found (0.008196s, 122.011/s).
+[Sun Feb  2 16:06:20 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:06:20 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:06:20 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:06:20 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:06:20 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:06:20 2014] [debug] 404 Not Found (0.008310s, 120.337/s).
+[Sun Feb  2 16:06:20 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:06:20 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:06:20 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:06:20 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:06:20 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:06:20 2014] [debug] 404 Not Found (0.008206s, 121.862/s).
+[Sun Feb  2 16:06:20 2014] [debug] GET "/getlocaldata".
+[Sun Feb  2 16:06:20 2014] [debug] Routing to controller "KiDiP::Employee" and action "getlocaldata".
+[Sun Feb  2 16:06:20 2014] [debug] 200 OK (0.003804s, 262.881/s).
+[Sun Feb  2 16:06:21 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:06:21 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:06:21 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:06:21 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:06:21 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:06:21 2014] [debug] 404 Not Found (0.014440s, 69.252/s).
+[Sun Feb  2 16:12:16 2014] [debug] GET "/planning".
+[Sun Feb  2 16:12:16 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sun Feb  2 16:12:16 2014] [info] list action called
+[Sun Feb  2 16:12:16 2014] [debug] Rendering cached template "planning/planning.html.ep".
+[Sun Feb  2 16:12:16 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Sun Feb  2 16:12:16 2014] [debug] 200 OK (0.005316s, 188.111/s).
+[Sun Feb  2 16:12:16 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:12:16 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:12:16 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:12:16 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:12:16 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:12:16 2014] [debug] 404 Not Found (0.015395s, 64.956/s).
+[Sun Feb  2 16:12:16 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:12:16 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:12:16 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:12:16 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:12:16 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:12:16 2014] [debug] 404 Not Found (0.009819s, 101.843/s).
+[Sun Feb  2 16:12:16 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:12:16 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:12:16 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:12:16 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:12:16 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:12:16 2014] [debug] 404 Not Found (0.008921s, 112.095/s).
+[Sun Feb  2 16:12:16 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:12:16 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:12:16 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:12:16 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:12:16 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:12:16 2014] [debug] 404 Not Found (0.010341s, 96.702/s).
+[Sun Feb  2 16:12:17 2014] [debug] GET "/getlocaldata".
+[Sun Feb  2 16:12:17 2014] [debug] Routing to controller "KiDiP::Employee" and action "getlocaldata".
+[Sun Feb  2 16:12:17 2014] [debug] 200 OK (0.002192s, 456.204/s).
+[Sun Feb  2 16:12:18 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:12:18 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:12:18 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:12:18 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:12:18 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:12:18 2014] [debug] 404 Not Found (0.008658s, 115.500/s).
+[Sun Feb  2 16:21:03 2014] [debug] GET "/planning".
+[Sun Feb  2 16:21:03 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sun Feb  2 16:21:03 2014] [info] list action called
+[Sun Feb  2 16:21:03 2014] [debug] Rendering cached template "planning/planning.html.ep".
+[Sun Feb  2 16:21:03 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Sun Feb  2 16:21:03 2014] [debug] 200 OK (0.012290s, 81.367/s).
+[Sun Feb  2 16:21:04 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:21:04 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:21:04 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:21:04 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:21:04 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:21:04 2014] [debug] 404 Not Found (0.009752s, 102.543/s).
+[Sun Feb  2 16:21:04 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:21:04 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:21:04 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:21:04 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:21:04 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:21:04 2014] [debug] 404 Not Found (0.008519s, 117.385/s).
+[Sun Feb  2 16:21:04 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:21:04 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:21:04 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:21:04 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:21:04 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:21:04 2014] [debug] 404 Not Found (0.008917s, 112.145/s).
+[Sun Feb  2 16:21:04 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:21:04 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:21:04 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:21:04 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:21:04 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:21:04 2014] [debug] 404 Not Found (0.014224s, 70.304/s).
+[Sun Feb  2 16:21:04 2014] [debug] GET "/getlocaldata".
+[Sun Feb  2 16:21:04 2014] [debug] Routing to controller "KiDiP::Employee" and action "getlocaldata".
+[Sun Feb  2 16:21:04 2014] [debug] 200 OK (0.001992s, 502.008/s).
+[Sun Feb  2 16:21:05 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:21:05 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:21:05 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:21:05 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:21:05 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:21:05 2014] [debug] 404 Not Found (0.008357s, 119.660/s).
+[Sun Feb  2 16:22:53 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  2 16:22:53 2014] [debug] GET "/planning".
+[Sun Feb  2 16:22:53 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sun Feb  2 16:22:53 2014] [info] list action called
+[Sun Feb  2 16:22:53 2014] [debug] Rendering template "planning/planning.html.ep".
+[Sun Feb  2 16:22:53 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  2 16:22:53 2014] [debug] 200 OK (0.039052s, 25.607/s).
+[Sun Feb  2 16:22:53 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:22:53 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:22:53 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:22:53 2014] [debug] Rendering inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:22:53 2014] [debug] Rendering inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:22:53 2014] [debug] 404 Not Found (0.022530s, 44.385/s).
+[Sun Feb  2 16:22:53 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:22:53 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:22:53 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:22:53 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:22:53 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:22:53 2014] [debug] 404 Not Found (0.008681s, 115.194/s).
+[Sun Feb  2 16:22:53 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:22:53 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:22:53 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:22:53 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:22:53 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:22:53 2014] [debug] 404 Not Found (0.009010s, 110.988/s).
+[Sun Feb  2 16:22:53 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:22:53 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:22:53 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:22:53 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:22:53 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:22:53 2014] [debug] 404 Not Found (0.008924s, 112.057/s).
+[Sun Feb  2 16:22:53 2014] [debug] GET "/getlocaldata".
+[Sun Feb  2 16:22:53 2014] [debug] Routing to controller "KiDiP::Employee" and action "getlocaldata".
+[Sun Feb  2 16:22:53 2014] [debug] 200 OK (0.003865s, 258.732/s).
+[Sun Feb  2 16:22:55 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:22:55 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:22:55 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:22:55 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:22:55 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:22:55 2014] [debug] 404 Not Found (0.008612s, 116.117/s).
+[Sun Feb  2 16:23:08 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  2 16:23:08 2014] [debug] GET "/planning".
+[Sun Feb  2 16:23:08 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sun Feb  2 16:23:08 2014] [info] list action called
+[Sun Feb  2 16:23:08 2014] [debug] Rendering template "planning/planning.html.ep".
+[Sun Feb  2 16:23:08 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  2 16:23:08 2014] [debug] 200 OK (0.043626s, 22.922/s).
+[Sun Feb  2 16:23:08 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:23:08 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:23:08 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:23:08 2014] [debug] Rendering inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:23:08 2014] [debug] Rendering inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:23:08 2014] [debug] 404 Not Found (0.021182s, 47.210/s).
+[Sun Feb  2 16:23:08 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:23:08 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:23:08 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:23:08 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:23:08 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:23:08 2014] [debug] 404 Not Found (0.008661s, 115.460/s).
+[Sun Feb  2 16:23:08 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:23:08 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:23:08 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:23:08 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:23:08 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:23:08 2014] [debug] 404 Not Found (0.016086s, 62.166/s).
+[Sun Feb  2 16:23:08 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:23:08 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:23:08 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:23:08 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:23:08 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:23:08 2014] [debug] 404 Not Found (0.008681s, 115.194/s).
+[Sun Feb  2 16:23:08 2014] [debug] GET "/getlocaldata".
+[Sun Feb  2 16:23:08 2014] [debug] Routing to controller "KiDiP::Employee" and action "getlocaldata".
+[Sun Feb  2 16:23:08 2014] [debug] 200 OK (0.003888s, 257.202/s).
+[Sun Feb  2 16:23:10 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:23:10 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:23:10 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:23:10 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:23:10 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:23:10 2014] [debug] 404 Not Found (0.008094s, 123.548/s).
+[Sun Feb  2 16:26:06 2014] [debug] GET "/planning".
+[Sun Feb  2 16:26:06 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sun Feb  2 16:26:06 2014] [info] list action called
+[Sun Feb  2 16:26:06 2014] [debug] Rendering cached template "planning/planning.html.ep".
+[Sun Feb  2 16:26:06 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Sun Feb  2 16:26:06 2014] [debug] 200 OK (0.005685s, 175.901/s).
+[Sun Feb  2 16:26:07 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:26:07 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:26:07 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:26:07 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:26:07 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:26:07 2014] [debug] 404 Not Found (0.010516s, 95.093/s).
+[Sun Feb  2 16:26:07 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:26:07 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:26:07 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:26:07 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:26:07 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:26:07 2014] [debug] 404 Not Found (0.015361s, 65.100/s).
+[Sun Feb  2 16:26:07 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:26:07 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:26:07 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:26:07 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:26:07 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:26:07 2014] [debug] 404 Not Found (0.009721s, 102.870/s).
+[Sun Feb  2 16:26:07 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:26:07 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:26:07 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:26:07 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:26:07 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:26:07 2014] [debug] 404 Not Found (0.008505s, 117.578/s).
+[Sun Feb  2 16:26:07 2014] [debug] GET "/getlocaldata".
+[Sun Feb  2 16:26:07 2014] [debug] Routing to controller "KiDiP::Employee" and action "getlocaldata".
+[Sun Feb  2 16:26:07 2014] [debug] 200 OK (0.002095s, 477.327/s).
+[Sun Feb  2 16:26:08 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:26:08 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:26:08 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:26:08 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:26:08 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:26:08 2014] [debug] 404 Not Found (0.011320s, 88.339/s).
+[Sun Feb  2 16:28:14 2014] [debug] GET "/planning".
+[Sun Feb  2 16:28:14 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sun Feb  2 16:28:14 2014] [info] list action called
+[Sun Feb  2 16:28:14 2014] [debug] Rendering cached template "planning/planning.html.ep".
+[Sun Feb  2 16:28:14 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Sun Feb  2 16:28:14 2014] [debug] 200 OK (0.005849s, 170.969/s).
+[Sun Feb  2 16:28:15 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:28:15 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:28:15 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:28:15 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:28:15 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:28:15 2014] [debug] 404 Not Found (0.016392s, 61.005/s).
+[Sun Feb  2 16:28:15 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:28:15 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:28:15 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:28:15 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:28:15 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:28:15 2014] [debug] 404 Not Found (0.009192s, 108.790/s).
+[Sun Feb  2 16:28:15 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:28:15 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:28:15 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:28:15 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:28:15 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:28:15 2014] [debug] 404 Not Found (0.008893s, 112.448/s).
+[Sun Feb  2 16:28:15 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:28:15 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:28:15 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:28:15 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:28:15 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:28:15 2014] [debug] 404 Not Found (0.009158s, 109.194/s).
+[Sun Feb  2 16:28:15 2014] [debug] GET "/getlocaldata".
+[Sun Feb  2 16:28:15 2014] [debug] Routing to controller "KiDiP::Employee" and action "getlocaldata".
+[Sun Feb  2 16:28:15 2014] [debug] 200 OK (0.002037s, 490.918/s).
+[Sun Feb  2 16:28:16 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:28:16 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:28:16 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:28:16 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:28:16 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:28:16 2014] [debug] 404 Not Found (0.008236s, 121.418/s).
+[Sun Feb  2 16:29:07 2014] [debug] GET "/planning".
+[Sun Feb  2 16:29:07 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sun Feb  2 16:29:07 2014] [info] list action called
+[Sun Feb  2 16:29:07 2014] [debug] Rendering cached template "planning/planning.html.ep".
+[Sun Feb  2 16:29:07 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Sun Feb  2 16:29:07 2014] [debug] 200 OK (0.005282s, 189.322/s).
+[Sun Feb  2 16:29:07 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:29:07 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:29:07 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:29:07 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:29:07 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:29:07 2014] [debug] 404 Not Found (0.008203s, 121.907/s).
+[Sun Feb  2 16:29:07 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:29:07 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:29:07 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:29:07 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:29:07 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:29:07 2014] [debug] 404 Not Found (0.008380s, 119.332/s).
+[Sun Feb  2 16:29:07 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:29:07 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:29:07 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:29:07 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:29:07 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:29:07 2014] [debug] 404 Not Found (0.008407s, 118.948/s).
+[Sun Feb  2 16:29:07 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:29:07 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:29:07 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:29:07 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:29:07 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:29:07 2014] [debug] 404 Not Found (0.008982s, 111.334/s).
+[Sun Feb  2 16:29:07 2014] [debug] GET "/getlocaldata".
+[Sun Feb  2 16:29:07 2014] [debug] Routing to controller "KiDiP::Employee" and action "getlocaldata".
+[Sun Feb  2 16:29:07 2014] [debug] 200 OK (0.002035s, 491.400/s).
+[Sun Feb  2 16:29:08 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:29:08 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:29:08 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:29:08 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:29:08 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:29:08 2014] [debug] 404 Not Found (0.008294s, 120.569/s).
+[Sun Feb  2 16:41:00 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  2 16:41:00 2014] [debug] GET "/planning".
+[Sun Feb  2 16:41:00 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sun Feb  2 16:41:00 2014] [info] list action called
+[Sun Feb  2 16:41:00 2014] [debug] Rendering template "planning/planning.html.ep".
+[Sun Feb  2 16:41:01 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  2 16:41:01 2014] [debug] 200 OK (0.036664s, 27.275/s).
+[Sun Feb  2 16:41:01 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:41:01 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:41:01 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:41:01 2014] [debug] Rendering inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:41:01 2014] [debug] Rendering inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:41:01 2014] [debug] 404 Not Found (0.020969s, 47.689/s).
+[Sun Feb  2 16:41:01 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:41:01 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:41:01 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:41:01 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:41:01 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:41:01 2014] [debug] 404 Not Found (0.008732s, 114.521/s).
+[Sun Feb  2 16:41:01 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:41:01 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:41:01 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:41:01 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:41:01 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:41:01 2014] [debug] 404 Not Found (0.008536s, 117.151/s).
+[Sun Feb  2 16:41:01 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:41:01 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:41:01 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:41:01 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:41:01 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:41:01 2014] [debug] 404 Not Found (0.008640s, 115.741/s).
+[Sun Feb  2 16:41:01 2014] [debug] GET "/getlocaldata".
+[Sun Feb  2 16:41:01 2014] [debug] Routing to controller "KiDiP::Employee" and action "getlocaldata".
+[Sun Feb  2 16:41:01 2014] [debug] 200 OK (0.003825s, 261.438/s).
+[Sun Feb  2 16:41:02 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:41:02 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:41:02 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:41:02 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:41:02 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:41:02 2014] [debug] 404 Not Found (0.008098s, 123.487/s).
+[Sun Feb  2 16:44:01 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  2 16:44:01 2014] [debug] GET "/planning".
+[Sun Feb  2 16:44:01 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sun Feb  2 16:44:01 2014] [info] list action called
+[Sun Feb  2 16:44:01 2014] [debug] Rendering template "planning/planning.html.ep".
+[Sun Feb  2 16:44:01 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  2 16:44:01 2014] [debug] 200 OK (0.050144s, 19.943/s).
+[Sun Feb  2 16:44:02 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:44:02 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:44:02 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:44:02 2014] [debug] Rendering inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:44:02 2014] [debug] Rendering inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:44:02 2014] [debug] 404 Not Found (0.022211s, 45.023/s).
+[Sun Feb  2 16:44:02 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:44:02 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:44:02 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:44:02 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:44:02 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:44:02 2014] [debug] 404 Not Found (0.008535s, 117.165/s).
+[Sun Feb  2 16:44:02 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:44:02 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:44:02 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:44:02 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:44:02 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:44:02 2014] [debug] 404 Not Found (0.009275s, 107.817/s).
+[Sun Feb  2 16:44:02 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:44:02 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:44:02 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:44:02 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:44:02 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:44:02 2014] [debug] 404 Not Found (0.009288s, 107.666/s).
+[Sun Feb  2 16:44:02 2014] [debug] GET "/getlocaldata".
+[Sun Feb  2 16:44:02 2014] [debug] Routing to controller "KiDiP::Employee" and action "getlocaldata".
+[Sun Feb  2 16:44:02 2014] [debug] 200 OK (0.003619s, 276.319/s).
+[Sun Feb  2 16:44:03 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:44:03 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:44:03 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:44:03 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:44:03 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:44:03 2014] [debug] 404 Not Found (0.008829s, 113.263/s).
+[Sun Feb  2 16:44:36 2014] [debug] GET "/planning".
+[Sun Feb  2 16:44:36 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sun Feb  2 16:44:36 2014] [info] list action called
+[Sun Feb  2 16:44:36 2014] [debug] Rendering cached template "planning/planning.html.ep".
+[Sun Feb  2 16:44:36 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Sun Feb  2 16:44:36 2014] [debug] 200 OK (0.012007s, 83.285/s).
+[Sun Feb  2 16:44:37 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:44:37 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:44:37 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:44:37 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:44:37 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:44:37 2014] [debug] 404 Not Found (0.008514s, 117.454/s).
+[Sun Feb  2 16:44:37 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:44:37 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:44:37 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:44:37 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:44:37 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:44:37 2014] [debug] 404 Not Found (0.008850s, 112.994/s).
+[Sun Feb  2 16:44:37 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:44:37 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:44:37 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:44:37 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:44:37 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:44:37 2014] [debug] 404 Not Found (0.009103s, 109.854/s).
+[Sun Feb  2 16:44:37 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:44:37 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:44:37 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:44:37 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:44:37 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:44:37 2014] [debug] 404 Not Found (0.011237s, 88.992/s).
+[Sun Feb  2 16:44:37 2014] [debug] GET "/getlocaldata".
+[Sun Feb  2 16:44:37 2014] [debug] Routing to controller "KiDiP::Employee" and action "getlocaldata".
+[Sun Feb  2 16:44:37 2014] [debug] 200 OK (0.002103s, 475.511/s).
+[Sun Feb  2 16:44:38 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:44:38 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:44:38 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:44:38 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:44:38 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:44:38 2014] [debug] 404 Not Found (0.008399s, 119.062/s).
+[Sun Feb  2 16:46:05 2014] [debug] GET "/planning".
+[Sun Feb  2 16:46:05 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sun Feb  2 16:46:05 2014] [info] list action called
+[Sun Feb  2 16:46:05 2014] [debug] Rendering cached template "planning/planning.html.ep".
+[Sun Feb  2 16:46:05 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Sun Feb  2 16:46:05 2014] [debug] 200 OK (0.005526s, 180.963/s).
+[Sun Feb  2 16:46:06 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:46:06 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:46:06 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:46:06 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:46:06 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:46:06 2014] [debug] 404 Not Found (0.009842s, 101.605/s).
+[Sun Feb  2 16:46:06 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:46:06 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:46:06 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:46:06 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:46:06 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:46:06 2014] [debug] 404 Not Found (0.009386s, 106.542/s).
+[Sun Feb  2 16:46:06 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:46:06 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:46:06 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:46:06 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:46:06 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:46:06 2014] [debug] 404 Not Found (0.008957s, 111.645/s).
+[Sun Feb  2 16:46:06 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:46:06 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:46:06 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:46:06 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:46:06 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:46:06 2014] [debug] 404 Not Found (0.009087s, 110.047/s).
+[Sun Feb  2 16:46:06 2014] [debug] GET "/getlocaldata".
+[Sun Feb  2 16:46:06 2014] [debug] Routing to controller "KiDiP::Employee" and action "getlocaldata".
+[Sun Feb  2 16:46:06 2014] [debug] 200 OK (0.002027s, 493.340/s).
+[Sun Feb  2 16:46:07 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:46:07 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:46:07 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:46:07 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:46:07 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:46:07 2014] [debug] 404 Not Found (0.010745s, 93.067/s).
+[Sun Feb  2 16:47:30 2014] [debug] GET "/planning".
+[Sun Feb  2 16:47:30 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sun Feb  2 16:47:30 2014] [info] list action called
+[Sun Feb  2 16:47:30 2014] [debug] Rendering cached template "planning/planning.html.ep".
+[Sun Feb  2 16:47:30 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Sun Feb  2 16:47:30 2014] [debug] 200 OK (0.005269s, 189.789/s).
+[Sun Feb  2 16:47:30 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:47:30 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:47:30 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:47:30 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:47:30 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:47:30 2014] [debug] 404 Not Found (0.009828s, 101.750/s).
+[Sun Feb  2 16:47:30 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:47:30 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:47:30 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:47:30 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:47:30 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:47:30 2014] [debug] 404 Not Found (0.016373s, 61.076/s).
+[Sun Feb  2 16:47:30 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:47:30 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:47:30 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:47:30 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:47:30 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:47:30 2014] [debug] 404 Not Found (0.009408s, 106.293/s).
+[Sun Feb  2 16:47:30 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:47:30 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:47:30 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:47:30 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:47:30 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:47:30 2014] [debug] 404 Not Found (0.010036s, 99.641/s).
+[Sun Feb  2 16:47:30 2014] [debug] GET "/getlocaldata".
+[Sun Feb  2 16:47:30 2014] [debug] Routing to controller "KiDiP::Employee" and action "getlocaldata".
+[Sun Feb  2 16:47:30 2014] [debug] 200 OK (0.002010s, 497.512/s).
+[Sun Feb  2 16:47:32 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:47:32 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:47:32 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:47:32 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:47:32 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:47:32 2014] [debug] 404 Not Found (0.011931s, 83.815/s).
+[Sun Feb  2 16:52:47 2014] [debug] GET "/planning".
+[Sun Feb  2 16:52:47 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sun Feb  2 16:52:47 2014] [info] list action called
+[Sun Feb  2 16:52:47 2014] [debug] Rendering cached template "planning/planning.html.ep".
+[Sun Feb  2 16:52:47 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Sun Feb  2 16:52:47 2014] [debug] 200 OK (0.007492s, 133.476/s).
+[Sun Feb  2 16:52:48 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:52:48 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:52:48 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:52:48 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:52:48 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:52:48 2014] [debug] 404 Not Found (0.008775s, 113.960/s).
+[Sun Feb  2 16:52:48 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:52:48 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:52:48 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:52:48 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:52:48 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:52:48 2014] [debug] 404 Not Found (0.009270s, 107.875/s).
+[Sun Feb  2 16:52:48 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:52:48 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:52:48 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:52:48 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:52:48 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:52:48 2014] [debug] 404 Not Found (0.008632s, 115.848/s).
+[Sun Feb  2 16:52:48 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:52:48 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:52:48 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:52:48 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:52:48 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:52:48 2014] [debug] 404 Not Found (0.009142s, 109.385/s).
+[Sun Feb  2 16:52:48 2014] [debug] GET "/getlocaldata".
+[Sun Feb  2 16:52:48 2014] [debug] Routing to controller "KiDiP::Employee" and action "getlocaldata".
+[Sun Feb  2 16:52:48 2014] [debug] 200 OK (0.002105s, 475.059/s).
+[Sun Feb  2 16:52:49 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:52:49 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:52:49 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:52:49 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:52:49 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:52:49 2014] [debug] 404 Not Found (0.008873s, 112.701/s).
+[Sun Feb  2 16:53:57 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  2 16:53:57 2014] [debug] GET "/planning".
+[Sun Feb  2 16:53:57 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sun Feb  2 16:53:57 2014] [info] list action called
+[Sun Feb  2 16:53:57 2014] [debug] Rendering template "planning/planning.html.ep".
+[Sun Feb  2 16:53:57 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  2 16:53:57 2014] [debug] 200 OK (0.040183s, 24.886/s).
+[Sun Feb  2 16:53:57 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:53:57 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:53:57 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:53:57 2014] [debug] Rendering inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:53:57 2014] [debug] Rendering inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:53:57 2014] [debug] 404 Not Found (0.023545s, 42.472/s).
+[Sun Feb  2 16:53:57 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:53:57 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:53:57 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:53:57 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:53:57 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:53:57 2014] [debug] 404 Not Found (0.010033s, 99.671/s).
+[Sun Feb  2 16:53:57 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:53:57 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:53:57 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:53:57 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:53:57 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:53:57 2014] [debug] 404 Not Found (0.009224s, 108.413/s).
+[Sun Feb  2 16:53:57 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:53:57 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:53:57 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:53:57 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:53:57 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:53:57 2014] [debug] 404 Not Found (0.010151s, 98.512/s).
+[Sun Feb  2 16:53:57 2014] [debug] GET "/getlocaldata".
+[Sun Feb  2 16:53:57 2014] [debug] Routing to controller "KiDiP::Employee" and action "getlocaldata".
+[Sun Feb  2 16:53:57 2014] [debug] 200 OK (0.003925s, 254.777/s).
+[Sun Feb  2 16:53:58 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:53:58 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:53:58 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:53:58 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:53:58 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:53:58 2014] [debug] 404 Not Found (0.011589s, 86.289/s).
+[Sun Feb  2 16:56:08 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  2 16:56:08 2014] [debug] GET "/planning".
+[Sun Feb  2 16:56:08 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sun Feb  2 16:56:08 2014] [info] list action called
+[Sun Feb  2 16:56:08 2014] [debug] Rendering template "planning/planning.html.ep".
+[Sun Feb  2 16:56:08 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  2 16:56:08 2014] [debug] 200 OK (0.033128s, 30.186/s).
+[Sun Feb  2 16:56:09 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:56:09 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:56:09 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:56:09 2014] [debug] Rendering inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:56:09 2014] [debug] Rendering inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:56:09 2014] [debug] 404 Not Found (0.021946s, 45.566/s).
+[Sun Feb  2 16:56:09 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:56:09 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:56:09 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:56:09 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:56:09 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:56:09 2014] [debug] 404 Not Found (0.008697s, 114.982/s).
+[Sun Feb  2 16:56:09 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:56:09 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:56:09 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:56:09 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:56:09 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:56:09 2014] [debug] 404 Not Found (0.008640s, 115.741/s).
+[Sun Feb  2 16:56:09 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:56:09 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:56:09 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:56:09 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:56:09 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:56:09 2014] [debug] 404 Not Found (0.008700s, 114.943/s).
+[Sun Feb  2 16:56:09 2014] [debug] GET "/getlocaldata".
+[Sun Feb  2 16:56:09 2014] [debug] Routing to controller "KiDiP::Employee" and action "getlocaldata".
+[Sun Feb  2 16:56:09 2014] [debug] 200 OK (0.003823s, 261.575/s).
+[Sun Feb  2 16:56:10 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 16:56:10 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 16:56:10 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 16:56:10 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 16:56:10 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 16:56:10 2014] [debug] 404 Not Found (0.008654s, 115.554/s).
