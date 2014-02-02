@@ -11051,3 +11051,344 @@ Compilation failed in require at (eval 535) line 1.
 [Sun Feb  2 16:56:10 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
 [Sun Feb  2 16:56:10 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
 [Sun Feb  2 16:56:10 2014] [debug] 404 Not Found (0.008654s, 115.554/s).
+[Sun Feb  2 18:16:16 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  2 18:16:16 2014] [debug] GET "/planning".
+[Sun Feb  2 18:16:16 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sun Feb  2 18:16:16 2014] [info] list action called
+[Sun Feb  2 18:16:16 2014] [debug] Rendering template "planning/planning.html.ep".
+[Sun Feb  2 18:16:16 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  2 18:16:16 2014] [debug] 200 OK (0.034558s, 28.937/s).
+[Sun Feb  2 18:16:24 2014] [debug] GET "/".
+[Sun Feb  2 18:16:24 2014] [debug] Routing to controller "KiDiP::Employee" and action "welcome".
+[Sun Feb  2 18:16:24 2014] [debug] Action not found in controller.
+[Sun Feb  2 18:16:24 2014] [debug] Rendering template "employee/welcome.html.ep".
+[Sun Feb  2 18:16:24 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  2 18:16:24 2014] [debug] 200 OK (0.015396s, 64.952/s).
+[Sun Feb  2 18:16:29 2014] [debug] GET "/".
+[Sun Feb  2 18:16:29 2014] [debug] Routing to controller "KiDiP::Employee" and action "welcome".
+[Sun Feb  2 18:16:29 2014] [debug] Action not found in controller.
+[Sun Feb  2 18:16:29 2014] [debug] Rendering cached template "employee/welcome.html.ep".
+[Sun Feb  2 18:16:29 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Sun Feb  2 18:16:29 2014] [debug] 200 OK (0.002360s, 423.729/s).
+[Sun Feb  2 18:17:18 2014] [debug] GET "/".
+[Sun Feb  2 18:17:18 2014] [debug] Routing to controller "KiDiP::Employee" and action "welcome".
+[Sun Feb  2 18:17:18 2014] [debug] Action not found in controller.
+[Sun Feb  2 18:17:18 2014] [debug] Rendering cached template "employee/welcome.html.ep".
+[Sun Feb  2 18:17:18 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Sun Feb  2 18:17:18 2014] [debug] 200 OK (0.003428s, 291.715/s).
+[Sun Feb  2 18:17:59 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  2 18:17:59 2014] [debug] GET "/".
+[Sun Feb  2 18:17:59 2014] [debug] Routing to controller "KiDiP::Employee" and action "welcome".
+[Sun Feb  2 18:17:59 2014] [debug] Action not found in controller.
+[Sun Feb  2 18:17:59 2014] [debug] Rendering template "employee/welcome.html.ep".
+[Sun Feb  2 18:17:59 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  2 18:17:59 2014] [debug] 200 OK (0.010195s, 98.087/s).
+[Sun Feb  2 18:18:08 2014] [info] Listening at "http://*:3000".
+[Sun Feb  2 18:18:11 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  2 18:18:11 2014] [debug] GET "/".
+[Sun Feb  2 18:18:11 2014] [debug] Routing to controller "KiDiP::Employee" and action "welcome".
+[Sun Feb  2 18:18:11 2014] [debug] Action not found in controller.
+[Sun Feb  2 18:18:11 2014] [debug] Rendering template "employee/welcome.html.ep".
+[Sun Feb  2 18:18:11 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  2 18:18:11 2014] [debug] 200 OK (0.010190s, 98.135/s).
+[Sun Feb  2 18:18:14 2014] [debug] GET "/".
+[Sun Feb  2 18:18:14 2014] [debug] Routing to controller "KiDiP::Employee" and action "welcome".
+[Sun Feb  2 18:18:14 2014] [debug] Action not found in controller.
+[Sun Feb  2 18:18:14 2014] [debug] Rendering cached template "employee/welcome.html.ep".
+[Sun Feb  2 18:18:14 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Sun Feb  2 18:18:14 2014] [debug] 200 OK (0.002755s, 362.976/s).
+[Sun Feb  2 18:18:20 2014] [debug] GET "/".
+[Sun Feb  2 18:18:20 2014] [debug] Routing to controller "KiDiP::Employee" and action "welcome".
+[Sun Feb  2 18:18:20 2014] [debug] Action not found in controller.
+[Sun Feb  2 18:18:20 2014] [debug] Rendering cached template "employee/welcome.html.ep".
+[Sun Feb  2 18:18:20 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Sun Feb  2 18:18:20 2014] [debug] 200 OK (0.002538s, 394.011/s).
+[Sun Feb  2 18:19:17 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  2 18:19:17 2014] [debug] GET "/planning".
+[Sun Feb  2 18:19:17 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sun Feb  2 18:19:17 2014] [info] list action called
+[Sun Feb  2 18:19:17 2014] [debug] Rendering template "planning/planning.html.ep".
+[Sun Feb  2 18:19:17 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  2 18:19:17 2014] [debug] 200 OK (0.033898s, 29.500/s).
+[Sun Feb  2 18:20:28 2014] [debug] GET "/planning".
+[Sun Feb  2 18:20:28 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sun Feb  2 18:20:28 2014] [info] list action called
+[Sun Feb  2 18:20:28 2014] [debug] Rendering cached template "planning/planning.html.ep".
+[Sun Feb  2 18:20:28 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Sun Feb  2 18:20:28 2014] [debug] 200 OK (0.006007s, 166.472/s).
+[Sun Feb  2 18:20:31 2014] [debug] GET "/workhour/list".
+[Sun Feb  2 18:20:31 2014] [debug] Routing to controller "KiDiP::Workhour" and action "list".
+[Sun Feb  2 18:20:31 2014] [info] list action called
+[Sun Feb  2 18:20:31 2014] [debug] Rendering template "workhour/list.html.ep".
+[Sun Feb  2 18:20:31 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  2 18:20:31 2014] [debug] 200 OK (0.010987s, 91.017/s).
+[Sun Feb  2 18:20:36 2014] [debug] GET "/planning".
+[Sun Feb  2 18:20:36 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sun Feb  2 18:20:36 2014] [info] list action called
+[Sun Feb  2 18:20:36 2014] [debug] Rendering cached template "planning/planning.html.ep".
+[Sun Feb  2 18:20:36 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Sun Feb  2 18:20:36 2014] [debug] 200 OK (0.005705s, 175.285/s).
+[Sun Feb  2 18:20:42 2014] [debug] GET "/workhour/list".
+[Sun Feb  2 18:20:42 2014] [debug] Routing to controller "KiDiP::Workhour" and action "list".
+[Sun Feb  2 18:20:42 2014] [info] list action called
+[Sun Feb  2 18:20:42 2014] [debug] Rendering cached template "workhour/list.html.ep".
+[Sun Feb  2 18:20:42 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Sun Feb  2 18:20:42 2014] [debug] 200 OK (0.003911s, 255.689/s).
+[Sun Feb  2 18:20:48 2014] [debug] GET "/planning".
+[Sun Feb  2 18:20:48 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sun Feb  2 18:20:48 2014] [info] list action called
+[Sun Feb  2 18:20:48 2014] [debug] Rendering cached template "planning/planning.html.ep".
+[Sun Feb  2 18:20:48 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Sun Feb  2 18:20:48 2014] [debug] 200 OK (0.005291s, 189.000/s).
+[Sun Feb  2 18:21:21 2014] [debug] GET "/".
+[Sun Feb  2 18:21:21 2014] [debug] Routing to controller "KiDiP::Employee" and action "welcome".
+[Sun Feb  2 18:21:21 2014] [debug] Action not found in controller.
+[Sun Feb  2 18:21:21 2014] [debug] Rendering template "employee/welcome.html.ep".
+[Sun Feb  2 18:21:21 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  2 18:21:21 2014] [debug] 200 OK (0.007464s, 133.976/s).
+[Sun Feb  2 18:23:44 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  2 18:23:44 2014] [debug] GET "/".
+[Sun Feb  2 18:23:44 2014] [debug] Routing to controller "KiDiP::Employee" and action "welcome".
+[Sun Feb  2 18:23:44 2014] [debug] Action not found in controller.
+[Sun Feb  2 18:23:44 2014] [debug] Rendering template "employee/welcome.html.ep".
+[Sun Feb  2 18:23:44 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  2 18:23:44 2014] [debug] 200 OK (0.013941s, 71.731/s).
+[Sun Feb  2 18:24:47 2014] [debug] GET "/".
+[Sun Feb  2 18:24:47 2014] [debug] Routing to controller "KiDiP::Employee" and action "welcome".
+[Sun Feb  2 18:24:47 2014] [debug] Action not found in controller.
+[Sun Feb  2 18:24:47 2014] [debug] Rendering cached template "employee/welcome.html.ep".
+[Sun Feb  2 18:24:47 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Sun Feb  2 18:24:47 2014] [debug] 200 OK (0.003279s, 304.971/s).
+[Sun Feb  2 18:25:30 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 18:25:30 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 18:25:30 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 18:25:30 2014] [debug] Rendering inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 18:25:30 2014] [debug] Rendering inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 18:25:30 2014] [debug] 404 Not Found (0.023660s, 42.265/s).
+[Sun Feb  2 18:25:30 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 18:25:30 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 18:25:30 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 18:25:30 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 18:25:30 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 18:25:30 2014] [debug] 404 Not Found (0.008972s, 111.458/s).
+[Sun Feb  2 18:25:30 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 18:25:30 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 18:25:30 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 18:25:30 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 18:25:30 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 18:25:30 2014] [debug] 404 Not Found (0.008778s, 113.921/s).
+[Sun Feb  2 18:25:30 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 18:25:30 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 18:25:30 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 18:25:30 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 18:25:30 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 18:25:30 2014] [debug] 404 Not Found (0.010074s, 99.265/s).
+[Sun Feb  2 18:25:30 2014] [debug] GET "/js/easyui/jquery.min.map".
+[Sun Feb  2 18:25:30 2014] [debug] Template "not_found.development.html.ep" not found.
+[Sun Feb  2 18:25:30 2014] [debug] Template "not_found.html.ep" not found.
+[Sun Feb  2 18:25:30 2014] [debug] Rendering cached inline template "61bac5a767dfc11d41545325644efbfa".
+[Sun Feb  2 18:25:30 2014] [debug] Rendering cached inline template "386d52bb3f2a581a1b21007d7de8d1aa".
+[Sun Feb  2 18:25:30 2014] [debug] 404 Not Found (0.009319s, 107.308/s).
+[Sun Feb  2 18:25:50 2014] [debug] GET "/employee/new".
+[Sun Feb  2 18:25:50 2014] [debug] Routing to controller "KiDiP::Employee" and action "new_employee".
+[Sun Feb  2 18:25:50 2014] [debug] Rendering template "employee/new_employee.html.ep".
+[Sun Feb  2 18:25:50 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  2 18:25:50 2014] [debug] 200 OK (0.010024s, 99.761/s).
+[Sun Feb  2 18:27:01 2014] [debug] POST "/employee/new".
+[Sun Feb  2 18:27:01 2014] [debug] Routing to controller "KiDiP::Employee" and action "new_employee".
+[Sun Feb  2 18:27:01 2014] [debug] Store new employee
+[Sun Feb  2 18:27:01 2014] [debug] 302 Found (0.006589s, 151.768/s).
+[Sun Feb  2 18:27:01 2014] [debug] GET "/employee/list".
+[Sun Feb  2 18:27:01 2014] [debug] Routing to controller "KiDiP::Employee" and action "list".
+[Sun Feb  2 18:27:01 2014] [info] list action called
+[Sun Feb  2 18:27:01 2014] [debug] Rendering template "employee/list.html.ep".
+[Sun Feb  2 18:27:01 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  2 18:27:01 2014] [debug] 200 OK (0.009461s, 105.697/s).
+[Sun Feb  2 18:27:05 2014] [debug] GET "/employee/list".
+[Sun Feb  2 18:27:05 2014] [debug] Routing to controller "KiDiP::Employee" and action "list".
+[Sun Feb  2 18:27:05 2014] [info] list action called
+[Sun Feb  2 18:27:05 2014] [debug] Rendering cached template "employee/list.html.ep".
+[Sun Feb  2 18:27:05 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Sun Feb  2 18:27:05 2014] [debug] 200 OK (0.004717s, 211.999/s).
+[Sun Feb  2 18:27:11 2014] [debug] GET "/employee/new".
+[Sun Feb  2 18:27:11 2014] [debug] Routing to controller "KiDiP::Employee" and action "new_employee".
+[Sun Feb  2 18:27:11 2014] [debug] Rendering cached template "employee/new_employee.html.ep".
+[Sun Feb  2 18:27:11 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Sun Feb  2 18:27:11 2014] [debug] 200 OK (0.003569s, 280.191/s).
+[Sun Feb  2 18:27:40 2014] [debug] POST "/employee/new".
+[Sun Feb  2 18:27:40 2014] [debug] Routing to controller "KiDiP::Employee" and action "new_employee".
+[Sun Feb  2 18:27:40 2014] [debug] Store new employee
+[Sun Feb  2 18:27:40 2014] [debug] 302 Found (0.002118s, 472.144/s).
+[Sun Feb  2 18:27:40 2014] [debug] GET "/employee/list".
+[Sun Feb  2 18:27:40 2014] [debug] Routing to controller "KiDiP::Employee" and action "list".
+[Sun Feb  2 18:27:40 2014] [info] list action called
+[Sun Feb  2 18:27:40 2014] [debug] Rendering cached template "employee/list.html.ep".
+[Sun Feb  2 18:27:40 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Sun Feb  2 18:27:40 2014] [debug] 200 OK (0.005182s, 192.976/s).
+[Sun Feb  2 18:27:47 2014] [debug] GET "/employee/list".
+[Sun Feb  2 18:27:47 2014] [debug] Routing to controller "KiDiP::Employee" and action "list".
+[Sun Feb  2 18:27:47 2014] [info] list action called
+[Sun Feb  2 18:27:47 2014] [debug] Rendering cached template "employee/list.html.ep".
+[Sun Feb  2 18:27:47 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Sun Feb  2 18:27:47 2014] [debug] 200 OK (0.005351s, 186.881/s).
+[Sun Feb  2 18:28:06 2014] [debug] GET "/employee/new".
+[Sun Feb  2 18:28:06 2014] [debug] Routing to controller "KiDiP::Employee" and action "new_employee".
+[Sun Feb  2 18:28:06 2014] [debug] Rendering cached template "employee/new_employee.html.ep".
+[Sun Feb  2 18:28:06 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Sun Feb  2 18:28:06 2014] [debug] 200 OK (0.003499s, 285.796/s).
+[Sun Feb  2 18:28:46 2014] [debug] POST "/employee/new".
+[Sun Feb  2 18:28:46 2014] [debug] Routing to controller "KiDiP::Employee" and action "new_employee".
+[Sun Feb  2 18:28:46 2014] [debug] Store new employee
+[Sun Feb  2 18:28:46 2014] [debug] 302 Found (0.002140s, 467.290/s).
+[Sun Feb  2 18:28:46 2014] [debug] GET "/employee/list".
+[Sun Feb  2 18:28:46 2014] [debug] Routing to controller "KiDiP::Employee" and action "list".
+[Sun Feb  2 18:28:46 2014] [info] list action called
+[Sun Feb  2 18:28:46 2014] [debug] Rendering cached template "employee/list.html.ep".
+[Sun Feb  2 18:28:46 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Sun Feb  2 18:28:46 2014] [debug] 200 OK (0.005770s, 173.310/s).
+[Sun Feb  2 18:28:51 2014] [debug] GET "/employee/list".
+[Sun Feb  2 18:28:51 2014] [debug] Routing to controller "KiDiP::Employee" and action "list".
+[Sun Feb  2 18:28:51 2014] [info] list action called
+[Sun Feb  2 18:28:51 2014] [debug] Rendering cached template "employee/list.html.ep".
+[Sun Feb  2 18:28:51 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Sun Feb  2 18:28:51 2014] [debug] 200 OK (0.006091s, 164.177/s).
+[Sun Feb  2 18:29:54 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  2 18:29:54 2014] [debug] GET "/employee/new".
+[Sun Feb  2 18:29:54 2014] [debug] Routing to controller "KiDiP::Employee" and action "new_employee".
+[Sun Feb  2 18:29:54 2014] [debug] Rendering template "employee/new_employee.html.ep".
+[Sun Feb  2 18:29:54 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  2 18:29:54 2014] [debug] 200 OK (0.015631s, 63.975/s).
+[Sun Feb  2 18:30:20 2014] [debug] POST "/employee/new".
+[Sun Feb  2 18:30:20 2014] [debug] Routing to controller "KiDiP::Employee" and action "new_employee".
+[Sun Feb  2 18:30:20 2014] [debug] Store new employee
+[Sun Feb  2 18:30:20 2014] [debug] 302 Found (0.003174s, 315.060/s).
+[Sun Feb  2 18:30:20 2014] [debug] GET "/employee/list".
+[Sun Feb  2 18:30:20 2014] [debug] Routing to controller "KiDiP::Employee" and action "list".
+[Sun Feb  2 18:30:20 2014] [info] list action called
+[Sun Feb  2 18:30:20 2014] [debug] Rendering template "employee/list.html.ep".
+[Sun Feb  2 18:30:20 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  2 18:30:20 2014] [debug] 200 OK (0.012209s, 81.907/s).
+[Sun Feb  2 18:30:23 2014] [debug] GET "/employee/list".
+[Sun Feb  2 18:30:23 2014] [debug] Routing to controller "KiDiP::Employee" and action "list".
+[Sun Feb  2 18:30:23 2014] [info] list action called
+[Sun Feb  2 18:30:23 2014] [debug] Rendering cached template "employee/list.html.ep".
+[Sun Feb  2 18:30:23 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Sun Feb  2 18:30:23 2014] [debug] 200 OK (0.006033s, 165.755/s).
+[Sun Feb  2 18:31:41 2014] [debug] GET "/employee/52ec9d983b04336a05000000".
+[Sun Feb  2 18:31:41 2014] [debug] Routing to controller "KiDiP::Employee" and action "edit_employee".
+[Sun Feb  2 18:31:41 2014] [debug] employee ID: 52ec9d983b04336a05000000
+[Sun Feb  2 18:31:41 2014] [debug] Rendering template "employee/edit_employee.html.ep".
+[Sun Feb  2 18:31:41 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  2 18:31:41 2014] [debug] 200 OK (0.010864s, 92.047/s).
+[Sun Feb  2 18:32:03 2014] [debug] GET "/employee/list".
+[Sun Feb  2 18:32:03 2014] [debug] Routing to controller "KiDiP::Employee" and action "list".
+[Sun Feb  2 18:32:03 2014] [info] list action called
+[Sun Feb  2 18:32:03 2014] [debug] Rendering cached template "employee/list.html.ep".
+[Sun Feb  2 18:32:03 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Sun Feb  2 18:32:03 2014] [debug] 200 OK (0.006511s, 153.586/s).
+[Sun Feb  2 18:34:06 2014] [debug] GET "/planning".
+[Sun Feb  2 18:34:06 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sun Feb  2 18:34:06 2014] [info] list action called
+[Sun Feb  2 18:34:06 2014] [debug] Rendering template "planning/planning.html.ep".
+[Sun Feb  2 18:34:06 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  2 18:34:06 2014] [debug] 200 OK (0.029533s, 33.860/s).
+[Sun Feb  2 18:34:07 2014] [debug] GET "/getlocaldata".
+[Sun Feb  2 18:34:07 2014] [debug] Routing to controller "KiDiP::Employee" and action "getlocaldata".
+[Sun Feb  2 18:34:07 2014] [debug] 200 OK (0.002912s, 343.407/s).
+[Sun Feb  2 18:34:24 2014] [debug] GET "/employee/list".
+[Sun Feb  2 18:34:24 2014] [debug] Routing to controller "KiDiP::Employee" and action "list".
+[Sun Feb  2 18:34:24 2014] [info] list action called
+[Sun Feb  2 18:34:24 2014] [debug] Rendering cached template "employee/list.html.ep".
+[Sun Feb  2 18:34:24 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Sun Feb  2 18:34:24 2014] [debug] 200 OK (0.006270s, 159.490/s).
+[Sun Feb  2 18:34:26 2014] [debug] GET "/employee/52ec9d983b04336a05000000".
+[Sun Feb  2 18:34:26 2014] [debug] Routing to controller "KiDiP::Employee" and action "edit_employee".
+[Sun Feb  2 18:34:26 2014] [debug] employee ID: 52ec9d983b04336a05000000
+[Sun Feb  2 18:34:26 2014] [debug] Rendering cached template "employee/edit_employee.html.ep".
+[Sun Feb  2 18:34:26 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Sun Feb  2 18:34:26 2014] [debug] 200 OK (0.003879s, 257.798/s).
+[Sun Feb  2 18:34:37 2014] [debug] GET "/planning".
+[Sun Feb  2 18:34:37 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sun Feb  2 18:34:37 2014] [info] list action called
+[Sun Feb  2 18:34:37 2014] [debug] Rendering cached template "planning/planning.html.ep".
+[Sun Feb  2 18:34:37 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Sun Feb  2 18:34:37 2014] [debug] 200 OK (0.006292s, 158.932/s).
+[Sun Feb  2 18:34:38 2014] [debug] GET "/getlocaldata".
+[Sun Feb  2 18:34:38 2014] [debug] Routing to controller "KiDiP::Employee" and action "getlocaldata".
+[Sun Feb  2 18:34:38 2014] [debug] 200 OK (0.002276s, 439.367/s).
+[Sun Feb  2 18:34:53 2014] [debug] GET "/planning".
+[Sun Feb  2 18:34:53 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sun Feb  2 18:34:53 2014] [info] list action called
+[Sun Feb  2 18:34:53 2014] [debug] Rendering cached template "planning/planning.html.ep".
+[Sun Feb  2 18:34:53 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Sun Feb  2 18:34:53 2014] [debug] 200 OK (0.007701s, 129.853/s).
+[Sun Feb  2 18:34:54 2014] [debug] GET "/getlocaldata".
+[Sun Feb  2 18:34:54 2014] [debug] Routing to controller "KiDiP::Employee" and action "getlocaldata".
+[Sun Feb  2 18:34:54 2014] [debug] 200 OK (0.002197s, 455.166/s).
+[Sun Feb  2 18:47:51 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  2 18:47:51 2014] [debug] GET "/planning".
+[Sun Feb  2 18:47:51 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sun Feb  2 18:47:51 2014] [info] list action called
+[Sun Feb  2 18:47:51 2014] [debug] Rendering template "planning/planning.html.ep".
+[Sun Feb  2 18:47:51 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  2 18:47:51 2014] [debug] 200 OK (0.034385s, 29.082/s).
+[Sun Feb  2 18:47:52 2014] [debug] GET "/getlocaldata".
+[Sun Feb  2 18:47:52 2014] [debug] Routing to controller "KiDiP::Employee" and action "getlocaldata".
+[Sun Feb  2 18:47:52 2014] [debug] 200 OK (0.003804s, 262.881/s).
+[Sun Feb  2 18:48:18 2014] [debug] GET "/planning".
+[Sun Feb  2 18:48:18 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sun Feb  2 18:48:18 2014] [info] list action called
+[Sun Feb  2 18:48:18 2014] [debug] Rendering cached template "planning/planning.html.ep".
+[Sun Feb  2 18:48:18 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Sun Feb  2 18:48:18 2014] [debug] 200 OK (0.005684s, 175.932/s).
+[Sun Feb  2 18:48:19 2014] [debug] GET "/getlocaldata".
+[Sun Feb  2 18:48:19 2014] [debug] Routing to controller "KiDiP::Employee" and action "getlocaldata".
+[Sun Feb  2 18:48:19 2014] [debug] 200 OK (0.002301s, 434.594/s).
+[Sun Feb  2 18:59:01 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  2 18:59:01 2014] [debug] GET "/planning".
+[Sun Feb  2 18:59:01 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sun Feb  2 18:59:01 2014] [info] list action called
+[Sun Feb  2 18:59:01 2014] [debug] Rendering template "planning/planning.html.ep".
+[Sun Feb  2 18:59:01 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  2 18:59:01 2014] [debug] 200 OK (0.040070s, 24.956/s).
+[Sun Feb  2 18:59:02 2014] [debug] GET "/getlocaldata".
+[Sun Feb  2 18:59:02 2014] [debug] Routing to controller "KiDiP::Employee" and action "getlocaldata".
+[Sun Feb  2 18:59:02 2014] [debug] 200 OK (0.003928s, 254.582/s).
+[Sun Feb  2 19:00:53 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  2 19:00:53 2014] [debug] GET "/planning".
+[Sun Feb  2 19:00:53 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sun Feb  2 19:00:53 2014] [info] list action called
+[Sun Feb  2 19:00:53 2014] [debug] Rendering template "planning/planning.html.ep".
+[Sun Feb  2 19:00:53 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  2 19:00:53 2014] [debug] 200 OK (0.035383s, 28.262/s).
+[Sun Feb  2 19:00:54 2014] [debug] GET "/getlocaldata".
+[Sun Feb  2 19:00:54 2014] [debug] Routing to controller "KiDiP::Employee" and action "getlocaldata".
+[Sun Feb  2 19:00:54 2014] [debug] 200 OK (0.003761s, 265.887/s).
+[Sun Feb  2 19:01:26 2014] [debug] Your secret passphrase needs to be changed!!!
+[Sun Feb  2 19:01:26 2014] [debug] GET "/planning".
+[Sun Feb  2 19:01:26 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sun Feb  2 19:01:26 2014] [info] list action called
+[Sun Feb  2 19:01:26 2014] [debug] Rendering template "planning/planning.html.ep".
+[Sun Feb  2 19:01:26 2014] [debug] Rendering template "layouts/default.html.ep".
+[Sun Feb  2 19:01:26 2014] [debug] 200 OK (0.040389s, 24.759/s).
+[Sun Feb  2 19:01:27 2014] [debug] GET "/getlocaldata".
+[Sun Feb  2 19:01:27 2014] [debug] Routing to controller "KiDiP::Employee" and action "getlocaldata".
+[Sun Feb  2 19:01:27 2014] [debug] 200 OK (0.003930s, 254.453/s).
+[Sun Feb  2 19:02:23 2014] [debug] GET "/planning".
+[Sun Feb  2 19:02:23 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sun Feb  2 19:02:23 2014] [info] list action called
+[Sun Feb  2 19:02:23 2014] [debug] Rendering cached template "planning/planning.html.ep".
+[Sun Feb  2 19:02:23 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Sun Feb  2 19:02:23 2014] [debug] 200 OK (0.006884s, 145.264/s).
+[Sun Feb  2 19:02:24 2014] [debug] GET "/getlocaldata".
+[Sun Feb  2 19:02:24 2014] [debug] Routing to controller "KiDiP::Employee" and action "getlocaldata".
+[Sun Feb  2 19:02:24 2014] [debug] 200 OK (0.001946s, 513.875/s).
+[Sun Feb  2 19:03:54 2014] [debug] GET "/planning".
+[Sun Feb  2 19:03:54 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Sun Feb  2 19:03:54 2014] [info] list action called
+[Sun Feb  2 19:03:54 2014] [debug] Rendering cached template "planning/planning.html.ep".
+[Sun Feb  2 19:03:54 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Sun Feb  2 19:03:54 2014] [debug] 200 OK (0.006733s, 148.522/s).
+[Sun Feb  2 19:03:55 2014] [debug] GET "/getlocaldata".
+[Sun Feb  2 19:03:55 2014] [debug] Routing to controller "KiDiP::Employee" and action "getlocaldata".
+[Sun Feb  2 19:03:55 2014] [debug] 200 OK (0.002073s, 482.393/s).

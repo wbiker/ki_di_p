@@ -24,7 +24,6 @@ sub planning {
     $em->{work_hour} = $wh;
     push($empl, $em);
   }
-  say Dumper $empl;
 
   # Render template "employee/list.html.ep" with message
   $self->stash(employees => $empl);

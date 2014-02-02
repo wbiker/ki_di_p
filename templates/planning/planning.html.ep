@@ -120,13 +120,19 @@
             // I subtract the hour of the is_hours column
             // must also substruct the overtime of the total_time_hours
             var overtimeValue = 0;
-            if(is_hours > should_hours) {
+            if("/" != value && is_hours > should_hours) {
                 overtimeValue = is_hours - should_hours;
             }
             if("T" == value) {
-		        is_hours -= 9;
-                if(9 < overtimeValue) {
-                    overtimeValue = 9;
+                if(day == 6) {
+                    is_hours -= 7.5;
+                    is_hours -= 1.25;
+                }
+                else {
+		            is_hours -= 9;
+                    if(9 < overtimeValue) {
+                        overtimeValue = 9;
+                    }
                 }
             }
             else if("V" == value) {
@@ -136,9 +142,15 @@
                 }
             }
             else if("N" == value) {
-		        is_hours -= 5.5;
-                if(5.5 < overtimeValue) {
-                    overtimeValue = 5.5;
+                if(day == 6) {
+                    is_hours -= 4.5;
+                    is_hours -= 1.25;
+                }
+                else {
+		            is_hours -= 5.5;
+                    if(5.5 < overtimeValue) {
+                        overtimeValue = 5.5;
+                    }
                 }
             }
             else if("U" == value || "K" == value) {
@@ -168,13 +180,25 @@
             // Add the hours corresponding to the new workshift to the is_hours column.
             var workshift = sessionStorage.workshift;
             if("T" == workshift) {
-                is_hours += 9;
+                if(day == 6) {
+                    is_hours += 7.5;
+                    is_hours += 1.25;
+                }
+                else {
+                    is_hours += 9;
+                }
             }
             else if("V" == workshift) {
                 is_hours += 4.5;
             }
             else if("N" == workshift) {
-                is_hours += 5.5;
+                if(day == 6) {
+                    is_hours += 4.5;
+                    is_hours += 1.25;
+                }
+                else {
+                    is_hours += 5.5;
+                }
             }
             else if("U" == workshift || "K" == workshift) {
                 if(day > 0 && day < 6) {
