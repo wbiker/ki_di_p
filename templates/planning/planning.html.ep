@@ -124,9 +124,14 @@
                 overtimeValue = is_hours - should_hours;
             }
             if("T" == value) {
+                console.log("old value is T");
                 if(day == 6) {
                     is_hours -= 7.5;
                     is_hours -= 1.25;
+
+                    if(8.75 < overtimeValue) {
+                        overtimeValue = 8.75;
+                    }
                 }
                 else {
 		            is_hours -= 9;

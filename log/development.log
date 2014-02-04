@@ -11392,3 +11392,164 @@ Compilation failed in require at (eval 535) line 1.
 [Sun Feb  2 19:03:55 2014] [debug] GET "/getlocaldata".
 [Sun Feb  2 19:03:55 2014] [debug] Routing to controller "KiDiP::Employee" and action "getlocaldata".
 [Sun Feb  2 19:03:55 2014] [debug] 200 OK (0.002073s, 482.393/s).
+[Tue Feb  4 17:57:46 2014] [info] Listening at "http://*:3000".
+[Tue Feb  4 18:00:21 2014] [debug] Your secret passphrase needs to be changed!!!
+[Tue Feb  4 18:00:21 2014] [debug] GET "/".
+[Tue Feb  4 18:00:21 2014] [debug] Routing to controller "KiDiP::Employee" and action "welcome".
+[Tue Feb  4 18:00:21 2014] [debug] Action not found in controller.
+[Tue Feb  4 18:00:21 2014] [debug] Rendering template "employee/welcome.html.ep".
+[Tue Feb  4 18:00:21 2014] [debug] Rendering template "layouts/default.html.ep".
+[Tue Feb  4 18:00:21 2014] [debug] 200 OK (0.010221s, 97.838/s).
+[Tue Feb  4 18:00:38 2014] [debug] GET "/planning".
+[Tue Feb  4 18:00:39 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Tue Feb  4 18:00:39 2014] [info] list action called
+[Tue Feb  4 18:00:39 2014] [debug] Rendering template "planning/planning.html.ep".
+[Tue Feb  4 18:00:39 2014] [debug] Rendering template "layouts/default.html.ep".
+[Tue Feb  4 18:00:39 2014] [debug] 200 OK (0.043163s, 23.168/s).
+[Tue Feb  4 18:00:39 2014] [debug] GET "/getlocaldata".
+[Tue Feb  4 18:00:39 2014] [debug] Routing to controller "KiDiP::Employee" and action "getlocaldata".
+[Tue Feb  4 18:00:39 2014] [debug] 200 OK (0.003521s, 284.010/s).
+[Tue Feb  4 18:04:32 2014] [debug] Your secret passphrase needs to be changed!!!
+[Tue Feb  4 18:04:32 2014] [debug] GET "/employee/new".
+[Tue Feb  4 18:04:32 2014] [debug] Routing to controller "KiDiP::Employee" and action "new_employee".
+[Tue Feb  4 18:04:32 2014] [debug] Rendering template "employee/new_employee.html.ep".
+[Tue Feb  4 18:04:32 2014] [debug] Rendering template "layouts/default.html.ep".
+[Tue Feb  4 18:04:32 2014] [debug] 200 OK (0.015078s, 66.322/s).
+[Tue Feb  4 18:04:43 2014] [debug] GET "/planning".
+[Tue Feb  4 18:04:43 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Tue Feb  4 18:04:43 2014] [info] list action called
+[Tue Feb  4 18:04:43 2014] [debug] Rendering template "planning/planning.html.ep".
+[Tue Feb  4 18:04:43 2014] [debug] Rendering template "layouts/default.html.ep".
+[Tue Feb  4 18:04:43 2014] [debug] 200 OK (0.030645s, 32.632/s).
+[Tue Feb  4 18:04:44 2014] [debug] GET "/getlocaldata".
+[Tue Feb  4 18:04:44 2014] [debug] Routing to controller "KiDiP::Employee" and action "getlocaldata".
+[Tue Feb  4 18:04:44 2014] [debug] 200 OK (0.002595s, 385.356/s).
+[Tue Feb  4 18:04:46 2014] [debug] GET "/employee/list".
+[Tue Feb  4 18:04:46 2014] [debug] Routing to controller "KiDiP::Employee" and action "list".
+[Tue Feb  4 18:04:46 2014] [info] list action called
+[Tue Feb  4 18:04:46 2014] [debug] Rendering template "employee/list.html.ep".
+[Tue Feb  4 18:04:46 2014] [debug] Rendering template "layouts/default.html.ep".
+[Tue Feb  4 18:04:46 2014] [debug] 200 OK (0.012765s, 78.339/s).
+[Tue Feb  4 18:04:51 2014] [debug] GET "/employee/52ee7fe54063c6e624000000".
+[Tue Feb  4 18:04:51 2014] [debug] Routing to controller "KiDiP::Employee" and action "edit_employee".
+[Tue Feb  4 18:04:51 2014] [debug] employee ID: 52ee7fe54063c6e624000000
+[Tue Feb  4 18:04:51 2014] [debug] Rendering template "employee/edit_employee.html.ep".
+[Tue Feb  4 18:04:51 2014] [debug] Rendering template "layouts/default.html.ep".
+[Tue Feb  4 18:04:51 2014] [debug] 200 OK (0.011063s, 90.391/s).
+[Tue Feb  4 18:04:59 2014] [debug] POST "/employee/52ee7fe54063c6e624000000".
+[Tue Feb  4 18:04:59 2014] [debug] Routing to controller "KiDiP::Employee" and action "edit_employee".
+[Tue Feb  4 18:04:59 2014] [debug] employee ID: 52ee7fe54063c6e624000000
+[Tue Feb  4 18:04:59 2014] [debug] 302 Found (0.004748s, 210.615/s).
+[Tue Feb  4 18:04:59 2014] [debug] GET "/employee/list".
+[Tue Feb  4 18:04:59 2014] [debug] Routing to controller "KiDiP::Employee" and action "list".
+[Tue Feb  4 18:04:59 2014] [info] list action called
+[Tue Feb  4 18:04:59 2014] [debug] Rendering cached template "employee/list.html.ep".
+[Tue Feb  4 18:04:59 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Tue Feb  4 18:04:59 2014] [debug] 200 OK (0.006130s, 163.132/s).
+[Tue Feb  4 18:05:46 2014] [debug] Your secret passphrase needs to be changed!!!
+[Tue Feb  4 18:05:46 2014] [debug] GET "/employee/list".
+[Tue Feb  4 18:05:46 2014] [debug] Routing to controller "KiDiP::Employee" and action "list".
+[Tue Feb  4 18:05:46 2014] [info] list action called
+[Tue Feb  4 18:05:46 2014] [debug] Rendering template "employee/list.html.ep".
+[Tue Feb  4 18:05:46 2014] [debug] Rendering template "layouts/default.html.ep".
+[Tue Feb  4 18:05:46 2014] [debug] 200 OK (0.015643s, 63.926/s).
+[Tue Feb  4 18:05:48 2014] [debug] GET "/employee/52ee7fe54063c6e624000000".
+[Tue Feb  4 18:05:48 2014] [debug] Routing to controller "KiDiP::Employee" and action "edit_employee".
+[Tue Feb  4 18:05:48 2014] [debug] employee ID: 52ee7fe54063c6e624000000
+[Tue Feb  4 18:05:48 2014] [debug] Rendering template "employee/edit_employee.html.ep".
+[Tue Feb  4 18:05:48 2014] [debug] Rendering template "layouts/default.html.ep".
+[Tue Feb  4 18:05:48 2014] [debug] 200 OK (0.010968s, 91.174/s).
+[Tue Feb  4 18:06:00 2014] [debug] POST "/employee/52ee7fe54063c6e624000000".
+[Tue Feb  4 18:06:00 2014] [debug] Routing to controller "KiDiP::Employee" and action "edit_employee".
+[Tue Feb  4 18:06:00 2014] [debug] employee ID: 52ee7fe54063c6e624000000
+[Tue Feb  4 18:06:00 2014] [debug] 302 Found (0.002810s, 355.872/s).
+[Tue Feb  4 18:06:00 2014] [debug] GET "/employee/list".
+[Tue Feb  4 18:06:00 2014] [debug] Routing to controller "KiDiP::Employee" and action "list".
+[Tue Feb  4 18:06:00 2014] [info] list action called
+[Tue Feb  4 18:06:00 2014] [debug] Rendering cached template "employee/list.html.ep".
+[Tue Feb  4 18:06:00 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Tue Feb  4 18:06:00 2014] [debug] 200 OK (0.006133s, 163.052/s).
+[Tue Feb  4 18:06:09 2014] [debug] GET "/employee/list".
+[Tue Feb  4 18:06:09 2014] [debug] Routing to controller "KiDiP::Employee" and action "list".
+[Tue Feb  4 18:06:09 2014] [info] list action called
+[Tue Feb  4 18:06:09 2014] [debug] Rendering cached template "employee/list.html.ep".
+[Tue Feb  4 18:06:09 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Tue Feb  4 18:06:09 2014] [debug] 200 OK (0.006247s, 160.077/s).
+[Tue Feb  4 18:08:33 2014] [debug] GET "/employee/52ec9d983b04336a05000000".
+[Tue Feb  4 18:08:33 2014] [debug] Routing to controller "KiDiP::Employee" and action "edit_employee".
+[Tue Feb  4 18:08:33 2014] [debug] employee ID: 52ec9d983b04336a05000000
+[Tue Feb  4 18:08:33 2014] [debug] Rendering cached template "employee/edit_employee.html.ep".
+[Tue Feb  4 18:08:33 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Tue Feb  4 18:08:33 2014] [debug] 200 OK (0.005383s, 185.770/s).
+[Tue Feb  4 18:08:44 2014] [debug] GET "/employee/list".
+[Tue Feb  4 18:08:44 2014] [debug] Routing to controller "KiDiP::Employee" and action "list".
+[Tue Feb  4 18:08:44 2014] [info] list action called
+[Tue Feb  4 18:08:44 2014] [debug] Rendering cached template "employee/list.html.ep".
+[Tue Feb  4 18:08:44 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Tue Feb  4 18:08:44 2014] [debug] 200 OK (0.006913s, 144.655/s).
+[Tue Feb  4 18:09:16 2014] [debug] GET "/planning".
+[Tue Feb  4 18:09:16 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Tue Feb  4 18:09:16 2014] [info] list action called
+[Tue Feb  4 18:09:16 2014] [debug] Rendering template "planning/planning.html.ep".
+[Tue Feb  4 18:09:16 2014] [debug] Rendering template "layouts/default.html.ep".
+[Tue Feb  4 18:09:16 2014] [debug] 200 OK (0.031262s, 31.988/s).
+[Tue Feb  4 18:09:17 2014] [debug] GET "/getlocaldata".
+[Tue Feb  4 18:09:17 2014] [debug] Routing to controller "KiDiP::Employee" and action "getlocaldata".
+[Tue Feb  4 18:09:17 2014] [debug] 200 OK (0.002740s, 364.964/s).
+[Tue Feb  4 18:09:57 2014] [debug] GET "/planning".
+[Tue Feb  4 18:09:57 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Tue Feb  4 18:09:57 2014] [info] list action called
+[Tue Feb  4 18:09:57 2014] [debug] Rendering cached template "planning/planning.html.ep".
+[Tue Feb  4 18:09:57 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Tue Feb  4 18:09:57 2014] [debug] 200 OK (0.006290s, 158.983/s).
+[Tue Feb  4 18:09:58 2014] [debug] GET "/getlocaldata".
+[Tue Feb  4 18:09:58 2014] [debug] Routing to controller "KiDiP::Employee" and action "getlocaldata".
+[Tue Feb  4 18:09:58 2014] [debug] 200 OK (0.002508s, 398.724/s).
+[Tue Feb  4 18:10:46 2014] [debug] GET "/planning".
+[Tue Feb  4 18:10:46 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Tue Feb  4 18:10:46 2014] [info] list action called
+[Tue Feb  4 18:10:46 2014] [debug] Rendering cached template "planning/planning.html.ep".
+[Tue Feb  4 18:10:46 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Tue Feb  4 18:10:46 2014] [debug] 200 OK (0.006432s, 155.473/s).
+[Tue Feb  4 18:10:46 2014] [debug] GET "/getlocaldata".
+[Tue Feb  4 18:10:46 2014] [debug] Routing to controller "KiDiP::Employee" and action "getlocaldata".
+[Tue Feb  4 18:10:46 2014] [debug] 200 OK (0.002009s, 497.760/s).
+[Tue Feb  4 18:11:38 2014] [debug] GET "/planning".
+[Tue Feb  4 18:11:38 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Tue Feb  4 18:11:38 2014] [info] list action called
+[Tue Feb  4 18:11:38 2014] [debug] Rendering cached template "planning/planning.html.ep".
+[Tue Feb  4 18:11:38 2014] [debug] Rendering cached template "layouts/default.html.ep".
+[Tue Feb  4 18:11:38 2014] [debug] 200 OK (0.007228s, 138.351/s).
+[Tue Feb  4 18:11:38 2014] [debug] GET "/getlocaldata".
+[Tue Feb  4 18:11:38 2014] [debug] Routing to controller "KiDiP::Employee" and action "getlocaldata".
+[Tue Feb  4 18:11:38 2014] [debug] 200 OK (0.002212s, 452.080/s).
+[Tue Feb  4 18:16:52 2014] [debug] Your secret passphrase needs to be changed!!!
+[Tue Feb  4 18:16:52 2014] [debug] GET "/planning".
+[Tue Feb  4 18:16:52 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Tue Feb  4 18:16:52 2014] [info] list action called
+[Tue Feb  4 18:16:52 2014] [debug] Rendering template "planning/planning.html.ep".
+[Tue Feb  4 18:16:52 2014] [debug] Rendering template "layouts/default.html.ep".
+[Tue Feb  4 18:16:52 2014] [debug] 200 OK (0.039286s, 25.454/s).
+[Tue Feb  4 18:16:53 2014] [debug] GET "/getlocaldata".
+[Tue Feb  4 18:16:53 2014] [debug] Routing to controller "KiDiP::Employee" and action "getlocaldata".
+[Tue Feb  4 18:16:53 2014] [debug] 200 OK (0.003997s, 250.188/s).
+[Tue Feb  4 18:18:37 2014] [debug] Your secret passphrase needs to be changed!!!
+[Tue Feb  4 18:18:37 2014] [debug] GET "/planning".
+[Tue Feb  4 18:18:37 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Tue Feb  4 18:18:37 2014] [info] list action called
+[Tue Feb  4 18:18:37 2014] [debug] Rendering template "planning/planning.html.ep".
+[Tue Feb  4 18:18:37 2014] [debug] Rendering template "layouts/default.html.ep".
+[Tue Feb  4 18:18:37 2014] [debug] 200 OK (0.039837s, 25.102/s).
+[Tue Feb  4 18:18:39 2014] [debug] GET "/getlocaldata".
+[Tue Feb  4 18:18:39 2014] [debug] Routing to controller "KiDiP::Employee" and action "getlocaldata".
+[Tue Feb  4 18:18:39 2014] [debug] 200 OK (0.004171s, 239.751/s).
+[Tue Feb  4 18:23:25 2014] [debug] Your secret passphrase needs to be changed!!!
+[Tue Feb  4 18:23:25 2014] [debug] GET "/planning".
+[Tue Feb  4 18:23:25 2014] [debug] Routing to controller "KiDiP::Planning" and action "planning".
+[Tue Feb  4 18:23:25 2014] [info] list action called
+[Tue Feb  4 18:23:25 2014] [debug] Rendering template "planning/planning.html.ep".
+[Tue Feb  4 18:23:25 2014] [debug] Rendering template "layouts/default.html.ep".
+[Tue Feb  4 18:23:25 2014] [debug] 200 OK (0.044406s, 22.519/s).
+[Tue Feb  4 18:23:26 2014] [debug] GET "/getlocaldata".
+[Tue Feb  4 18:23:26 2014] [debug] Routing to controller "KiDiP::Employee" and action "getlocaldata".
+[Tue Feb  4 18:23:26 2014] [debug] 200 OK (0.004040s, 247.525/s).

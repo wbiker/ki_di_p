@@ -11,7 +11,7 @@
             </tr>
             <tr>
                 <td>Urlaub plus</td>
-                <td><input class="easyui-numberbox" name="vacation_plus" value="25" /></td>
+                <td><input class="easyui-numberbox" name="vacation_plus" value="30" /></td>
             </tr>
             <tr>
                 <td>Wochenendestunden plus:</td>

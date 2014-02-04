@@ -15,11 +15,11 @@
             </tr>
             <tr>
                 <td>Urlaub:</td>
-                <td><input class="easyui-numberbox" name="vacation" value="25" /></td>
+                <td><input class="easyui-numberbox" name="vacation" value="30" /></td>
             </tr>
             <tr>
                 <td>Aktuelle Stunden:</td>
-                <td><input class="easyui-numberbox" name="total_work_time" value="0" /></td>
+                <td><input class="easyui-numberbox" data-options="precision:2"  name="total_work_time" value="0" /></td>
             </tr>
             <tr>
                 <td>Arbeitszeit:</td>

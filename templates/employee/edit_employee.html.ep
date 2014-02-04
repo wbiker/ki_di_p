@@ -19,7 +19,7 @@
             </tr>
             <tr>
                 <td>Aktuelle Stunden:</td>
-                <td><input class="easyui-numberbox" name="total_work_time"  value="<%= $employee->{total_work_time} %>"/></td>
+                <td><input class="easyui-numberbox" data-options="precision:2" name="total_work_time"  value="<%= $employee->{total_work_time} %>"/></td>
             </tr>
             <tr>
                 <td>Arbeitszeit:</td>
