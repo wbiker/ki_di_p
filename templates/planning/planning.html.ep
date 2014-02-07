@@ -9,20 +9,21 @@
         <a href="#" id="U" class="easyui-linkbutton" data-options="toggle:true,group:'workshifts'" onclick="click_t(this)">U</a>
         <a href="#" id="K" class="easyui-linkbutton" data-options="toggle:true,group:'workshifts'" onclick="click_t(this)">K</a>
         <a href="#" id="F" class="easyui-linkbutton" data-options="toggle:true,group:'workshifts'" onclick="click_t(this)">/</a>
+        <a href="#" id="F" class="easyui-linkbutton" onclick="saveWeek()">Speicher</a>
     </div>
 
 
-    <table id="dg" class="easyui-datagrid" data-options="idField:'id',selectOnCheck:false,singleSelect:true" style="width:auto">
+    <table id="dg" class="easyui-datagrid" data-options="idField:'id',selectOnCheck:false,singleSelect:true,showFooter:true" style="width:auto">
         <thead>
             <tr>
                 <th data-options="field:'id',hidden:true"></th>
                 <th data-options="field:'name',width:250">Name</th>
-                <th data-options="field:'<%= $dates->{date1} %>',align:'center'"><%= $dates->{date1_string} %></th>
-                <th data-options="field:'<%= $dates->{date2} %>',align:'center'"><%= $dates->{date2_string} %></th>
-                <th data-options="field:'<%= $dates->{date3} %>',align:'center'"><%= $dates->{date3_string} %></th>
-                <th data-options="field:'<%= $dates->{date4} %>',align:'center'"><%= $dates->{date4_string} %></th>
-                <th data-options="field:'<%= $dates->{date5} %>',align:'center'"><%= $dates->{date5_string} %></th>
-                <th data-options="field:'<%= $dates->{date6} %>',align:'center'"><%= $dates->{date6_string} %></th>
+                <th data-options="field:'date1',align:'center'"><%= $dates->{date1_string} %></th>
+                <th data-options="field:'date2',align:'center'"><%= $dates->{date2_string} %></th>
+                <th data-options="field:'date3',align:'center'"><%= $dates->{date3_string} %></th>
+                <th data-options="field:'date4',align:'center'"><%= $dates->{date4_string} %></th>
+                <th data-options="field:'date5',align:'center'"><%= $dates->{date5_string} %></th>
+                <th data-options="field:'date6',align:'center'"><%= $dates->{date6_string} %></th>
                 <th data-options="field:'is_hours',align:'center'" formatter="formatIsHours">Ist Stunden</th>
                 <th data-options="field:'should_hours',align:'center'">Soll Stunden</th>
                 <th data-options="field:'total_work_time',align:'center'">Arbeitsstunden</th>
@@ -66,6 +67,7 @@
 
 <script>
     sessionStorage.workshift = 'T';
+    var dates;
 
     function formatIsHours(val, row) {
         // skip last row because it is the sumary row
@@ -112,7 +114,10 @@
             var em = employees[currentRow.id];
             var workshifts = JSON.parse(sessionStorage.workshifts);
             var ws = workshifts[em.work_shift];
-            var d = new Date(field);
+            // dates is set in the getlocaldata function at page load time.
+            var date_column = dates[field];
+            console.log("date: " + date_column);
+            var d = new Date(date_column);
             var day = d.getDay();
             console.log("Week day: Sunday to Saturday 0 - 6: " + day);
 
@@ -276,7 +281,6 @@
                     }
                 }
             }
-            console.log(sumary);
             var sumary_keys = Object.keys(sumary);
             var sum = {};
             sum.index = data.rows.length - 1;
@@ -290,6 +294,46 @@
             $('#dg').datagrid('updateRow', sum);
         }
     });
+
+    // save the week information.
+    function saveWeek() {
+        // get all rows
+        var rows = $('#dg').datagrid('getRows');
+
+        // go through the rows.
+        for(var i = 0; i < rows.length - 1; i++) {
+            var row = rows[i];
+            row.date1_value = dates.date1;
+            row.date2_value = dates.date2;
+            row.date3_value = dates.date3;
+            row.date4_value = dates.date4;
+            row.date5_value = dates.date5;
+            row.date6_value = dates.date6;
+
+            // send data to server
+            // ID, total_work_time and vacation
+            var id = row.id;
+            var post_url = "/employee/" + id + "/update";
+            var toSend = JSON.stringify(row);
+            $.ajax({
+                url: post_url,
+                type: 'POST',
+                data: toSend,
+                dataType: 'json',
+
+                success: function() {
+                    console.log("Success");
+                },
+
+                error: function(xhr, status, error) {
+                    console.log("Update failed:");
+                    console.log(status);
+                }
+            });
+            
+        }
+        
+    }
 
     function click_t(opt) {
         sessionStorage.workshift = opt.id;
@@ -308,11 +352,13 @@
             dataType: 'json',
 
             success: function (json, textStatus) {
-                console.log("got all employees");
-                console.log(json);
                 $.each(json, function(key, value) {
                     console.log("Add " + key + " to sessionStorage");
                     sessionStorage[key] = JSON.stringify(value);
+
+                    if(key == "dates") {
+                        dates = value;
+                    }
                 });
             },
 

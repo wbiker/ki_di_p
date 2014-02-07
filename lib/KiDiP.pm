@@ -18,6 +18,7 @@ sub startup {
   $r->get('/employee/new')->to(controller => 'employee', action => 'new_employee');
   $r->get('/employee/list')->to(controller => 'employee', action => 'list');
   $r->get('/employee/:employee_id')->to(controller => 'employee', action => 'edit_employee');
+  $r->post('/employee/:employee_id/update')->to(controller => 'employee', action => 'update_employee');
   $r->get('/employee/:employee_id/delete')->to(controller => 'employee', action => 'delete_employee');
   $r->get('/planning')->to(controller => 'planning', action => 'planning');
 

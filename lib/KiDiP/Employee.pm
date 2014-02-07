@@ -3,6 +3,8 @@ use Mojo::Base 'Mojolicious::Controller';
 
 use Database::Mongo;
 use Data::Dumper;
+use Time::Piece;
+use Time::Seconds;
 
 # This action will render a template
 sub list {
@@ -48,6 +50,26 @@ sub edit_employee {
     $self->redirect_to('/employee/list');
 }
 
+sub update_employee {
+    my $self = shift;
+    my $employee_id = $self->param('employee_id');
+    $self->app->log->debug("update employee ID: $employee_id"); 
+
+    my $mongo = $self->app->{mongo};
+    my $employee = $mongo->find_one('employee', $employee_id);
+
+    my $empl = {};
+    $empl->{vacation} = $self->param('vacation');
+    $empl->{total_work_time} = $self->param('total_work_time');
+    
+    my $data = $self->req->json;
+    say "JSON ", Dumper $data;
+
+#    $mongo->update('employee', $employee_id, $empl);
+    my $json = "{ status: 'OK'";
+    $self->render(json => $json, status => 200);
+}
+
 # is triggered by URL/employee/new
 sub new_employee {
     my $self = shift;
@@ -82,7 +104,6 @@ sub new_employee {
     $mongo->insert('employee', $empl);
     $self->redirect_to('/employee/list');
 }
-
 
 sub delete_employee {
     my $self = shift;
@@ -123,6 +144,26 @@ sub getlocaldata {
             vacation_plus => $ws->{vacation_plus},
         };
     }
+
+    my @wdays = qw/So Mo Di Mi Do Fr/;
+    # calculate days for one week
+    my $cur = Time::Piece->new;
+    # if current day is a monday I add one day because I want the next week not the current one.
+    $cur += ONE_DAY if $cur->wday == 2;
+    while($cur->wday != 2) {
+        # asl long as date is not monday add one day
+        $cur += ONE_DAY;
+    }
+
+    my $dates = {};
+    for(1..7) {
+        $dates->{'date'.$_} = $cur->ymd;
+        $dates->{'date'.$_."_string"} = $wdays[$cur->day_of_week]." ".$cur->dmy('.');
+
+        $cur += ONE_DAY;
+    }
+
+    $json->{dates} = $dates;
 
     $self->render(json => $json);
 }
