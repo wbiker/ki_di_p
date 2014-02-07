@@ -56,14 +56,36 @@ sub update_employee {
     $self->app->log->debug("update employee ID: $employee_id"); 
 
     my $mongo = $self->app->{mongo};
-    my $employee = $mongo->find_one('employee', $employee_id);
-
-    my $empl = {};
-    $empl->{vacation} = $self->param('vacation');
-    $empl->{total_work_time} = $self->param('total_work_time');
-    
     my $data = $self->req->json;
-    say "JSON ", Dumper $data;
+    my $new_entry = {};
+    for my $count (1..6) {
+        my $key = "date".$count;
+        my $date = $data->{$key};
+        if($date ne '' && $date ne '/') {
+            my $date_string = $data->{"date".$count."_value"};
+            my $already_exists = $mongo->find_field('workshift', "date", $date_string);
+
+            $new_entry->{workshift} = $date;
+            $new_entry->{employee_id} = $data->{id};
+            $new_entry->{date} = $date_string;
+
+            if(!$already_exists) {
+                $mongo->insert('workshift', $new_entry);
+            }
+            else {
+                $mongo->update('workshift', $already_exists->{_id}->to_string, $new_entry);
+            }
+        }
+    }
+    
+    # update employee
+    my $employee = $mongo->find_one('employee', $data->{id});
+    if($employee) {
+        $employee->{total_work_time} = $data->{total_work_time};
+        $employee->{vacation} = $data->{vacation};
+
+        $mongo->update('employee', $employee->{_id}->to_string, $employee);
+    }
 
 #    $mongo->update('employee', $employee_id, $empl);
     my $json = "{ status: 'OK'";
@@ -145,7 +167,7 @@ sub getlocaldata {
         };
     }
 
-    my @wdays = qw/So Mo Di Mi Do Fr/;
+    my @wdays = qw/So Mo Di Mi Do Fr Sa/;
     # calculate days for one week
     my $cur = Time::Piece->new;
     # if current day is a monday I add one day because I want the next week not the current one.

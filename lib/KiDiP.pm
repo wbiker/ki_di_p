@@ -32,7 +32,7 @@ sub startup {
   $r->get('/getlocaldata')->to(controller => 'employee', action => 'getlocaldata');
 
 
-  $self->{mongo} = Database::Mongo->new(database => 'kidip', collections => [qw/employee work_hour workshift_duration/]);
+  $self->{mongo} = Database::Mongo->new(database => 'kidip', collections => [qw/employee work_hour workshift/]);
 }
 
 1;

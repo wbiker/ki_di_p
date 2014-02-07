@@ -35,12 +35,12 @@
             <tr>
             <td><%= $employee->{_id} %></td>
             <td><%= $employee->{firstname}." ".$employee->{lastname} %></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td><%= $employee->{date1} %></td>
+            <td><%= $employee->{date2} %></td>
+            <td><%= $employee->{date3} %></td>
+            <td><%= $employee->{date4} %></td>
+            <td><%= $employee->{date5} %></td>
+            <td><%= $employee->{date6} %></td>
             <td>0</td>
             <td><%= $employee->{work_hour}->{worktime} %></td>
             <td><%= $employee->{total_work_time} %></td>
@@ -252,48 +252,128 @@
 
             $('#dg').datagrid('updateRow', params);
 
-            // Go through all rows and check whether employees are working at the morning and the evening
-            var sumary = {};
-            for(var i = 0; i < data.rows.length - 1; i++) {
-                var row = data.rows[i];
-                var keys = Object.keys(row);
-                for(var index in keys) {
-                    var key = keys[index];
-                    if("id" != key && "name" != key && "total_work_time" != key && "vacation" != key && "is_hours" != key && "should_hours" != key) {
-                        var value = row[key];
+            calculateSumary();
+        }
+    });
 
-                        if(! sumary[key]) {
-                            sumary[key] = {};
-                            sumary[key].v = 0;
-                            sumary[key].n = 0;
-                        }
 
-                        if("T" == value) {
-                            sumary[key].v += 1;
-                            sumary[key].n += 1;
-                        }
-                        else if("V" == value) {
-                            sumary[key].v += 1;
-                        }
-                        else if("N" == value) {
-                            sumary[key].n += 1;
-                        }
+    // Go through all rows and check whether employees are working at the morning and the evening
+    function calculateSumary() {
+        var data = $('#dg').datagrid('getData');
+        var sumary = {};
+        var is_hours = {};
+        for(var i = 0; i < data.rows.length - 1; i++) {
+            var row = data.rows[i];
+            var keys = Object.keys(row);
+            for(var index in keys) {
+                var key = keys[index];
+                if("id" != key && "name" != key && "total_work_time" != key && "vacation" != key && "is_hours" != key && "should_hours" != key) {
+                    var value = row[key];
+                    if(! sumary[key]) {
+                        sumary[key] = {};
+                        sumary[key].v = 0;
+                        sumary[key].n = 0;
+                    }
+
+                    if("T" == value) {
+                        sumary[key].v += 1;
+                        sumary[key].n += 1;
+                    }
+                    else if("V" == value) {
+                        sumary[key].v += 1;
+                    }
+                    else if("N" == value) {
+                        sumary[key].n += 1;
                     }
                 }
             }
-            var sumary_keys = Object.keys(sumary);
-            var sum = {};
-            sum.index = data.rows.length - 1;
-            sum.row = {};
-            for(var index in sumary_keys) {
-                var sum_key = sumary_keys[index];
-                var workersPerDay = sumary[sum_key];
-                sum.row[sum_key] = workersPerDay.v + "-" + workersPerDay.n;
-            }
-
-            $('#dg').datagrid('updateRow', sum);
         }
-    });
+        var sumary_keys = Object.keys(sumary);
+        var sum = {};
+        sum.index = data.rows.length - 1;
+        sum.row = {};
+        for(var index in sumary_keys) {
+            var sum_key = sumary_keys[index];
+            var workersPerDay = sumary[sum_key];
+            sum.row[sum_key] = workersPerDay.v + "-" + workersPerDay.n;
+        }
+
+        $('#dg').datagrid('updateRow', sum);
+    }
+
+    // Go through all rows and calculate the is_hours. Need after initialing loading data of the server
+    function calculateIsHours() {
+            var data = $('#dg').datagrid('getData');
+
+            var employees = JSON.parse(sessionStorage.employees);
+            var workshifts = JSON.parse(sessionStorage.workshifts);
+
+        // go through all rows
+        for(int i = 0; i < data.rows.length-1; i++) {
+            var currentRow = data.rows[i];
+            var em = employees[currentRow.id];
+            
+            for(int y = 1; y < 7; y++) {
+                var ws = workshifts[em.work_shift];
+                // dates is set in the getlocaldata function at page load time.
+
+                // Add the hours corresponding to the new workshift to the is_hours column.
+                var dateField = "date" + y;
+                var workshift = currentRow[dateField];
+                if(workshift != "/" || workshift != ""= {
+                    if("T" == workshift) {
+                        if(dateField == "date6") {
+                            is_hours += 7.5;
+                            is_hours += 1.25;
+                        }
+                        else {
+                            is_hours += 9;
+                        }
+                   } 
+                    else if("V" == workshift) {
+                        is_hours += 4.5;
+                    }
+                    else if("N" == workshift) {
+                        if(dateField == "date6") {
+                            is_hours += 4.5;
+                            is_hours += 1.25;
+                        }   
+                    else {
+                        is_hours += 5.5;
+                    }
+                }
+                else if("U" == workshift || "K" == workshift) {
+                    if(dateField == "date6") {
+                        is_hours += Number(ws.weekend_plus);
+                    }
+                    else {
+                        // work day:
+                        is_hours += Number(ws.workday_plus);
+                    }
+                
+                    // The same for the vacation column if U is set
+                    if("U" == workshift) {
+                        // vacation
+                    }
+                }
+
+                // build an object to update the clicked cell and the total_work_time column.
+                var params = {};
+                params.index = i;
+                
+                var row_my = new Object();
+	            row_my.is_hours = is_hours;
+
+                console.log(row_my);
+    
+                params.row = row_my;
+
+                $('#dg').datagrid('updateRow', params);
+                }
+            }
+        }
+        $('#dg').datagrid('updateRow', isHours);
+    }
 
     // save the week information.
     function saveWeek() {
@@ -360,6 +440,7 @@
                         dates = value;
                     }
                 });
+                calculateSumary();
             },
 
             error: function (xhr, textStatus, errorThrown) {

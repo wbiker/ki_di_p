@@ -88,6 +88,29 @@ sub find_one {
     return $find;
 }
 
+sub find_field {
+    my $self = shift;
+    my $collection = shift;
+    my $field = shift;
+    my $value = shift;
+    
+    my $find = $self->{collections}->{$collection}->find_one({$field => $value});
+
+    return $find;
+}
+
+sub find_field_and_employee_id {
+    my $self = shift;
+    my $collection = shift;
+    my $eid = shift;
+    my $field = shift;
+    my $value = shift;
+    
+    my $find = $self->{collections}->{$collection}->find_one({'employee_id' => $eid, $field => $value});
+
+    return $find;
+}
+
 sub delete {
     my $self = shift;
     my $collection = shift;
