@@ -15,8 +15,16 @@ sub list {
   my $mongo = $self->app->{mongo};
   $log->info("list action called");
   my $employees = $mongo->find('employee', {});
+
+    my @empl;
+    while(my $employee = $employees->next) {
+        push(@empl, $employee);
+    }
+    
+    @empl = sort { $a->{position} <=> $b->{position} } @empl;
+
   # Render template "employee/list.html.ep" with message
-  $self->stash(employees => $employees);
+  $self->stash(employees => \@empl);
   $self->render(
     message => 'Welcome to the Mojolicious real-time web framework!');
 }
@@ -46,6 +54,7 @@ sub edit_employee {
     $empl->{total_work_time} = $self->param('total_work_time');
     $empl->{work_start} = $self->param('work_start');
     $empl->{work_shift} = $self->param('work_shift');
+    $empl->{position} = $self->param('position');
 
     $mongo->update('employee', $employee_id, $empl);
     $self->redirect_to('/employee/list');
@@ -110,7 +119,8 @@ sub new_employee {
                 id => $workh->{_id},
                 vacation_plus => $workh->{vacation_plus},
                 workday_plus => $workh->{workday_plus},
-                weekend_plus => $workh->{weekend_plus}});
+                weekend_plus => $workh->{weekend_plus},
+                });
         }
 
         $self->stash(workhours => $workhours);
@@ -125,6 +135,7 @@ sub new_employee {
     $empl->{total_work_time} = $self->param('total_work_time');
     $empl->{work_start} = $self->param('work_start');
     $empl->{work_shift} = $self->param('work_shift');
+    $empl->{position} = $self->param('position');
 
     my $mongo = $self->app->{mongo};
     $mongo->insert('employee', $empl);
@@ -199,8 +210,8 @@ sub createpdf {
     my $self = shift;
     my $log = $self->app->log;
     
-    my $date = $self->req->json;
-    my $file_name = $data->{data1};:
+    #my $date = $self->req->json;
+    #my $file_name = $data->{data1};
 }
 
 1;

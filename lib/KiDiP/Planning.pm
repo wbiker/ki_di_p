@@ -59,9 +59,11 @@ sub planning {
 
     push($empl, $em);
   }
+    # sort employees
+    my @sorted_employees = sort { $a->{position} <=> $b->{position} } @{$empl};
 
   # Render template "employee/list.html.ep" with message
-  $self->stash(employees => $empl);
+  $self->stash(employees => \@sorted_employees);
 
   $self->stash(dates => $dates);
 

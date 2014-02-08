@@ -1,7 +1,7 @@
 % layout 'default';
 % title 'Kak Dienstplan Manager';
 
-% if(0 < $employees->count) {
+% if(0 < $employees) {
     <table class="easyui-datagrid" data-options="idField:'id'" style="width:auto">
         <thead>
             <tr>
@@ -14,7 +14,7 @@
             </tr>
         </thead>
         <tbody> 
-        % while(my $employee = $employees->next) {
+        % for my $employee (@{$employees}) {
             <tr>
             <td><%= $employee->{_id} %></td>
             <td><%= $employee->{firstname}." ".$employee->{lastname} %></td>
