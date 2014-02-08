@@ -5,6 +5,7 @@ use Database::Mongo;
 use Data::Dumper;
 use Time::Piece;
 use Time::Seconds;
+use PDF::Create;
 
 # This action will render a template
 sub list {
@@ -61,21 +62,23 @@ sub update_employee {
     for my $count (1..6) {
         my $key = "date".$count;
         my $date = $data->{$key};
-        if($date ne '' && $date ne '/') {
+#        if($date ne '' && $date ne '/') {
             my $date_string = $data->{"date".$count."_value"};
-            my $already_exists = $mongo->find_field('workshift', "date", $date_string);
+            my $already_exists = $mongo->find_field('workshift', {"date" => $date_string, employee_id => $data->{id}});
 
             $new_entry->{workshift} = $date;
             $new_entry->{employee_id} = $data->{id};
             $new_entry->{date} = $date_string;
 
             if(!$already_exists) {
+                say "Insert new workshift: ", Dumper $new_entry;
                 $mongo->insert('workshift', $new_entry);
             }
             else {
+                say "Update existing workshift: ", Dumper $new_entry;
                 $mongo->update('workshift', $already_exists->{_id}->to_string, $new_entry);
             }
-        }
+ #       }
     }
     
     # update employee
@@ -83,6 +86,7 @@ sub update_employee {
     if($employee) {
         $employee->{total_work_time} = $data->{total_work_time};
         $employee->{vacation} = $data->{vacation};
+        $employee->{is_hours} = $data->{is_hours};
 
         $mongo->update('employee', $employee->{_id}->to_string, $employee);
     }
@@ -188,6 +192,15 @@ sub getlocaldata {
     $json->{dates} = $dates;
 
     $self->render(json => $json);
+}
+
+# triggered by /createpdf. called by the frontend if clicked on the Speichern button
+sub createpdf {
+    my $self = shift;
+    my $log = $self->app->log;
+    
+    my $date = $self->req->json;
+    my $file_name = $data->{data1};:
 }
 
 1;

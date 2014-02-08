@@ -41,7 +41,7 @@
             <td><%= $employee->{date4} %></td>
             <td><%= $employee->{date5} %></td>
             <td><%= $employee->{date6} %></td>
-            <td>0</td>
+            <td><%= $employee->{is_hours} %></td>
             <td><%= $employee->{work_hour}->{worktime} %></td>
             <td><%= $employee->{total_work_time} %></td>
             <td><%= $employee->{vacation} %></td>
@@ -79,11 +79,12 @@
         }
 
         var shouldHours = row.should_hours;
-        if(val > shouldHours) {
+        if(Number(val) > Number(shouldHours)) {
             return '<span style="color:orange;">'+val+'</span>';
         }
-
-        return val;
+        else {
+            return '<span>'+val+'</span>';
+        }
     }
 
     $('#dg').datagrid({
@@ -299,81 +300,7 @@
         }
 
         $('#dg').datagrid('updateRow', sum);
-    }
-
-    // Go through all rows and calculate the is_hours. Need after initialing loading data of the server
-    function calculateIsHours() {
-            var data = $('#dg').datagrid('getData');
-
-            var employees = JSON.parse(sessionStorage.employees);
-            var workshifts = JSON.parse(sessionStorage.workshifts);
-
-        // go through all rows
-        for(int i = 0; i < data.rows.length-1; i++) {
-            var currentRow = data.rows[i];
-            var em = employees[currentRow.id];
-            
-            for(int y = 1; y < 7; y++) {
-                var ws = workshifts[em.work_shift];
-                // dates is set in the getlocaldata function at page load time.
-
-                // Add the hours corresponding to the new workshift to the is_hours column.
-                var dateField = "date" + y;
-                var workshift = currentRow[dateField];
-                if(workshift != "/" || workshift != ""= {
-                    if("T" == workshift) {
-                        if(dateField == "date6") {
-                            is_hours += 7.5;
-                            is_hours += 1.25;
-                        }
-                        else {
-                            is_hours += 9;
-                        }
-                   } 
-                    else if("V" == workshift) {
-                        is_hours += 4.5;
-                    }
-                    else if("N" == workshift) {
-                        if(dateField == "date6") {
-                            is_hours += 4.5;
-                            is_hours += 1.25;
-                        }   
-                    else {
-                        is_hours += 5.5;
-                    }
-                }
-                else if("U" == workshift || "K" == workshift) {
-                    if(dateField == "date6") {
-                        is_hours += Number(ws.weekend_plus);
-                    }
-                    else {
-                        // work day:
-                        is_hours += Number(ws.workday_plus);
-                    }
-                
-                    // The same for the vacation column if U is set
-                    if("U" == workshift) {
-                        // vacation
-                    }
-                }
-
-                // build an object to update the clicked cell and the total_work_time column.
-                var params = {};
-                params.index = i;
-                
-                var row_my = new Object();
-	            row_my.is_hours = is_hours;
-
-                console.log(row_my);
-    
-                params.row = row_my;
-
-                $('#dg').datagrid('updateRow', params);
-                }
-            }
-        }
-        $('#dg').datagrid('updateRow', isHours);
-    }
+    };
 
     // save the week information.
     function saveWeek() {
@@ -413,7 +340,7 @@
             
         }
         
-    }
+    };
 
     function click_t(opt) {
         sessionStorage.workshift = opt.id;

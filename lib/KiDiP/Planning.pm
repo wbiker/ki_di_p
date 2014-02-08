@@ -40,17 +40,22 @@ sub planning {
     my $wh = $self->app->{mongo}->find_one('work_hour', $em->{work_shift});
     $em->{work_hour} = $wh;
     
+    my $workshift_found;
     for my $cnt (1..7) {
         my $date = $dates->{'date'.$cnt};
         my $workshift = $self->app->{mongo}->find_field_and_employee_id('workshift', $em->{_id}->to_string, 'date', $date);
         if($workshift) {
             $em->{'date'.$cnt} = $workshift->{workshift};
+            $workshift_found = 1;    # only if at least one workshift for this employee was found I use the is_hour value from the database. Otherwise is_hours is 0.
         }
         else {
             $em->{'date'.$cnt} = "";
         }
     }
-
+   if(!$workshift_found) {
+        # no workshift this week found. Set is_hours to 0.
+       $em->{is_hours} = 0;
+   }
 
     push($empl, $em);
   }

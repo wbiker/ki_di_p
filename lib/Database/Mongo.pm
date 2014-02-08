@@ -91,10 +91,8 @@ sub find_one {
 sub find_field {
     my $self = shift;
     my $collection = shift;
-    my $field = shift;
-    my $value = shift;
-    
-    my $find = $self->{collections}->{$collection}->find_one({$field => $value});
+    my $hash = shift; 
+    my $find = $self->{collections}->{$collection}->find_one($hash);
 
     return $find;
 }

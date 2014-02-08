@@ -30,6 +30,7 @@ sub startup {
   $r->post('/workhour/new')->to(controller => 'workhour', action => 'new_workhour');
 
   $r->get('/getlocaldata')->to(controller => 'employee', action => 'getlocaldata');
+  $r->post('/createpdf')->to(controller => 'employee', action => 'createpdf');
 
 
   $self->{mongo} = Database::Mongo->new(database => 'kidip', collections => [qw/employee work_hour workshift/]);

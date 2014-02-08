@@ -39,6 +39,10 @@
                 <td>Arbeitsbeginn:</td>
                 <td><div class="easyui-calendar" id="cal" data-options="firstDay:1" style="width:180px;heigh:180px;"></div></td>
             </tr>
+            <tr>
+                <td>Listposition:</td>
+                <td><div class="easyui-numberbox" name="position" value="<%= $employee->{position} %>" /></td>
+            </tr>
         </table>
         <input id="ws" type="text" hidden="true" name="work_start" value="<%= $employee->{work_start} %>"/>
     </form>
