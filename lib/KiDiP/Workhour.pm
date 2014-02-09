@@ -9,6 +9,7 @@ use Time::Seconds;
 # This action will render a template
 sub list {
   my $self = shift;
+  $self->redirect_to('login') unless $self->is_user_authenticated();
     
   my $log = $self->app->log;
   $log->info("list action called");
@@ -19,6 +20,7 @@ sub list {
 
 sub new_workhour {
   my $self = shift;
+  $self->redirect_to('login') unless $self->is_user_authenticated();
     
   my $log = $self->app->log;
   # Render template "employee/list.html.ep" with message

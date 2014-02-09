@@ -11,6 +11,7 @@ my @wdays = qw(So Mo Di Mi Do Fr Sa);
 # This action will render a template
 sub planning {
   my $self = shift;
+  $self->redirect_to('login') unless $self->is_user_authenticated();
     
   my $log = $self->app->log;
   $log->info("list action called");

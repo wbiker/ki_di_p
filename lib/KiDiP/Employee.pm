@@ -12,6 +12,8 @@ sub list {
   my $self = shift;
     
   my $log = $self->app->log;
+  $self->redirect_to('login') unless $self->is_user_authenticated();
+
   my $mongo = $self->app->{mongo};
   $log->info("list action called");
   my $employees = $mongo->find('employee', {});
@@ -31,6 +33,7 @@ sub list {
 
 sub edit_employee {
     my $self = shift;
+    $self->redirect_to('login') unless $self->is_user_authenticated();
     my $employee_id = $self->param('employee_id');
     $self->app->log->debug("employee ID: $employee_id"); 
 
@@ -62,6 +65,7 @@ sub edit_employee {
 
 sub update_employee {
     my $self = shift;
+    $self->redirect_to('login') unless $self->is_user_authenticated();
     my $employee_id = $self->param('employee_id');
     $self->app->log->debug("update employee ID: $employee_id"); 
 
@@ -108,6 +112,7 @@ sub update_employee {
 # is triggered by URL/employee/new
 sub new_employee {
     my $self = shift;
+    $self->redirect_to('login') unless $self->is_user_authenticated();
 
     my $log = $self->app->log;
 
@@ -144,6 +149,7 @@ sub new_employee {
 
 sub delete_employee {
     my $self = shift;
+    $self->redirect_to('login') unless $self->is_user_authenticated();
 
     my $log = $self->app->log;
     my $employee_id = $self->param('employee_id');
@@ -213,5 +219,10 @@ sub createpdf {
     #my $date = $self->req->json;
     #my $file_name = $data->{data1};
 }
+
+sub welcome {
+    my $self = shift;
+}
+
 
 1;
