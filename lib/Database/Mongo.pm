@@ -21,6 +21,7 @@ use warnings;
 use Carp;
  
 use MongoDB;
+use vars qw/$AUTOLOAD/;
 
 sub new {
     my $class = shift;
@@ -38,9 +39,11 @@ sub new {
     }
     
     $self->{db} = $self->{client}->get_database($options{database});
+    $self->{desired_collection} = undef;
 
     for my $col (@{$options{collections}}) {
         $self->{collections}->{$col} = $self->{db}->get_collection($col);
+        push($self->{collection_names}, $col);
     }
     
     return bless $self, $class;
@@ -48,8 +51,13 @@ sub new {
 
 sub insert {
     my $self = shift;
-    my $collection = shift;
     my $hash = shift;
+    my $collection = shift;
+
+    unless($collection) {
+        die "collection must be set either as methode or as parameter!" unless $self->{desired_collection};
+        $collection = $self->{desired_collection};
+    }
 
     $self->{collections}->{$collection}->insert($hash);
 
@@ -58,10 +66,15 @@ sub insert {
 
 sub update {
     my $self = shift;
-    my $collection = shift;
     my $id = shift;
     my $hash = shift;
+    my $collection = shift;
 
+    unless($collection) {
+        die "collection must be set either as methode or as parameter!" unless $self->{desired_collection};
+        $collection = $self->{desired_collection};
+    }
+    
     my $iod = MongoDB::OID->new($id);
 
     $self->{collections}->{$collection}->update({_id => $iod}, $hash);
@@ -69,17 +82,27 @@ sub update {
 
 sub find {
     my $self = shift;
-    my $collection = shift;
     my $criteria = shift;
+    my $collection = shift;
 
+    unless($collection) {
+        die "collection must be set either as methode or as parameter!" unless $self->{desired_collection};
+        $collection = $self->{desired_collection};
+    }
+    
     my $find = $self->{collections}->{$collection}->find($criteria);
     return $find;
 }
 
 sub find_one {
     my $self = shift;
-    my $collection = shift;
     my $id = shift;
+    my $collection = shift;
+    
+    unless($collection) {
+        die "collection must be set either as methode or as parameter!" unless $self->{desired_collection};
+        $collection = $self->{desired_collection};
+    }
     
     my $oid;
     $oid = MongoDB::OID->new($id);
@@ -90,8 +113,14 @@ sub find_one {
 
 sub find_field {
     my $self = shift;
-    my $collection = shift;
     my $hash = shift; 
+    my $collection = shift;
+
+    unless($collection) {
+        die "collection must be set either as methode or as parameter!" unless $self->{desired_collection};
+        $collection = $self->{desired_collection};
+    }
+    
     my $find = $self->{collections}->{$collection}->find_one($hash);
 
     return $find;
@@ -99,10 +128,15 @@ sub find_field {
 
 sub find_field_and_employee_id {
     my $self = shift;
-    my $collection = shift;
     my $eid = shift;
     my $field = shift;
     my $value = shift;
+    my $collection = shift;
+    
+    unless($collection) {
+        die "collection must be set either as methode or as parameter!" unless $self->{desired_collection};
+        $collection = $self->{desired_collection};
+    }
     
     my $find = $self->{collections}->{$collection}->find_one({'employee_id' => $eid, $field => $value});
 
@@ -111,14 +145,37 @@ sub find_field_and_employee_id {
 
 sub delete {
     my $self = shift;
-    my $collection = shift;
     my $id = shift;
+    my $collection = shift;
+    
+    unless($collection) {
+        die "collection must be set either as methode or as parameter!" unless $self->{desired_collection};
+        $collection = $self->{desired_collection};
+    }
     
     my $oid;
     $oid = MongoDB::OID->new($id);
     my $find = $self->{collections}->{$collection}->remove({_id => $oid});
 
     return $find;
+}
+
+sub AUTOLOAD {
+    my $self = shift;
+    my $type = ref($self) or die "$self is not a object!";
+
+    my $collection_name = $AUTLOAD;
+    $collection_name =~ s/.*://;
+
+    say "collection name: $collection_name";
+    if(exists $self->{collections}->{$collection_name}) {
+        say "store desired collection $collection_name;
+        $self->{desired_collection} = $collection_name;
+    }
+    else {
+        die "Could not found $collection_name in the collections";
+    }
+    return $self; 
 }
 
 1;

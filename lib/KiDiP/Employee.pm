@@ -16,7 +16,7 @@ sub list {
 
   my $mongo = $self->app->{mongo};
   $log->info("list action called");
-  my $employees = $mongo->find('employee', {});
+  my $employees = $mongo->employee->find({});
 
     my @empl;
     while(my $employee = $employees->next) {
@@ -39,8 +39,8 @@ sub edit_employee {
 
     my $mongo = $self->app->{mongo};
     if('GET' eq $self->req->method) {
-        my $employee = $mongo->find_one('employee', $employee_id);
-        my $work_shifts_cursor = $mongo->find('work_hour', {});
+        my $employee = $mongo->employee->find_one($employee_id);
+        my $work_shifts_cursor = $mongo->work_hour->find({});
         my $work_shifts = [];
         while(my $wh = $work_shifts_cursor->next) {
            push($work_shifts, $wh);
@@ -59,7 +59,7 @@ sub edit_employee {
     $empl->{work_shift} = $self->param('work_shift');
     $empl->{position} = $self->param('position');
 
-    $mongo->update('employee', $employee_id, $empl);
+    $mongo->employee->update($employee_id, $empl);
     $self->redirect_to('/employee/list');
 }
 
@@ -77,7 +77,7 @@ sub update_employee {
         my $date = $data->{$key};
 #        if($date ne '' && $date ne '/') {
             my $date_string = $data->{"date".$count."_value"};
-            my $already_exists = $mongo->find_field('workshift', {"date" => $date_string, employee_id => $data->{id}});
+            my $already_exists = $mongo->workshift->find_field({"date" => $date_string, employee_id => $data->{id}});
 
             $new_entry->{workshift} = $date;
             $new_entry->{employee_id} = $data->{id};
@@ -85,23 +85,23 @@ sub update_employee {
 
             if(!$already_exists) {
                 say "Insert new workshift: ", Dumper $new_entry;
-                $mongo->insert('workshift', $new_entry);
+                $mongo->workshift->insert($new_entry);
             }
             else {
                 say "Update existing workshift: ", Dumper $new_entry;
-                $mongo->update('workshift', $already_exists->{_id}->to_string, $new_entry);
+                $mongo->workshift->update($already_exists->{_id}->to_string, $new_entry);
             }
  #       }
     }
     
     # update employee
-    my $employee = $mongo->find_one('employee', $data->{id});
+    my $employee = $mongo->employee->find_one($data->{id});
     if($employee) {
         $employee->{total_work_time} = $data->{total_work_time};
         $employee->{vacation} = $data->{vacation};
         $employee->{is_hours} = $data->{is_hours};
 
-        $mongo->update('employee', $employee->{_id}->to_string, $employee);
+        $mongo->employee->update($employee->{_id}->to_string, $employee);
     }
 
 #    $mongo->update('employee', $employee_id, $empl);
@@ -143,7 +143,7 @@ sub new_employee {
     $empl->{position} = $self->param('position');
 
     my $mongo = $self->app->{mongo};
-    $mongo->insert('employee', $empl);
+    $mongo->employee->insert($empl);
     $self->redirect_to('/employee/list');
 }
 
@@ -155,7 +155,7 @@ sub delete_employee {
     my $employee_id = $self->param('employee_id');
 
     my $mongo = $self->app->{mongo};
-    $mongo->delete('employee', $employee_id);
+    $mongo->employee->delete($employee_id);
     $self->redirect_to('/employee/list');
     
 }
@@ -163,7 +163,8 @@ sub delete_employee {
 sub getlocaldata {
     my $self = shift;
 
-    my $employees = $self->app->{mongo}->find('employee', {});
+    my $mango = $self->app->{mango};
+    my $employees = $mango->employee->find({});
 
     my $json = {};
     $json->{employees} = {};
@@ -175,7 +176,7 @@ sub getlocaldata {
         };
     }
 
-    my $workshifts_cursor = $self->app->{mongo}->find('work_hour', {});
+    my $workshifts_cursor = $mango->work_hour->find({});
     
     $json->{workshifts} = {};
     while(my $ws = $workshifts_cursor->next) {
