@@ -18,6 +18,7 @@ package Database::Mongo;
 
 use strict;
 use warnings;
+use feature qw(say);
 use Carp;
  
 use MongoDB;
@@ -43,7 +44,6 @@ sub new {
 
     for my $col (@{$options{collections}}) {
         $self->{collections}->{$col} = $self->{db}->get_collection($col);
-        push($self->{collection_names}, $col);
     }
     
     return bless $self, $class;
@@ -164,12 +164,10 @@ sub AUTOLOAD {
     my $self = shift;
     my $type = ref($self) or die "$self is not a object!";
 
-    my $collection_name = $AUTLOAD;
+    my $collection_name = $AUTOLOAD;
     $collection_name =~ s/.*://;
 
-    say "collection name: $collection_name";
     if(exists $self->{collections}->{$collection_name}) {
-        say "store desired collection $collection_name;
         $self->{desired_collection} = $collection_name;
     }
     else {

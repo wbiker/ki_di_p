@@ -15,8 +15,9 @@ sub planning {
     
   my $log = $self->app->log;
   $log->info("list action called");
-  my $employees = $self->app->{mongo}->find('employee', {});
-  my $work_hours = $self->app->{mongo}->find('work_hour', {});
+  my $mongo = $self->app->{mongo};
+  my $employees = $mongo->employee->find({});
+  my $work_hours = $mongo->work_hour->find({});
 
   # calculate days for one week
   my $cur = Time::Piece->new;
@@ -38,13 +39,13 @@ sub planning {
   # walk through the employees and add the work hor data
   my $empl = [];
   while(my $em = $employees->next) {
-    my $wh = $self->app->{mongo}->find_one('work_hour', $em->{work_shift});
+    my $wh = $mongo->work_hour->find_one($em->{work_shift});
     $em->{work_hour} = $wh;
     
     my $workshift_found;
     for my $cnt (1..7) {
         my $date = $dates->{'date'.$cnt};
-        my $workshift = $self->app->{mongo}->find_field_and_employee_id('workshift', $em->{_id}->to_string, 'date', $date);
+        my $workshift = $mongo->workshift->find_field_and_employee_id($em->{_id}->to_string, 'date', $date);
         if($workshift) {
             $em->{'date'.$cnt} = $workshift->{workshift};
             $workshift_found = 1;    # only if at least one workshift for this employee was found I use the is_hour value from the database. Otherwise is_hours is 0.

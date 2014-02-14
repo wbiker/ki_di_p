@@ -163,8 +163,8 @@ sub delete_employee {
 sub getlocaldata {
     my $self = shift;
 
-    my $mango = $self->app->{mango};
-    my $employees = $mango->employee->find({});
+    my $mongo = $self->app->{mongo};
+    my $employees = $mongo->employee->find({});
 
     my $json = {};
     $json->{employees} = {};
@@ -176,7 +176,7 @@ sub getlocaldata {
         };
     }
 
-    my $workshifts_cursor = $mango->work_hour->find({});
+    my $workshifts_cursor = $mongo->work_hour->find({});
     
     $json->{workshifts} = {};
     while(my $ws = $workshifts_cursor->next) {

@@ -111,6 +111,8 @@
             }
 
             var currentRow = data.rows[rowIndex];
+            console.log("session");
+            console.log(sessionStorage);
             var employees = JSON.parse(sessionStorage.employees);
             var em = employees[currentRow.id];
             var workshifts = JSON.parse(sessionStorage.workshifts);
