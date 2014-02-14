@@ -170,7 +170,7 @@
                 if(day > 0 && day < 6) {
                     // work day:
                     is_hours -= Number(ws.workday_plus);
-                    if(Numer(ws.workday_plus) < overtimeValue) {
+                    if(Number(ws.workday_plus) < overtimeValue) {
                         overtimeValue = Number(ws.workday_plus);
                     }
                 }
