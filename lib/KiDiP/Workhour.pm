@@ -13,7 +13,8 @@ sub list {
     
   my $log = $self->app->log;
   $log->info("list action called");
-  my $wh = $self->app->{mongo}->find('work_hour', {});
+  my $mongo = $self->app->{mongo};
+  my $wh = $mongo->work_hour->find({});
   # Render template "employee/list.html.ep" with message
   $self->stash(workhours => $wh);
 }
@@ -21,6 +22,8 @@ sub list {
 sub new_workhour {
   my $self = shift;
   $self->redirect_to('login') unless $self->is_user_authenticated();
+
+  my $mongo = $self->app->{mongo};
     
   my $log = $self->app->log;
   # Render template "employee/list.html.ep" with message
@@ -35,7 +38,7 @@ sub new_workhour {
   $wh->{weekend_plus} = $self->param('weekend_plus');
   $wh->{workday_plus} = $self->param('workday_plus');
 
-  $self->app->{mongo}->insert('work_hour', $wh);
+  $mongo->work_hour->insert($wh);
 }
 
 1;

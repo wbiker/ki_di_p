@@ -114,10 +114,12 @@ sub new_employee {
     my $self = shift;
     $self->redirect_to('login') unless $self->is_user_authenticated();
 
+    my $mongo = $self->app->{mongo};
     my $log = $self->app->log;
 
     if('GET' eq $self->req->method) {
-        my $wh_cursor = $self->app->{mongo}->find('work_hour');
+
+        my $wh_cursor = $mongo->work_hour->find({});
         my $workhours = [];
         while(my $workh = $wh_cursor->next) {
             push($workhours, {name => $workh->{name},
