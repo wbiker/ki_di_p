@@ -144,7 +144,6 @@ sub new_employee {
     $empl->{work_shift} = $self->param('work_shift');
     $empl->{position} = $self->param('position');
 
-    my $mongo = $self->app->{mongo};
     $mongo->employee->insert($empl);
     $self->redirect_to('/employee/list');
 }
