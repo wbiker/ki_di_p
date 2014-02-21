@@ -128,7 +128,7 @@
             // I subtract the hour of the is_hours column
             // must also substruct the overtime of the total_time_hours
             var overtimeValue = 0;
-            if("/" != value && is_hours > should_hours) {
+            if(is_hours > should_hours) {
                 overtimeValue = is_hours - should_hours;
             }
             if("T" == value) {
