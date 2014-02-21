@@ -186,6 +186,10 @@
                     total_vacation += Number(1);
                 }
             }
+            else if("/" == value) {
+                // nothing to substract
+                overtimeValue = 0;
+            }
 
             console.log("Overtime: " + overtimeValue);
             total_work_time -= overtimeValue;
