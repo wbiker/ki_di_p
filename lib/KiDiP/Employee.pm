@@ -97,7 +97,20 @@ sub update_employee {
     # update employee
     my $employee = $mongo->employee->find_one($data->{id});
     if($employee) {
-        $employee->{total_work_time} = $data->{total_work_time};
+        my $total_work_time = $data->{total_work_time};
+        # if week should be closed
+        if(exists $data->{close} && 1 == $data->{close}) {
+            say "Close week";
+            # check is_hours and should_hours. 
+            # If is_hours is greater than shoudl_hours add difference
+            # to the total work time. Otherwise substract difference.
+            my $is_hours = $data->{is_hours};
+            my $should_hours = $data->{should_hours};
+            my $diff = $is_hours - $should_hours;
+            $total_work_time = $total_work_time + $diff;
+        }
+
+        $employee->{total_work_time} = $total_work_time;
         $employee->{vacation} = $data->{vacation};
         $employee->{is_hours} = $data->{is_hours};
 

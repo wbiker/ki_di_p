@@ -9,7 +9,8 @@
         <a href="#" id="U" class="easyui-linkbutton" data-options="toggle:true,group:'workshifts'" onclick="click_t(this)">U</a>
         <a href="#" id="K" class="easyui-linkbutton" data-options="toggle:true,group:'workshifts'" onclick="click_t(this)">K</a>
         <a href="#" id="F" class="easyui-linkbutton" data-options="toggle:true,group:'workshifts'" onclick="click_t(this)">/</a>
-        <a href="#" id="F" class="easyui-linkbutton" onclick="saveWeek()">Speicher</a>
+        <a href="#" id="saveWeek" class="easyui-linkbutton" onclick="saveWeek()">Speicher</a>
+        <a href="#" id="saveWeekEnd" class="easyui-linkbutton" onclick="saveWeek(1)">Woche abschließen</a>
     </div>
 
 
@@ -309,10 +310,9 @@
     };
 
     // save the week information.
-    function saveWeek() {
+    function saveWeek(close) {
         // get all rows
         var rows = $('#dg').datagrid('getRows');
-
         // go through the rows.
         for(var i = 0; i < rows.length - 1; i++) {
             var row = rows[i];
@@ -322,6 +322,9 @@
             row.date4_value = dates.date4;
             row.date5_value = dates.date5;
             row.date6_value = dates.date6;
+            if(close) {
+                row.close = 1;
+            }
 
             // send data to server
             // ID, total_work_time and vacation
